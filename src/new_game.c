@@ -25,6 +25,7 @@
 #include "overworld.h"
 #include "mail.h"
 #include "battle_records.h"
+#include "battle_setup.h"
 #include "item.h"
 #include "pokedex.h"
 #include "apprentice.h"
@@ -48,11 +49,13 @@
 #include "constants/items.h"
 #include "difficulty.h"
 #include "follower_npc.h"
+#include "script_pokemon_util.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 
 static void ClearFrontierRecord(void);
 static void WarpToTruck(void);
+static void AddPokemonToPc(void);
 static void ResetMiniGamesRecords(void);
 static void ResetItemFlags(void);
 static void ResetDexNav(void);
@@ -131,8 +134,26 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(MAP_STARTING_ZONE), MAP_NUM(MAP_STARTING_ZONE), WARP_ID_NONE, 5, 8);
     WarpIntoMap();
+}
+
+static void AddPokemonToPc(void)
+{
+    u8 evs[NUM_STATS] = {0, 0, 0, 0, 0, 0};
+    u8 ivs[NUM_STATS] = {MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1,   // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
+                         MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1};  // ScriptGiveMonParameterized won't touch the stats' IV.
+    
+    // If first move is none, it will set default moves.
+    // Check moves.h for moves
+    u16 moves[MAX_MON_MOVES] = {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE};
+
+    ScriptGiveMonToPcParameterized(
+        SPECIES_MUDKIP, 5, ITEM_NONE, ITEM_POKE_BALL, 
+        NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_MALE, 
+        evs, ivs, moves, SHINY_MODE_NEVER, 
+        FALSE, NUMBER_OF_MON_TYPES, 0
+    );
 }
 
 void Sav2_ClearSetDefault(void)
@@ -213,6 +234,7 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
+    AddPokemonToPc();
 }
 
 static void ResetMiniGamesRecords(void)

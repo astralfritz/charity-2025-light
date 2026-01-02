@@ -49,6 +49,10 @@ gText_Birch_YourePlayer::
 	.string "I get it now!\p"
 	.string "$"
 
+gText_Birch_EatShit::
+	.string "Eat shit.\p"
+	.string "$"
+
 gText_Birch_AreYouReady::
 	.string "All right, are you ready?\p"
 	.string "Your very own adventure is about\n"

@@ -1,6 +1,8 @@
 #include "global.h"
 #include "bg.h"
 #include "data.h"
+#include "malloc.h"
+#include "random.h"
 #include "decompress.h"
 #include "event_data.h"
 #include "gpu_regs.h"
@@ -110,19 +112,14 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
     {8, 4},
 };
 
-static const u16 sStarterMon[STARTER_MON_COUNT] =
-{
-    SPECIES_TREECKO,
-    SPECIES_TORCHIC,
-    SPECIES_MUDKIP,
-};
+static u16 sStarterMon[STARTER_MON_COUNT];
 
 static const struct BgTemplate sBgTemplates[3] =
 {
     {
         .bg = 0,
         .charBaseIndex = 2,
-        .mapBaseIndex = 31,
+        .mapBaseIndex = 7,
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 0,
@@ -131,7 +128,7 @@ static const struct BgTemplate sBgTemplates[3] =
     {
         .bg = 2,
         .charBaseIndex = 0,
-        .mapBaseIndex = 7,
+        .mapBaseIndex = 8,
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 3,
@@ -473,6 +470,10 @@ static void CB2_StarterChoose(void)
 
 static void Task_StarterChoose(u8 taskId)
 {
+    sStarterMon[0] = Random() % 1523;
+    sStarterMon[1] = Random() % 1523;
+    sStarterMon[2] = Random() % 1523;
+
     CreateStarterPokemonLabel(gTasks[taskId].tStarterSelection);
     DrawStdFrameWithCustomTileAndPalette(0, FALSE, 0x2A8, 0xD);
     AddTextPrinterParameterized(0, FONT_NORMAL, gText_BirchInTrouble, 0, 1, 0, NULL);

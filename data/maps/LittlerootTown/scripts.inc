@@ -427,6 +427,12 @@ LittlerootTown_EventScript_PlayersHouseSignFemale::
 	msgbox LittlerootTown_Text_PlayersHouse, MSGBOX_DEFAULT
 	return
 
+LittlerootTown_EventScript_BitchSign::
+	lockall
+	msgbox LittlerootTown_Text_BitchSign, MSGBOX_DEFAULT
+	releaseall
+	return
+
 LittlerootTown_EventScript_GiveRunningShoesTrigger0::
 	lockall
 	setvar VAR_0x8008, 0
@@ -1013,4 +1019,7 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I gave you?\p"
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
+
+LittlerootTown_Text_BitchSign:
+	.string "You're a bitch$"
 
