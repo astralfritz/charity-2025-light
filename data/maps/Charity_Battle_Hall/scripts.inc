@@ -16,3 +16,8 @@ Charity_Battle_Hall_Entrance_EventScript_Nurse_2::
 	waitbuttonpress
 	release
 	end
+
+Charity_Battle_Hall_EventScript_Fritz::
+	trainerbattle_single TRAINER_FRITZ, Charity_Battle_Hall_Text_FritzIntro, Charity_Battle_Hall_Text_FritzDefeated
+	msgbox Charity_Battle_Hall_Text_FritzPostBattle, MSGBOX_AUTOCLOSE
+	end
