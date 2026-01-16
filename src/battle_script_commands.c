@@ -4528,7 +4528,8 @@ static bool32 BattleTypeAllowsExp(void)
               | BATTLE_TYPE_FRONTIER
               | BATTLE_TYPE_SAFARI
               | BATTLE_TYPE_BATTLE_TOWER
-              | BATTLE_TYPE_EREADER_TRAINER))
+              | BATTLE_TYPE_EREADER_TRAINER
+              | BATTLE_TYPE_TRAINER))
         return FALSE;
     else
         return TRUE;
