@@ -1,5 +1,6 @@
 #include "global.h"
 #include "new_game.h"
+#include "malloc.h"
 #include "random.h"
 #include "pokemon.h"
 #include "roamer.h"
@@ -140,16 +141,33 @@ static void WarpToTruck(void)
 
 static void AddPokemonToPc(void)
 {
-    u8 evs[NUM_STATS] = {0, 0, 0, 0, 0, 0};
-    u8 ivs[NUM_STATS] = {MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1,   // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
-                         MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1};  // ScriptGiveMonParameterized won't touch the stats' IV.
-    
     // If first move is none, it will set default moves.
     // Check moves.h for moves
     u16 moves[MAX_MON_MOVES] = {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE};
 
+    u8 evs[NUM_STATS] = {0, 0, 0, 0, 0, 0};
+    u8 ivs[NUM_STATS] = {MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1,   // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
+                        MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1};  // ScriptGiveMonParameterized won't touch the stats' IV.
+
+    u16 random_mon_1 = Random() % 1523;
     ScriptGiveMonToPcParameterized(
-        SPECIES_MUDKIP, 5, ITEM_NONE, ITEM_POKE_BALL, 
+        random_mon_1, 50, ITEM_NONE, ITEM_POKE_BALL, 
+        NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_MALE, 
+        evs, ivs, moves, SHINY_MODE_NEVER, 
+        FALSE, NUMBER_OF_MON_TYPES, 0
+    );
+
+    u16 random_mon_2 = Random() % 1523;
+    ScriptGiveMonToPcParameterized(
+        random_mon_2, 50, ITEM_NONE, ITEM_POKE_BALL, 
+        NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_MALE, 
+        evs, ivs, moves, SHINY_MODE_NEVER, 
+        FALSE, NUMBER_OF_MON_TYPES, 0
+    );
+
+    u16 random_mon_3 = Random() % 1523;
+    ScriptGiveMonToPcParameterized(
+        random_mon_3, 50, ITEM_NONE, ITEM_POKE_BALL, 
         NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_MALE, 
         evs, ivs, moves, SHINY_MODE_NEVER, 
         FALSE, NUMBER_OF_MON_TYPES, 0
