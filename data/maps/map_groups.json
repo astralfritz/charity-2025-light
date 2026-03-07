@@ -623,7 +623,7 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_CharityBattle": [
-    "StartingZone",
+    "Charity_Starting_Zone",
     "Charity_Battle_Hall"
   ]
 }

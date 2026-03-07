@@ -478,7 +478,7 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, u
 
 /* Creates a Pokemon via script and puts it in the PC
  */
-u32 ScriptGiveMonToPcParameterized(u16 species, u8 level, u16 item, enum PokeBall ball, u8 nature, u8 abilityNum, u8 gender, u8 *evs, u8 *ivs, u16 *moves, enum ShinyMode shinyMode, bool8 gmaxFactor, u8 teraType, u8 dmaxLevel)
+u32 ScriptGiveMonToPcParameterized(u16 species, u8 level, u16 item, enum PokeBall ball, u8 nature, u8 abilityNum, u8 *evs, u8 *ivs, u16 *moves, enum ShinyMode shinyMode, bool8 gmaxFactor, u8 teraType, u8 dmaxLevel)
 {
     enum NationalDexOrder nationalDexNum;
     int sentToPc;
@@ -498,7 +498,7 @@ u32 ScriptGiveMonToPcParameterized(u16 species, u8 level, u16 item, enum PokeBal
     }
 
     // create a Pokémon with basic data
-    CreateMonWithGenderNatureLetter(&mon, species, level, 32, gender, nature, 0);
+    CreateMonWithNature(&mon, species, level, 32, nature);
 
     // shininess
     if (shinyMode == SHINY_MODE_ALWAYS || (P_FLAG_FORCE_SHINY != 0 && FlagGet(P_FLAG_FORCE_SHINY)))

@@ -4412,14 +4412,14 @@
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
     },
     {
-      "id": "LAYOUT_STARTING_ZONE",
-      "name": "StartingZone_Layout",
+      "id": "LAYOUT_CHARITY_STARTING_ZONE",
+      "name": "Charity_Starting_Zone_Layout",
       "width": 11,
       "height": 10,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_TrainerHill",
-      "border_filepath": "data/layouts/StartingZone/border.bin",
-      "blockdata_filepath": "data/layouts/StartingZone/map.bin"
+      "border_filepath": "data/layouts/Charity_Starting_Zone/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_Starting_Zone/map.bin"
     },
     {
       "id": "LAYOUT_CHARITY_BATTLE_HALL",

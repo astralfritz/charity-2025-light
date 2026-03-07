@@ -135,7 +135,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_STARTING_ZONE), MAP_NUM(MAP_STARTING_ZONE), WARP_ID_NONE, 5, 8);
+    SetWarpDestination(MAP_GROUP(MAP_CHARITY_STARTING_ZONE), MAP_NUM(MAP_CHARITY_STARTING_ZONE), WARP_ID_NONE, 5, 8);
     WarpIntoMap();
 }
 
@@ -146,32 +146,32 @@ static void AddPokemonToPc(void)
     u16 moves[MAX_MON_MOVES] = {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE};
 
     u8 evs[NUM_STATS] = {0, 0, 0, 0, 0, 0};
-    u8 ivs[NUM_STATS] = {MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1,   // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
-                        MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1};  // ScriptGiveMonParameterized won't touch the stats' IV.
+    u8 ivs[NUM_STATS] = 
+    {
+        MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
+        MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1  // ScriptGiveMonParameterized won't touch the stats' IV.
+    };
 
-    u16 random_mon_1 = Random() % 1523;
-    ScriptGiveMonToPcParameterized(
-        random_mon_1, 50, ITEM_NONE, ITEM_POKE_BALL, 
-        NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_MALE, 
-        evs, ivs, moves, SHINY_MODE_NEVER, 
-        FALSE, NUMBER_OF_MON_TYPES, 0
-    );
+    // Add 18 random pokemon to the PC to help build out a team.
+    for (u16 i = 0; i < 18; i++) 
+    {
+        u16 random_mon_1 = Random() % 1523;
+        ScriptGiveMonToPcParameterized(
+            random_mon_1, 50, ITEM_NONE, ITEM_POKE_BALL, 
+            NUM_NATURES, NUM_ABILITY_PERSONALITY, 
+            evs, ivs, moves, SHINY_MODE_NEVER, 
+            FALSE, NUMBER_OF_MON_TYPES, 0
+        );
+    }
+}
 
-    u16 random_mon_2 = Random() % 1523;
-    ScriptGiveMonToPcParameterized(
-        random_mon_2, 50, ITEM_NONE, ITEM_POKE_BALL, 
-        NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_MALE, 
-        evs, ivs, moves, SHINY_MODE_NEVER, 
-        FALSE, NUMBER_OF_MON_TYPES, 0
-    );
-
-    u16 random_mon_3 = Random() % 1523;
-    ScriptGiveMonToPcParameterized(
-        random_mon_3, 50, ITEM_NONE, ITEM_POKE_BALL, 
-        NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_MALE, 
-        evs, ivs, moves, SHINY_MODE_NEVER, 
-        FALSE, NUMBER_OF_MON_TYPES, 0
-    );
+static void ResetLoopVariables(void)
+{
+    // I want to setup a looping mechanic. On each failure, it will put the player 
+    // back at the starting room. All Pokemon will go up 1 level on their team though.
+    // The idea is that each loop, they get stronger. The player will have to find each 
+    // trainer in the game and beat them (at least one in the game) to get a full completion.
+    // If they miss anyone, they will be forced back to the beginning and have to go again.
 }
 
 void Sav2_ClearSetDefault(void)
@@ -253,6 +253,7 @@ void NewGameInitData(void)
     ResetDexNav();
     ClearFollowerNPCData();
     AddPokemonToPc();
+    ResetLoopVariables();
 }
 
 static void ResetMiniGamesRecords(void)
