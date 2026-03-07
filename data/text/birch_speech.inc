@@ -15,21 +15,22 @@ gText_Birch_MainSpeech::
 	.string "This world is widely inhabited by\n"
 	.string "creatures known as POKéMON.\p"
 	.string "But you knew that already didn't you?\p"
-	.string "I just wanted to say thank you for making\n"
-	.string "this possible and helping Light with the\l"
-	.string "charity he ran last year!\p"
+	.string "I just wanted to say thank you for\n"
+	.string "making this possible and helping Light\l"
+	.string "with the charity he ran!\p"
 	.string "It's was exciting seeing how far the\n"
-	.string "the event went and getting this unlocked!\p"
+	.string "the event went and getting this\l"
+	.string "unlocked!\p"
 	.string "So let's skip ahead shall we?\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "And you are?"
+	.string "Who's taking on the adventure today?\p"
 	.string "$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "BRENDAN or MAY?\p"
+	.string "$"
 
 gText_Birch_WhatsYourName::
 	.string "All right.\n"
@@ -39,23 +40,12 @@ gText_Birch_SoItsPlayer::
 	.string "So it's {PLAYER}{KUN}?$"
 
 gText_Birch_YourePlayer::
-	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
-	.string "I get it now!\p"
-	.string "$"
-
-gText_Birch_EatShit::
-	.string "Eat shit.\p"
+	.string "Ah, so {PLAYER}{KUN} will be the lead\n"
+	.string "today!\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
 	.string "All right, are you ready?\p"
 	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
-	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
+	.string "to unfold!\p"
 	.string "$"

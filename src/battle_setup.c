@@ -1325,9 +1325,13 @@ static void CB2_EndTrainerBattle(void)
     {
         HealPlayerParty();
         if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE || InTrainerHillChallenge() || (!NoAliveMonsForPlayer()) || FlagGet(B_FLAG_NO_WHITEOUT))
-            SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        {
+            SetMainCallback2(CB2_ResetLoop);
+        }
         else
+        {
             SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+        }
     }
     else if (DidPlayerForfeitNormalTrainerBattle())
     {

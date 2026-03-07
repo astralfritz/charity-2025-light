@@ -227,6 +227,7 @@ static void Task_NewGameBirchSpeech_StartNamingScreen(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void);
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8);
 static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8);
+static void Task_NewGameBirchSpeech_SoItsPlayerName(u8);
 void CreateYesNoMenuParameterized(u8, u8, u16, u16, u8, u8);
 static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8);
 static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8);
@@ -396,6 +397,7 @@ static const struct WindowTemplate sWindowTemplates_MainMenu[] =
 
 static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
 {
+    // Speech box
     {
         .bg = 0,
         .tilemapLeft = 2,
@@ -405,15 +407,17 @@ static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
         .paletteNum = 15,
         .baseBlock = 1
     },
+    // Gender box
     {
         .bg = 0,
         .tilemapLeft = 3,
         .tilemapTop = 5,
-        .width = 6,
+        .width = 7,
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 0x6D
     },
+    // Yes/No
     {
         .bg = 0,
         .tilemapLeft = 3,
@@ -476,12 +480,12 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 };
 
 static const struct MenuAction sMenuActions_Gender[] = {
-    {COMPOUND_STRING("BOY"), {NULL}},
-    {COMPOUND_STRING("GIRL"), {NULL}}
+    {COMPOUND_STRING("BRENDAN"), {NULL}},
+    {COMPOUND_STRING("MAY"), {NULL}}
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("STU"),
+    COMPOUND_STRING("BRENDAN"),
     COMPOUND_STRING("MILTON"),
     COMPOUND_STRING("TOM"),
     COMPOUND_STRING("KENNY"),
@@ -504,7 +508,7 @@ static const u8 *const sMalePresetNames[] = {
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("KIMMY"),
+    COMPOUND_STRING("MAY"),
     COMPOUND_STRING("TIARA"),
     COMPOUND_STRING("BELLA"),
     COMPOUND_STRING("JAYLA"),
@@ -1526,19 +1530,23 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
     int gender = NewGameBirchSpeech_ProcessGenderMenuInput();
     int gender2;
 
+    SeedRngAndSetTrainerId();
+
     switch (gender)
     {
         case MALE:
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->playerGender = gender;
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            NewGameBirchSpeech_SetDefaultPlayerName(0);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_SoItsPlayerName;
             break;
         case FEMALE:
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->playerGender = gender;
             NewGameBirchSpeech_ClearGenderWindow(1, 1);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourName;
+            NewGameBirchSpeech_SetDefaultPlayerName(0);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_SoItsPlayerName;
             break;
     }
     gender2 = Menu_GetCursorPos();

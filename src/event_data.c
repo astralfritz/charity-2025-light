@@ -55,6 +55,17 @@ void InitEventData(void)
     memset(sSpecialFlags, 0, sizeof(sSpecialFlags));
 }
 
+void InitLoopData(void)
+{
+    u8 loopCount = VarGet(VAR_CHARITY_LOOP);
+        
+    memset(gSaveBlock1Ptr->flags, 0, sizeof(gSaveBlock1Ptr->flags));
+    memset(gSaveBlock1Ptr->vars, 0, sizeof(gSaveBlock1Ptr->vars));
+    memset(sSpecialFlags, 0, sizeof(sSpecialFlags));
+
+    VarSet(VAR_CHARITY_LOOP, loopCount);
+}
+
 void ClearTempFieldEventData(void)
 {
     memset(&gSaveBlock1Ptr->flags[TEMP_FLAGS_START / 8], 0, TEMP_FLAGS_SIZE);

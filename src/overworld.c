@@ -1831,6 +1831,36 @@ void CB2_WhiteOut(void)
     }
 }
 
+void CB2_ResetLoop(void)
+{
+    u8 state;
+
+    if (++gMain.state >= 120)
+    {
+        u8 loopCount = VarGet(VAR_CHARITY_LOOP);
+        loopCount = loopCount + 1;
+        if (loopCount > 10) 
+        {
+            loopCount = 10;
+        }
+        VarSet(VAR_CHARITY_LOOP, loopCount);
+        FieldClearVBlankHBlankCallbacks();
+        StopMapMusic();
+        ResetSafariZoneFlag_();
+        DoWhiteOut();
+        ResetInitialPlayerAvatarState();
+        ScriptContext_Init();
+        UnlockPlayerFieldControls();
+        state = 0;
+        SetFollowerNPCData(FNPC_DATA_SURF_BLOB, FNPC_SURF_BLOB_NONE);
+        NewLoopInitData();
+        DoMapLoadLoop(&state);
+        SetFieldVBlankCallback();
+        SetMainCallback1(CB1_Overworld);
+        SetMainCallback2(CB2_Overworld);
+    }
+}
+
 void CB2_LoadMap(void)
 {
     FieldClearVBlankHBlankCallbacks();

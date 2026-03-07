@@ -2,6 +2,7 @@
 #define GUARD_EVENT_DATA_H
 
 void InitEventData(void);
+void InitLoopData(void);
 void ClearTempFieldEventData(void);
 void ClearDailyFlags(void);
 void DisableNationalPokedex(void);

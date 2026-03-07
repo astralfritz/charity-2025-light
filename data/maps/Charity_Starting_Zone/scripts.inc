@@ -40,8 +40,11 @@ Charity_Starting_Zone_OnWarp::
 
 Charity_Starting_Zone_EventScript_Start_Adventure::
 	lockall
-	goto_if_set FLAG_SYS_POKEMON_GET, Charity_Starting_Zone_EventScript_ChangeMoves
-	goto Charity_Starting_Zone_EventScript_Pick_A_Mon
+	goto_if_unset FLAG_SYS_POKEMON_GET, Charity_Starting_Zone_EventScript_Pick_A_Mon
+	goto_if_unset FLAG_CONGRATS_ON_FIRST_MON, Charity_Starting_Zone_EventScript_Congrats
+	goto_if_eq VAR_TIPS_FROM_BIRCH, 0, Charity_Starting_Zone_EventScript_MultipleDialog
+	goto_if_eq VAR_TIPS_FROM_BIRCH, 1, Charity_Starting_Zone_EventScript_ChangeMoves
+	goto_if_eq VAR_TIPS_FROM_BIRCH, 2, Charity_Starting_Zone_EventScript_MoreMons
 	releaseall
 	end
 
@@ -51,8 +54,31 @@ Charity_Starting_Zone_EventScript_Pick_A_Mon::
 	releaseall
 	end
 
+Charity_Starting_Zone_EventScript_Congrats::
+	setflag FLAG_CONGRATS_ON_FIRST_MON
+	setvar VAR_TIPS_FROM_BIRCH, 1
+	msgbox Charity_Starting_Zone_Text_Congrats, MSGBOX_NPC
+	goto Charity_Starting_Zone_EventScript_Start_Adventure_End
+	releaseall
+	end
+
+Charity_Starting_Zone_EventScript_MultipleDialog::
+	setvar VAR_TIPS_FROM_BIRCH, 1
+	msgbox Charity_Starting_Zone_Text_MultipleDialog, MSGBOX_NPC
+	goto Charity_Starting_Zone_EventScript_Start_Adventure_End
+	releaseall
+	end
+
 Charity_Starting_Zone_EventScript_ChangeMoves::
+	setvar VAR_TIPS_FROM_BIRCH, 2
 	msgbox Charity_Starting_Zone_Text_ChangeMoves, MSGBOX_NPC
+	goto Charity_Starting_Zone_EventScript_Start_Adventure_End
+	releaseall
+	end
+
+Charity_Starting_Zone_EventScript_MoreMons::
+	setvar VAR_TIPS_FROM_BIRCH, 0
+	msgbox Charity_Starting_Zone_Text_MoreMons, MSGBOX_NPC
 	goto Charity_Starting_Zone_EventScript_Start_Adventure_End
 	releaseall
 	end
@@ -87,11 +113,26 @@ Charity_Starting_Zone_Text_Pick_A_Mon:
 	.string "before you can proceed."
 	.string "$"
 
-Charity_Starting_Zone_Text_ChangeMoves:
+Charity_Starting_Zone_Text_Congrats:
 	.string "Congrats on your first POKéMON!\p"
+	.string "Some people might have multiple\n"
+	.string "dialogs if you talk to them more."
+	.string "$"
+
+Charity_Starting_Zone_Text_MultipleDialog:
+	.string "Some people might have multiple\n"
+	.string "dialogs if you talk to them more."
+	.string "$"
+
+Charity_Starting_Zone_Text_ChangeMoves:
 	.string "Make sure to check the summary.\n"
 	.string "You can change the moveset in\p"
 	.string "the menu using the start button."
+	.string "$"
+
+Charity_Starting_Zone_Text_MoreMons:
+	.string "Check out the PC for more\n"
+	.string "random POKéMON to help you!"
 	.string "$"
 
 Charity_Starting_Zone_Text_Pick_A_Mon_Sign:

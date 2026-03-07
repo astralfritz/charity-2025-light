@@ -179,6 +179,11 @@ static void ResetCharityVariables(void)
     VarSet(VAR_CHARITY_STATE, 0);
 }
 
+static void ResetLoopVariables(void)
+{
+    VarSet(VAR_CHARITY_STATE, 0);
+}
+
 void Sav2_ClearSetDefault(void)
 {
     ClearSav2();
@@ -257,8 +262,49 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
-    //ResetLoopVariables();
+    ResetLoopVariables();
     ResetCharityVariables();
+    AddPokemonToPc();
+}
+
+void NewLoopInitData(void)
+{
+    if (gSaveFileStatus == SAVE_STATUS_EMPTY || gSaveFileStatus == SAVE_STATUS_CORRUPT)
+        RtcReset();
+
+    gDifferentSaveFile = TRUE;
+    gSaveBlock2Ptr->encryptionKey = 0;
+    ZeroPlayerPartyMons();
+    ZeroEnemyPartyMons();
+    ResetPokedex();
+    ClearFrontierRecord();
+    gSaveBlock2Ptr->specialSaveWarpFlags = 0;
+    gSaveBlock2Ptr->gcnLinkFlags = 0;
+    InitLoopData();
+    SetMoney(&gSaveBlock1Ptr->money, 3000);
+    ResetLinkContestBoolean();
+    ResetGameStats();
+    gPlayerPartyCount = 0;
+    ZeroPlayerPartyMons();
+    ResetPokemonStorageSystem();
+    DeactivateAllRoamers();
+    gSaveBlock1Ptr->registeredItem = ITEM_NONE;
+    ClearBag();
+    NewGameInitPCItems();
+    ClearPokeblocks();
+    ClearDecorationInventories();
+    InitEasyChatPhrases();
+    WarpToTruck();
+    RunScriptImmediately(EventScript_ResetAllMapFlags);
+    ResetMiniGamesRecords();
+    WipeTrainerNameRecords();
+    ResetTrainerHillResults();
+    ResetContestLinkResults();
+    SetCurrentDifficultyLevel(DIFFICULTY_NORMAL);
+    ResetItemFlags();
+    ResetDexNav();
+    ClearFollowerNPCData();
+    ResetLoopVariables();
     AddPokemonToPc();
 }
 
