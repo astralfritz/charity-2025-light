@@ -22,6 +22,7 @@ Charity_Starting_Zone_EventScript_GivePokemon::
 	setflag FLAG_BADGE08_GET
 	setflag FLAG_NURSE_UNION_ROOM_REMINDER
 	removeobject LOCALID_CHARITY_STARTING_ZONE_BIRCH_BAG
+	removeobject LOCALID_CHARITY_STARTING_ZONE_PC
 	setflag FLAG_HIDE_CHARITY_STARTING_ZONE_BIRCH_BAG
 	waitmovement 0
 	special ChooseStarter
@@ -66,6 +67,12 @@ Charity_Starting_Zone_EventScript_Warp_To_Charity_Battle_Hall::
 	warp MAP_CHARITY_BATTLE_HALL, 4, 10
 	waitstate
 
+Charity_Starting_Zone_EventScript_Pick_A_Mon_Sign::
+	lockall
+	msgbox Charity_Starting_Zone_Text_Pick_A_Mon_Sign, MSGBOX_DEFAULT
+	releaseall
+	return
+
 Charity_Starting_Zone_Movement_Away_From_Door:
 	walk_right
 	walk_in_place_down
@@ -77,10 +84,18 @@ Charity_Starting_Zone_Movement_Face_Down:
 
 Charity_Starting_Zone_Text_Pick_A_Mon:
 	.string "You must select your first POKéMON\n"
-	.string "before you can proceed.$"
+	.string "before you can proceed."
+	.string "$"
 
 Charity_Starting_Zone_Text_ChangeMoves:
 	.string "Congrats on your first POKéMON!\p"
 	.string "Make sure to check the summary.\n"
 	.string "You can change the moveset in\p"
-	.string "the menu using the start button.$"
+	.string "the menu using the start button."
+	.string "$"
+
+Charity_Starting_Zone_Text_Pick_A_Mon_Sign:
+	.string "You cannot access your PC until\n"
+	.string "you pick your first POKéMON from\l"
+	.string "the bag!"
+	.string "$"
