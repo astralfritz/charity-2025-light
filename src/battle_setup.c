@@ -876,9 +876,12 @@ static void CB2_GiveStarter(void)
 {
     u16 starterMon;
 
+    u8 timesLooped = VarGet(VAR_CHARITY_LOOP);
+    u8 monLevel = 50 + timesLooped;
+
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
-    ScriptGiveMon(starterMon, 50, ITEM_NONE);
+    ScriptGiveMon(starterMon, monLevel, ITEM_NONE);
     ResetTasks();
     SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 }

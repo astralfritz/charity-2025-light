@@ -152,12 +152,15 @@ static void AddPokemonToPc(void)
         MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1  // ScriptGiveMonParameterized won't touch the stats' IV.
     };
 
+    u8 timesLooped = VarGet(VAR_CHARITY_LOOP);
+    u8 monLevel = 50 + timesLooped;
+
     // Add 18 random pokemon to the PC to help build out a team.
     for (u16 i = 0; i < 18; i++) 
     {
         u16 random_mon_1 = Random() % 1523;
         ScriptGiveMonToPcParameterized(
-            random_mon_1, 50, ITEM_NONE, ITEM_POKE_BALL, 
+            random_mon_1, monLevel, ITEM_NONE, ITEM_POKE_BALL, 
             NUM_NATURES, NUM_ABILITY_PERSONALITY, 
             evs, ivs, moves, SHINY_MODE_NEVER, 
             FALSE, NUMBER_OF_MON_TYPES, 0
@@ -165,13 +168,15 @@ static void AddPokemonToPc(void)
     }
 }
 
-static void ResetLoopVariables(void)
+static void ResetCharityVariables(void)
 {
     // I want to setup a looping mechanic. On each failure, it will put the player 
     // back at the starting room. All Pokemon will go up 1 level on their team though.
     // The idea is that each loop, they get stronger. The player will have to find each 
     // trainer in the game and beat them (at least one in the game) to get a full completion.
     // If they miss anyone, they will be forced back to the beginning and have to go again.
+    VarSet(VAR_CHARITY_LOOP, 0);
+    VarSet(VAR_CHARITY_STATE, 0);
 }
 
 void Sav2_ClearSetDefault(void)
@@ -252,8 +257,9 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
+    //ResetLoopVariables();
+    ResetCharityVariables();
     AddPokemonToPc();
-    ResetLoopVariables();
 }
 
 static void ResetMiniGamesRecords(void)
