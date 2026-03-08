@@ -1224,7 +1224,7 @@
 
 #define FLAG_HIDE_CHARITY_STARTING_ZONE_BIRCH_BAG                   0x493
 #define FLAG_CONGRATS_ON_FIRST_MON                                  0x494 // Congrats from Birch on first mon get
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
+#define FLAG_OPENED_LOOP_DIALOG                                     0x495 // For tracking loop dialog
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag

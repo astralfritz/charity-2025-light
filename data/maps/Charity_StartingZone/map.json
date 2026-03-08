@@ -1,8 +1,8 @@
 {
   "id": "MAP_CHARITY_STARTING_ZONE",
-  "name": "Charity_Starting_Zone",
+  "name": "Charity_StartingZone",
   "layout": "LAYOUT_CHARITY_STARTING_ZONE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_CONTEST",
   "region_map_section": "MAPSEC_CHARITY_EVENT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -25,7 +25,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Charity_Starting_Zone_EventScript_GivePokemon",
+      "script": "Charity_StartingZone_EventScript_GivePokemon",
       "flag": "FLAG_HIDE_CHARITY_STARTING_ZONE_BIRCH_BAG"
     },
     {
@@ -39,7 +39,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Charity_Starting_Zone_EventScript_Start_Adventure",
+      "script": "Charity_StartingZone_EventScript_BirchChat",
       "flag": "0"
     },
     {
@@ -53,7 +53,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Charity_Starting_Zone_EventScript_Pick_A_Mon_Sign",
+      "script": "Charity_StartingZone_EventScript_Pick_A_Mon_Sign",
       "flag": "LOCALID_CHARITY_STARTING_ZONE_BIRCH_BAG"
     }
   ],
@@ -66,7 +66,16 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "Charity_Starting_Zone_EventScript_Warp_To_Charity_Battle_Hall"
+      "script": "Charity_StartingZone_EventScript_Warp_To_Charity_BattleHall"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Charity_StartingZone_EventScript_StartAdventure"
     }
   ],
   "bg_events": []

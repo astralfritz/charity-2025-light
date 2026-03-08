@@ -4413,23 +4413,23 @@
     },
     {
       "id": "LAYOUT_CHARITY_STARTING_ZONE",
-      "name": "Charity_Starting_Zone_Layout",
+      "name": "Charity_StartingZone_Layout",
       "width": 11,
       "height": 10,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_TrainerHill",
-      "border_filepath": "data/layouts/Charity_Starting_Zone/border.bin",
-      "blockdata_filepath": "data/layouts/Charity_Starting_Zone/map.bin"
+      "border_filepath": "data/layouts/Charity_StartingZone/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_StartingZone/map.bin"
     },
     {
       "id": "LAYOUT_CHARITY_BATTLE_HALL",
-      "name": "Charity_Battle_Hall_Layout",
+      "name": "Charity_BattleHall_Layout",
       "width": 36,
       "height": 12,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_TrainerHill",
-      "border_filepath": "data/layouts/Charity_Battle_Hall/border.bin",
-      "blockdata_filepath": "data/layouts/Charity_Battle_Hall/map.bin"
+      "border_filepath": "data/layouts/Charity_BattleHall/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_BattleHall/map.bin"
     }
   ]
 }

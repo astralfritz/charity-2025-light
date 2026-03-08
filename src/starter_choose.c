@@ -373,6 +373,10 @@ void CB2_ChooseStarter(void)
     u8 taskId;
     u8 spriteId;
 
+    sStarterMon[0] = Random() % 1523;
+    sStarterMon[1] = Random() % 1523;
+    sStarterMon[2] = Random() % 1523;
+
     SetVBlankCallback(NULL);
 
     SetGpuReg(REG_OFFSET_DISPCNT, 0);
@@ -470,10 +474,6 @@ static void CB2_StarterChoose(void)
 
 static void Task_StarterChoose(u8 taskId)
 {
-    sStarterMon[0] = Random() % 1523;
-    sStarterMon[1] = Random() % 1523;
-    sStarterMon[2] = Random() % 1523;
-
     CreateStarterPokemonLabel(gTasks[taskId].tStarterSelection);
     DrawStdFrameWithCustomTileAndPalette(0, FALSE, 0x2A8, 0xD);
     AddTextPrinterParameterized(0, FONT_NORMAL, gText_BirchInTrouble, 0, 1, 0, NULL);
