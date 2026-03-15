@@ -4795,15 +4795,20 @@ VSSeeker_Text_TrainersNotReady::
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
 
-Charity_BattleHall_Text_FritzIntro:
-	.string "Hello! I'm Fritz!\n"
-	.string "I helped create this little hack.\p"
-	.string "Why don't we have a battle\n"
-	.string "to warm up?$"
+Charity_Hallway1_Text_FritzIntro::
+	.string "$"
 
-Charity_BattleHall_Text_FritzDefeated:
-	.string "That was fun! Thanks for the battle.\n"
-	.string "Good luck with the actual battles!$"
+Charity_Hallway1_Text_FritzDefeat::
+	.string "$"
 
-Charity_BattleHall_Text_FritzPostBattle:
-	.string "I really hope you enjoy the game!$"
+Charity_Hallway1_Text_FritzPostBattle::
+	.string "$"
+
+Charity_Pokecenter_Text_HannahhanzIntro::
+	.string "Get fucked.$"
+
+Charity_Pokecenter_Text_HannahhanzDefeat::
+	.string "$"
+
+Charity_Pokecenter_Text_HannahhanzPostBattle::
+	.string "$"

@@ -1,5 +1,5 @@
 {
-  "id": "MAP_CHARITY_STARTING_ZONE",
+  "id": "MAP_CHARITY_STARTINGZONE",
   "name": "Charity_StartingZone",
   "layout": "LAYOUT_CHARITY_STARTING_ZONE",
   "music": "MUS_CONTEST",
@@ -57,17 +57,16 @@
       "flag": "LOCALID_CHARITY_STARTING_ZONE_BIRCH_BAG"
     }
   ],
-  "warp_events": [],
-  "coord_events": [
+  "warp_events": [
     {
-      "type": "trigger",
       "x": 5,
       "y": 1,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Charity_StartingZone_EventScript_Warp_To_Charity_BattleHall"
-    },
+      "dest_map": "MAP_CHARITY_HALLWAY1",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
     {
       "type": "trigger",
       "x": 5,

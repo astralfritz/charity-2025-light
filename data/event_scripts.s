@@ -1164,6 +1164,9 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Charity_StartingZone/scripts.inc"
 
-	.include "data/maps/Charity_BattleHall/scripts.inc"
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
+
+	.include "data/maps/Charity_Hallway1/scripts.inc"
+
+	.include "data/maps/Charity_Pokecenter/scripts.inc"

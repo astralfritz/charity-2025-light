@@ -4422,14 +4422,24 @@
       "blockdata_filepath": "data/layouts/Charity_StartingZone/map.bin"
     },
     {
-      "id": "LAYOUT_CHARITY_BATTLE_HALL",
-      "name": "Charity_BattleHall_Layout",
-      "width": 36,
-      "height": 12,
+      "id": "LAYOUT_Charity_Hallway1",
+      "name": "Charity_Hallway1_Layout",
+      "width": 29,
+      "height": 27,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_TrainerHill",
-      "border_filepath": "data/layouts/Charity_BattleHall/border.bin",
-      "blockdata_filepath": "data/layouts/Charity_BattleHall/map.bin"
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/Charity_Hallway1/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_Hallway1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHARITY_POKECENTER",
+      "name": "Charity_Pokecenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Charity_Pokecenter/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_Pokecenter/map.bin"
     }
   ]
 }

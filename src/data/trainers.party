@@ -75,7 +75,7 @@ Comments can be added as C comment blocks
 
 === TRAINER_NONE ===
 Name:
-Class: Pkmn Trainer 1
+Class: Donator
 Pic: Hiker
 Gender: Male
 Music: Male
@@ -6208,7 +6208,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FRITZ ===
 Name: FRITZ
-Class: Gentleman
+Class: Donator
 Pic: Gentleman
 Gender: Male
 Music: Male
@@ -6223,14 +6223,14 @@ Scizor
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-=== TRAINER_TIMMY ===
-Name: TIMMY
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
+=== TRAINER_HANNAHHANZ ===
+Name: HANNAHHANZ
+Class: Donator
+Pic: Beauty
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Aron
 Level: 15

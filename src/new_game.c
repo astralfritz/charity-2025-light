@@ -57,6 +57,7 @@ extern const u8 EventScript_ResetAllMapFlags[];
 static void ClearFrontierRecord(void);
 static void WarpToTruck(void);
 static void AddPokemonToPc(void);
+static void GiveStartingItems(void);
 static void ResetMiniGamesRecords(void);
 static void ResetItemFlags(void);
 static void ResetDexNav(void);
@@ -135,7 +136,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_CHARITY_STARTING_ZONE), MAP_NUM(MAP_CHARITY_STARTING_ZONE), WARP_ID_NONE, 5, 8);
+    SetWarpDestination(MAP_GROUP(MAP_CHARITY_STARTINGZONE), MAP_NUM(MAP_CHARITY_STARTINGZONE), WARP_ID_NONE, 5, 8);
     WarpIntoMap();
 }
 
@@ -166,6 +167,14 @@ static void AddPokemonToPc(void)
             FALSE, NUMBER_OF_MON_TYPES, 0
         );
     }
+}
+
+static void GiveStartingItems(void)
+{
+    // Start with 5 masterballs, 10 super potions, and 10 revives
+    AddBagItem(ITEM_SUPER_POTION, 10);
+    AddBagItem(ITEM_REVIVE, 10);
+    AddBagItem(ITEM_MASTER_BALL, 5);
 }
 
 static void ResetCharityVariables(void)
@@ -265,6 +274,7 @@ void NewGameInitData(void)
     ResetLoopVariables();
     ResetCharityVariables();
     AddPokemonToPc();
+    GiveStartingItems();
 }
 
 void NewLoopInitData(void)
@@ -306,6 +316,7 @@ void NewLoopInitData(void)
     ClearFollowerNPCData();
     ResetLoopVariables();
     AddPokemonToPc();
+    GiveStartingItems();
 }
 
 static void ResetMiniGamesRecords(void)

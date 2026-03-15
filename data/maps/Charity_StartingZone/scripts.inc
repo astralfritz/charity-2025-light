@@ -1,21 +1,5 @@
 Charity_StartingZone_MapScripts::
-	map_script MAP_SCRIPT_ON_RETURN_TO_FIELD, Charity_StartingZone_OnReturnToField
-	map_script MAP_SCRIPT_ON_TRANSITION, Charity_StartingZone_OnTransition
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, Charity_StartingZone_OnFrame
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Charity_StartingZone_OnWarp
 	.byte 0
-
-Charity_StartingZone_OnReturnToField:
-	end
-
-Charity_StartingZone_OnTransition:
-	end
-
-Charity_StartingZone_OnFrame:
-	.2byte 0
-
-Charity_StartingZone_OnWarp:
-	.2byte 0
 
 Charity_StartingZone_EventScript_GivePokemon::
 	lock
@@ -115,10 +99,6 @@ Charity_StartingZone_EventScript_BirchChatEnd::
 	waitmovement 0
 	releaseall
 	end
-
-Charity_StartingZone_EventScript_Warp_To_Charity_BattleHall::
-	warp MAP_CHARITY_BATTLE_HALL, 4, 10
-	waitstate
 
 Charity_StartingZone_EventScript_Pick_A_Mon_Sign::
 	lockall
