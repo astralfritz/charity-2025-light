@@ -11,10 +11,10 @@ Charity_Hallway1_EventScript_WarpToPokecenter::
 	warp MAP_CHARITY_POKECENTER, 2, 6
 	waitstate
 
-Charity_Hallway1_EventScript_Fritz::
-	trainerbattle_single TRAINER_FRITZ, Charity_Hallway1_Text_FritzIntro, Charity_Hallway1_Text_FritzDefeat
-	setvar VAR_0x8004, TRAINER_FRITZ
-	msgbox Charity_Hallway1_Text_FritzPostBattle, MSGBOX_DEFAULT
+Charity_Hallway1_EventScript_Fritzz37::
+	trainerbattle_single TRAINER_CHARITY_Fritzz37, Charity_Hallway1_Text_Fritzz37Intro, Charity_Hallway1_Text_Fritzz37Defeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Fritzz37
+	msgbox Charity_Hallway1_Text_Fritzz37PostBattle, MSGBOX_DEFAULT
 	release
 	end
 

@@ -2619,7 +2619,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
         .speechLose = {EC_WORD_YOU, EC_WORD_WEREN_T, EC_WORD_BEING, EC_WORD_FUNNY, EC_WORD_AT, EC_WORD_ALL},
         .monSet = gFallarborBattleTentTrainerMons_Tannor
     },
-    [FALLARBOR_TENT_TRAINER_BENJI] = {
+    [FALLARBOR_TENT_TRAINER_CHARITY_simquallJI] = {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("BENJI"),
         .speechBefore = {EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_THINK, EC_WORD_VERY, EC_WORD_FAST, EC_WORD_HUH_QUES},

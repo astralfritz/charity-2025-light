@@ -4795,13 +4795,13 @@ VSSeeker_Text_TrainersNotReady::
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
 
-Charity_Hallway1_Text_FritzIntro::
+Charity_Hallway1_Text_Fritzz37Intro::
 	.string "$"
 
-Charity_Hallway1_Text_FritzDefeat::
+Charity_Hallway1_Text_Fritzz37Defeat::
 	.string "$"
 
-Charity_Hallway1_Text_FritzPostBattle::
+Charity_Hallway1_Text_Fritzz37PostBattle::
 	.string "$"
 
 Charity_Pokecenter_Text_HannahhanzIntro::

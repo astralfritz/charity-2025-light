@@ -1170,3 +1170,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Charity_Hallway1/scripts.inc"
 
 	.include "data/maps/Charity_Pokecenter/scripts.inc"
+
+	.include "data/maps/Chairty_Hallway2/scripts.inc"
+
+	.include "data/maps/Charity_Pokemart/scripts.inc"
+
+	.include "data/maps/Charity_Gym/scripts.inc"

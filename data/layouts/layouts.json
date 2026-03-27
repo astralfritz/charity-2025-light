@@ -4440,6 +4440,36 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/Charity_Pokecenter/border.bin",
       "blockdata_filepath": "data/layouts/Charity_Pokecenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAIRTY_HALLWAY2",
+      "name": "Chairty_Hallway2_Layout",
+      "width": 72,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Chairty_Hallway2/border.bin",
+      "blockdata_filepath": "data/layouts/Chairty_Hallway2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHARITY_POKEMART",
+      "name": "Charity_Pokemart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Charity_Pokemart/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHARITY_GYM",
+      "name": "Charity_Gym_Layout",
+      "width": 13,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/Charity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_Gym/map.bin"
     }
   ]
 }

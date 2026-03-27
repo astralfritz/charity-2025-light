@@ -625,6 +625,9 @@
   "gMapGroup_CharityBattle": [
     "Charity_StartingZone",
     "Charity_Hallway1",
-    "Charity_Pokecenter"
+    "Charity_Pokecenter",
+    "Chairty_Hallway2",
+    "Charity_Pokemart",
+    "Charity_Gym"
   ]
 }

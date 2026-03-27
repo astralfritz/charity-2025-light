@@ -4172,7 +4172,7 @@ Kirlia
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JOSHUA ===
+=== TRAINER_UA ===
 Name: JOSHUA
 Class: Psychic
 Pic: Psychic M
@@ -5757,7 +5757,7 @@ Minun @ Sitrus Berry
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_TIMOTHY_1 ===
+=== TRAINER_CHARITY_Light ===
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -5770,7 +5770,7 @@ Hariyama
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_TIMOTHY_2 ===
+=== TRAINER_CHARITY_Chibisama666 ===
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -5787,7 +5787,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_TIMOTHY_3 ===
+=== TRAINER_CHARITY_BansheeThey ===
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -5804,7 +5804,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_TIMOTHY_4 ===
+=== TRAINER_CHARITY_Prue ===
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -5821,7 +5821,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_TIMOTHY_5 ===
+=== TRAINER_CHARITY_CrimsonLobo ===
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -5838,7 +5838,7 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_VICKY ===
+=== TRAINER_CHARITY_Ozlaine ===
 Name: VICKY
 Class: Winstrate
 Pic: Expert F
@@ -5855,7 +5855,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Confusion
 - Detect
 
-=== TRAINER_SHELBY_1 ===
+=== TRAINER_CHARITY_TheMaddyMonster ===
 Name: SHELBY
 Class: Expert
 Pic: Expert F
@@ -5872,7 +5872,7 @@ Makuhita
 Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_SHELBY_2 ===
+=== TRAINER_CHARITY_Enomorie ===
 Name: SHELBY
 Class: Expert
 Pic: Expert F
@@ -5889,7 +5889,7 @@ Makuhita
 Level: 30
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-=== TRAINER_SHELBY_3 ===
+=== TRAINER_CHARITY_Pastrieman ===
 Name: SHELBY
 Class: Expert
 Pic: Expert F
@@ -5906,7 +5906,7 @@ Hariyama
 Level: 33
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
-=== TRAINER_SHELBY_4 ===
+=== TRAINER_CHARITY_digisparkks ===
 Name: SHELBY
 Class: Expert
 Pic: Expert F
@@ -5923,7 +5923,7 @@ Hariyama
 Level: 36
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
-=== TRAINER_SHELBY_5 ===
+=== TRAINER_CHARITY_Clover ===
 Name: SHELBY
 Class: Expert
 Pic: Expert F
@@ -5940,7 +5940,7 @@ Hariyama
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
-=== TRAINER_CALVIN_1 ===
+=== TRAINER_CHARITY_AxoloDyl ===
 Name: CALVIN
 Class: Youngster
 Pic: Youngster
@@ -5953,7 +5953,7 @@ Poochyena
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BILLY ===
+=== TRAINER_CHARITY_ImpGirlee ===
 Name: BILLY
 Class: Youngster
 Pic: Youngster
@@ -5970,7 +5970,7 @@ Seedot
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JOSH ===
+=== TRAINER_CHARITY_Destructsean ===
 Name: JOSH
 Class: Youngster
 Pic: Youngster
@@ -5984,7 +5984,7 @@ Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 
-=== TRAINER_TOMMY ===
+=== TRAINER_CHARITY_MelodySerafina ===
 Name: TOMMY
 Class: Youngster
 Pic: Youngster
@@ -6001,7 +6001,7 @@ Geodude
 Level: 8
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_JOEY ===
+=== TRAINER_CHARITY_lilbambijoe ===
 Name: JOEY
 Class: Youngster
 Pic: Youngster
@@ -6014,7 +6014,7 @@ Machop
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BEN ===
+=== TRAINER_CHARITY_simquall ===
 Name: BEN
 Class: Youngster
 Pic: Youngster
@@ -6039,7 +6039,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Yawn
 - Pound
 
-=== TRAINER_QUINCY ===
+=== TRAINER_CHARITY_Nicolowlow ===
 Name: QUINCY
 Class: Cooltrainer
 Pic: Cooltrainer M
@@ -6065,7 +6065,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Will O Wisp
 - Toxic
 
-=== TRAINER_KATELYNN ===
+=== TRAINER_CHARITY_zelderfreak ===
 Name: KATELYNN
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -6091,7 +6091,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Aerial Ace
 - Brick Break
 
-=== TRAINER_JAYLEN ===
+=== TRAINER_CHARITY_CupOhJoe ===
 Name: JAYLEN
 Class: Youngster
 Pic: Youngster
@@ -6104,7 +6104,7 @@ Trapinch
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DILLON ===
+=== TRAINER_CHARITY_RedVelvetNite ===
 Name: DILLON
 Class: Youngster
 Pic: Youngster
@@ -6117,7 +6117,7 @@ Aron
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CALVIN_2 ===
+=== TRAINER_CHARITY_Gamekxnd ===
 Name: CALVIN
 Class: Youngster
 Pic: Youngster
@@ -6130,7 +6130,7 @@ Mightyena
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_CALVIN_3 ===
+=== TRAINER_CHARITY_Tsuki_Rae ===
 Name: CALVIN
 Class: Youngster
 Pic: Youngster
@@ -6147,7 +6147,7 @@ Mightyena
 Level: 30
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_CALVIN_4 ===
+=== TRAINER_CHARITY_Sinners ===
 Name: CALVIN
 Class: Youngster
 Pic: Youngster
@@ -6168,7 +6168,7 @@ Mightyena
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CALVIN_5 ===
+=== TRAINER_CHARITY_gamerazillakong ===
 Name: CALVIN
 Class: Youngster
 Pic: Youngster
@@ -6189,7 +6189,7 @@ Mightyena
 Level: 36
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_EDDIE ===
+=== TRAINER_CHARITY_Ruluan ===
 Name: EDDIE
 Class: Youngster
 Pic: Youngster
@@ -6206,8 +6206,8 @@ Zigzagoon
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_FRITZ ===
-Name: FRITZ
+=== TRAINER_CHARITY_Fritzz37 ===
+Name: Fritzz37
 Class: Donator
 Pic: Gentleman
 Gender: Male
@@ -6223,8 +6223,8 @@ Scizor
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-=== TRAINER_HANNAHHANZ ===
-Name: HANNAHHANZ
+=== TRAINER_CHARITY_Hannahhanz ===
+Name: Hannahhanz
 Class: Donator
 Pic: Beauty
 Gender: Female
@@ -6648,7 +6648,7 @@ Magnemite
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BENJAMIN_1 ===
+=== TRAINER_JAMIN_1 ===
 Name: BENJAMIN
 Class: Triathlete
 Pic: Cycling Triathlete M
@@ -6661,7 +6661,7 @@ Magnemite
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BENJAMIN_2 ===
+=== TRAINER_JAMIN_2 ===
 Name: BENJAMIN
 Class: Triathlete
 Pic: Cycling Triathlete M
@@ -6674,7 +6674,7 @@ Magnemite
 Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_BENJAMIN_3 ===
+=== TRAINER_JAMIN_3 ===
 Name: BENJAMIN
 Class: Triathlete
 Pic: Cycling Triathlete M
@@ -6687,7 +6687,7 @@ Magnemite
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_BENJAMIN_4 ===
+=== TRAINER_JAMIN_4 ===
 Name: BENJAMIN
 Class: Triathlete
 Pic: Cycling Triathlete M
@@ -6700,7 +6700,7 @@ Magneton
 Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_BENJAMIN_5 ===
+=== TRAINER_JAMIN_5 ===
 Name: BENJAMIN
 Class: Triathlete
 Pic: Cycling Triathlete M
@@ -7438,7 +7438,7 @@ Swablu
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BENNY ===
+=== TRAINER_NY ===
 Name: BENNY
 Class: Bird Keeper
 Pic: Bird Keeper
