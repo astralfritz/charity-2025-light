@@ -52,7 +52,7 @@ Route113_EventScript_Jaylen::
 	end
 
 Route113_EventScript_Dillon::
-	trainerbattle_single TRAINER_CHARITY_RedVelvetNite, Route113_Text_DillonIntro, Route113_Text_DillonDefeat
+	trainerbattle_single TRAINER_CHARITY_Chris, Route113_Text_DillonIntro, Route113_Text_DillonDefeat
 	msgbox Route113_Text_DillonPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -11,8 +11,8 @@ Common_EventScript_SetGymTrainers::
 	end
 
 RustboroCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_CHARITY_Destructsean
-	settrainerflag TRAINER_CHARITY_MelodySerafina
+	settrainerflag TRAINER_CHARITY_Sean
+	settrainerflag TRAINER_CHARITY_MelodySera
 	settrainerflag TRAINER_MARC
 	return
 

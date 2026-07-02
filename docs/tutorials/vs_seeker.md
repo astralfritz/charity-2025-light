@@ -58,7 +58,7 @@ The game determines which version of the Trainer you'll fight next by following 
 No extra work is required. With the exception of Wally, Gym Leaders and Elite Four, all of the rematchable Trainers in Emerald will work with the Vs. Seeker without any changes.
 ### New Trainers
 #### Party / `gRematchTable`
-Each of the rematches for the Trainer must be defined as seperate Trainers in `src/data/trainers.party` and `include/constants/opponents`. For example, `TRAINER_CHARITY_AxoloDyl` also has `TRAINER_CHARITY_Gamekxnd`,`TRAINER_CHARITY_Tsuki_Rae`,`TRAINER_CHARITY_Sinners`, and `TRAINER_CHARITY_gamerazillakong`.  
+Each of the rematches for the Trainer must be defined as seperate Trainers in `src/data/trainers.party` and `include/constants/opponents`. For example, `TRAINER_CHARITY_AxoloDyl` also has `TRAINER_CHARITY_Gamekxnd`,`TRAINER_CHARITY_Tsuki_Rae`,`TRAINER_CHARITY_Sinners`, and `TRAINER_CHARITY_Nate`.  
 
 Once all of those constants and parties are defined, a new row must be added to `gRematchTable` (located in in `src/battle_setup.c`). The row header should be a rematch ID, which can be added in `include/constants/rematches.h`. The row contents must be the five constants created for the new parties, with the lat argument being the constant of the map (`include/constants/map_groups.h`) where the Trainer is placed.
 

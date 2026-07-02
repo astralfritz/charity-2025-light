@@ -227,7 +227,7 @@ Route116_Movement_GlassesManExitEast:
 	step_end
 
 Route116_EventScript_Joey::
-	trainerbattle_single TRAINER_CHARITY_lilbambijoe, Route116_Text_JoeyIntro, Route116_Text_JoeyDefeat
+	trainerbattle_single TRAINER_CHARITY_bambijoe, Route116_Text_JoeyIntro, Route116_Text_JoeyDefeat
 	msgbox Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE
 	end
 

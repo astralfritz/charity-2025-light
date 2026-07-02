@@ -18,6 +18,20 @@ Charity_Hallway1_EventScript_Fritzz37::
 	release
 	end
 
+Chairty_Hallway1_EventScript_Ruluan::
+	trainerbattle_single TRAINER_CHARITY_Ruluan, Charity_Hallway1_Text_RuluanIntro, Charity_Hallway1_Text_RuluanDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Ruluan
+	msgbox Charity_Hallway1_Text_RuluanPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Chairty_Hallway1_EventScript_Nate::
+	trainerbattle_single TRAINER_CHARITY_Nate, Charity_Hallway1_Text_NateIntro, Charity_Hallway1_Text_NateDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Nate
+	msgbox Charity_Hallway1_Text_NatePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 Charity_Hallway1_Text_ToolBox:
 	.string "Just a bunch of tools in here.\n"
 	.string "Nothing of use to you.$"

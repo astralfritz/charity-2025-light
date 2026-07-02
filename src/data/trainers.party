@@ -5770,7 +5770,7 @@ Hariyama
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_CHARITY_Chibisama666 ===
+=== TRAINER_CHARITY_Chibi ===
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -5787,7 +5787,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_CHARITY_BansheeThey ===
+=== TRAINER_CHARITY_Gwen ===
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -5821,7 +5821,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Sand Attack
 - Dig
 
-=== TRAINER_CHARITY_CrimsonLobo ===
+=== TRAINER_CHARITY_Lobo ===
 Name: TIMOTHY
 Class: Expert
 Pic: Expert M
@@ -5855,7 +5855,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Confusion
 - Detect
 
-=== TRAINER_CHARITY_TheMaddyMonster ===
+=== TRAINER_CHARITY_Maddy ===
 Name: SHELBY
 Class: Expert
 Pic: Expert F
@@ -5906,7 +5906,7 @@ Hariyama
 Level: 33
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
-=== TRAINER_CHARITY_digisparkks ===
+=== TRAINER_CHARITY_digi ===
 Name: SHELBY
 Class: Expert
 Pic: Expert F
@@ -5970,7 +5970,7 @@ Seedot
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CHARITY_Destructsean ===
+=== TRAINER_CHARITY_Sean ===
 Name: JOSH
 Class: Youngster
 Pic: Youngster
@@ -5984,7 +5984,7 @@ Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 
-=== TRAINER_CHARITY_MelodySerafina ===
+=== TRAINER_CHARITY_MelodySera ===
 Name: TOMMY
 Class: Youngster
 Pic: Youngster
@@ -6001,7 +6001,7 @@ Geodude
 Level: 8
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_CHARITY_lilbambijoe ===
+=== TRAINER_CHARITY_bambijoe ===
 Name: JOEY
 Class: Youngster
 Pic: Youngster
@@ -6065,7 +6065,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Will O Wisp
 - Toxic
 
-=== TRAINER_CHARITY_zelderfreak ===
+=== TRAINER_CHARITY_Zelder ===
 Name: KATELYNN
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -6104,7 +6104,7 @@ Trapinch
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CHARITY_RedVelvetNite ===
+=== TRAINER_CHARITY_Chris===
 Name: DILLON
 Class: Youngster
 Pic: Youngster
@@ -6168,43 +6168,43 @@ Mightyena
 Level: 33
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_CHARITY_gamerazillakong ===
-Name: CALVIN
-Class: Youngster
-Pic: Youngster
+=== TRAINER_CHARITY_Nate ===
+Name: Nate
+Class: Donator
+Pic: Gentleman
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Swellow
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Aurorus
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Linoone
-Level: 32
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Kingdra
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Mightyena
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Omastar
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Ruluan ===
-Name: EDDIE
-Class: Youngster
-Pic: Youngster
+Name: Ruluan
+Class: Donator
+Pic: Camper
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Zigzagoon
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Stoutland
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Zigzagoon
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grumpig
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Fritzz37 ===
 Name: Fritzz37
@@ -6232,12 +6232,12 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Aron
-Level: 15
+Quagsire
+Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrike
-Level: 13
+Clodsire
+Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLACE ===
@@ -10711,7 +10711,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_NATE ===
 Name: NATE
 Class: Gentleman
-Pic: Gentleman
+Pic: Cooltrainer M
 Gender: Male
 Music: Rich
 Double Battle: No

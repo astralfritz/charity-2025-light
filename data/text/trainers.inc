@@ -4804,6 +4804,24 @@ Charity_Hallway1_Text_Fritzz37Defeat::
 Charity_Hallway1_Text_Fritzz37PostBattle::
 	.string "$"
 
+Charity_Hallway1_Text_RuluanIntro::
+	.string "$"
+
+Charity_Hallway1_Text_RuluanDefeat::
+	.string "$"
+
+Charity_Hallway1_Text_RuluanPostBattle::
+	.string "$"
+
+Charity_Hallway1_Text_NateIntro::
+	.string "$"
+
+Charity_Hallway1_Text_NateDefeat::
+	.string "$"
+
+Charity_Hallway1_Text_NatePostBattle::
+	.string "$"
+
 Charity_Pokecenter_Text_HannahhanzIntro::
 	.string "Get fucked.$"
 
