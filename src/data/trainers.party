@@ -5770,239 +5770,411 @@ Sliggoo
 Level: 55
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
+Sliggoo
+Level: 55
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Sliggoo
+Level: 55
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Sliggoo
+Level: 55
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Sliggoo
+Level: 55
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Pikachu
+Level: 55
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
 === TRAINER_CHARITY_Chibi ===
 Name: TIMOTHY
 Class: Donator
-Pic: Expert M
+Pic: Bird Keeper
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Honchkrow
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Pidgeot
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Oricorio Pom Pom
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Gwen ===
-Name: TIMOTHY
+Name: Gwen
 Class: Donator
-Pic: Expert M
-Gender: Male
+Pic: Aqua Admin F
+Gender: Female
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Haxorus
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Breloom
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Golem
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Prue ===
-Name: TIMOTHY
+Name: Rau
 Class: Donator
-Pic: Expert M
+Pic: Salon Maiden Anabel
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Baxcalibur
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Beartic
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Dewgong
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Lapras
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Lobo ===
-Name: TIMOTHY
+Name: Lobo
 Class: Donator
-Pic: Expert M
+Pic: Dragon Tamer
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Garchomp
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Tyrantrum
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Ozlaine ===
-Name: VICKY
+Name: Ozlaine
 Class: Donator
-Pic: Expert F
-Gender: Female
+Pic: Factory Head Noland
+Gender: Male
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Electrode
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Infernape
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Clawitzer
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Maddy ===
-Name: SHELBY
+Name: Maddy
 Class: Donator
-Pic: Expert F
+Pic: Aroma Lady
 Gender: Female
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Milotic
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Exeggutor Alola
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Enomorie ===
-Name: SHELBY
+Name: Enomorie
 Class: Donator
-Pic: Expert F
+Pic: Psychic F
 Gender: Female
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Absol
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Ninetales Alola
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Pastrieman ===
-Name: SHELBY
+Name: Pastrieman
 Class: Donator
-Pic: Expert F
-Gender: Female
+Pic: Leader Wattson
+Gender: Male
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Pansear
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Mandibuzz
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Barbaracle
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_digi ===
-Name: SHELBY
+Name: digi
 Class: Donator
-Pic: Pokefan M
+Pic: Leader Roxanne
 Gender: Female
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Happiny
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Lurantis
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Victreebel
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Clover ===
-Name: SHELBY
+Name: Clover
 Class: Donator
-Pic: Expert F
+Pic: Arena Tycoon Greta
 Gender: Female
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Tauros
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Cetitan
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Annihilape
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_AxoloDyl ===
-Name: CALVIN
+Name: AxoloDyl
 Class: Donator
-Pic: Youngster
+Pic: Aqua Admin M
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Swampert
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Feraligatr
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Samurott
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_ImpGirlee ===
-Name: BILLY
+Name: ImpGirlee
 Class: Donator
-Pic: Youngster
-Gender: Male
-Music: Male
+Pic: Leader Winona
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Impidimp
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Morgrem
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Grimmsnarl
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Sean ===
-Name: JOSH
+Name: Sean
 Class: Donator
-Pic: Youngster
+Pic: Aqua Grunt M
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Crawdaunt
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Oricorio
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Garganacl
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_MelodySera ===
-Name: TOMMY
+Name: MelodySera
 Class: Donator
-Pic: Youngster
-Gender: Male
-Music: Male
+Pic: Pike Queen Lucy
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Sableye
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Tapu Fini
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Sableye Mega
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_bambijoe ===
-Name: JOEY
+Name: bambijoe
 Class: Donator
-Pic: Youngster
+Pic: Leader Brawly
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Gyarados
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Stantler
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Lopunny
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_simquall ===
-Name: BEN
+Name: simquall
 Class: Donator
-Pic: Youngster
+Pic: Beauty
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Zebstrika
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Mimikyu
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Gengar
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Latias
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Typhlosion
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CHARITY_Nicolowlow ===
-Name: QUINCY
+Name: Nicolowlow
 Class: Donator
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
-
-Sliggoo
-Level: 50
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-
-=== TRAINER_CHARITY_Zelder ===
-Name: KATELYNN
-Class: Donator
-Pic: Cooltrainer F
+Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Beheeyem
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Ursaluna
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Lunala
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+=== TRAINER_CHARITY_Zelder ===
+Name: Zelder
+Class: Donator
+Pic: Pokemon Breeder M
+Gender: Male
+Music: Cool
+Items: Full Restore
+Double Battle: No
+AI: Basic Trainer
+
+Centiskorch
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Cresselia
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Kangaskhan
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Vileplume
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Swampert
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -6015,7 +6187,15 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Sliggoo
+Pikachu
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Dondozo
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Poliwrath
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -6032,7 +6212,7 @@ Toxtricity
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Grimmsnarl
+Obstagoon
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -6062,11 +6242,11 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Gengar
+Dragapult
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Dragapult
+Golurk
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
