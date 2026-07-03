@@ -35,3 +35,30 @@ Chairty_Hallway1_EventScript_Nate::
 Charity_Hallway1_Text_ToolBox:
 	.string "Just a bunch of tools in here.\n"
 	.string "Nothing of use to you.$"
+
+Charity_Hallway1_Text_Fritzz37Intro:
+	.string "$"
+
+Charity_Hallway1_Text_Fritzz37Defeat:
+	.string "$"
+
+Charity_Hallway1_Text_Fritzz37PostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_RuluanIntro:
+	.string "$"
+
+Charity_Hallway1_Text_RuluanDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_RuluanPostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_NateIntro:
+	.string "$"
+
+Charity_Hallway1_Text_NateDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_NatePostBattle:
+	.string "$"

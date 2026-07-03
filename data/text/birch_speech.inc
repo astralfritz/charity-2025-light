@@ -1,20 +1,17 @@
 gText_Birch_Welcome::
 	.string "Hello and welcome to the world of\n"
 	.string "POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "My name is FRITZ.\p"
+	.string "But everyone knows me as the HACK\n"
+	.string "DEVELOPER.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
+	.string "You of course know of “POKéMON.”\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "But you knew that already didn't you?\p"
 	.string "I just wanted to say thank you for\n"
 	.string "making this possible and helping Light\l"
 	.string "with the charity he ran!\p"
@@ -45,6 +42,10 @@ gText_Birch_YourePlayer::
 	.string "$"
 
 gText_Birch_AreYouReady::
+	.string "Last note before we begin!\p"
+	.string "I did my best to match pics to\n"
+	.string "trainers! Apologies if it's not a\l"
+	.string "great match!\p"
 	.string "All right, are you ready?\p"
 	.string "Your very own adventure is about\n"
 	.string "to unfold!\p"

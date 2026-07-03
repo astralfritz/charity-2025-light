@@ -4794,39 +4794,3 @@ VSSeeker_Text_TrainersNotReady::
 	.string "The other Trainers don't appear\n"
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
-
-Charity_Hallway1_Text_Fritzz37Intro::
-	.string "$"
-
-Charity_Hallway1_Text_Fritzz37Defeat::
-	.string "$"
-
-Charity_Hallway1_Text_Fritzz37PostBattle::
-	.string "$"
-
-Charity_Hallway1_Text_RuluanIntro::
-	.string "$"
-
-Charity_Hallway1_Text_RuluanDefeat::
-	.string "$"
-
-Charity_Hallway1_Text_RuluanPostBattle::
-	.string "$"
-
-Charity_Hallway1_Text_NateIntro::
-	.string "$"
-
-Charity_Hallway1_Text_NateDefeat::
-	.string "$"
-
-Charity_Hallway1_Text_NatePostBattle::
-	.string "$"
-
-Charity_Pokecenter_Text_HannahhanzIntro::
-	.string "Get fucked.$"
-
-Charity_Pokecenter_Text_HannahhanzDefeat::
-	.string "$"
-
-Charity_Pokecenter_Text_HannahhanzPostBattle::
-	.string "$"
