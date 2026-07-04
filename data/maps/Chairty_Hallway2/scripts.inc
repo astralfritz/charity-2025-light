@@ -15,6 +15,20 @@ Charity_Hallway1_EventScript_Gamekxnd::
 	release
 	end
 
+Charity_Hallway1_EventScript_Nicolowlow::
+	trainerbattle_single TRAINER_CHARITY_Nicolowlow, Charity_Hallway1_Text_NicolowlowIntro, Charity_Hallway1_Text_NicolowlowDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Nicolowlow
+	msgbox Charity_Hallway1_Text_NicolowlowPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Hallway1_EventScript_digi::
+	trainerbattle_single TRAINER_CHARITY_digi, Charity_Hallway1_Text_digiIntro, Charity_Hallway1_Text_digiDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_digi
+	msgbox Charity_Hallway1_Text_digiPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 Charity_Hallway1_Text_CupOhJoeIntro:
 	.string "$"
 
@@ -31,4 +45,22 @@ Charity_Hallway1_Text_GamekxndDefeat:
 	.string "$"
 
 Charity_Hallway1_Text_GamekxndPostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_NicolowlowIntro:
+	.string "$"
+
+Charity_Hallway1_Text_NicolowlowDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_NicolowlowPostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_digiIntro:
+	.string "$"
+
+Charity_Hallway1_Text_digiDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_digiPostBattle:
 	.string "$"

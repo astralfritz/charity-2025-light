@@ -5758,9 +5758,9 @@ Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CHARITY_Light ===
-Name: TIMOTHY
-Class: Expert
-Pic: Expert M
+Name: Light
+Class: Champion
+Pic: Red
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -5770,7 +5770,7 @@ Sliggoo
 Level: 55
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Sliggoo
+Typhlosion
 Level: 55
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -5778,11 +5778,11 @@ Sliggoo
 Level: 55
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Sliggoo
+Mew
 Level: 55
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Sliggoo
+Litten
 Level: 55
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -5860,17 +5860,17 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 === TRAINER_CHARITY_Lobo ===
 Name: Lobo
 Class: Donator
-Pic: Dragon Tamer
+Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Garchomp
+Toxtricity
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Tyrantrum
+Obstagoon
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -6202,17 +6202,25 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 === TRAINER_CHARITY_Chris===
 Name: Chris
 Class: Donator
-Pic: Guitarist
+Pic: Dragon Tamer
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Toxtricity
+Roaring Moon
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Obstagoon
+Guzzlord
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Dragonite
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Dragonite
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -6334,6 +6342,10 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Basic Trainer
+
+Wooper Paldea
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Quagsire
 Level: 50

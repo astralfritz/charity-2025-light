@@ -1,7 +1,7 @@
 {
-  "id": "MAP_CHARITY_GYM",
-  "name": "Charity_Gym",
-  "layout": "LAYOUT_CHARITY_GYM",
+  "id": "MAP_CHARITY_HOUSE_1",
+  "name": "Charity_House_1",
+  "layout": "LAYOUT_CHARITY_HOUSE_1",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -15,9 +15,24 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "local_id": "Charity_House_1_bambijoe",
+      "graphics_id": "OBJ_EVENT_GFX_BRAWLY",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "Charity_House_1_Sean",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
       "x": 2,
-      "y": 12,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -30,11 +45,18 @@
   ],
   "warp_events": [
     {
-      "x": 6,
-      "y": 18,
+      "x": 4,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_CHAIRTY_HALLWAY2",
-      "dest_warp_id": "1"
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_CHAIRTY_HALLWAY2",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [],

@@ -54,6 +54,60 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "local_id": "Charity_Hallway2_Nicolowlow",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "x": 36,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Charity_Hallway1_EventScript_Nicolowlow",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_URSALUNA",
+      "x": 36,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 3,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "Charity_Hallway2_digi",
+      "graphics_id": "OBJ_EVENT_GFX_ROXANNE",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VICTREEBEL",
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -62,6 +116,48 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_CHARITY_POKECENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 68,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CHARITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_CHARITY_HOUSE_1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CHAIRTY_HALLWAY2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_CHAIRTY_HALLWAY2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_CHAIRTY_HALLWAY2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_CHAIRTY_HALLWAY2",
       "dest_warp_id": "0"
     }
   ],

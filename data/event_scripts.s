@@ -1176,3 +1176,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Charity_Pokemart/scripts.inc"
 
 	.include "data/maps/Charity_Gym/scripts.inc"
+
+	.include "data/maps/Charity_House_1/scripts.inc"
