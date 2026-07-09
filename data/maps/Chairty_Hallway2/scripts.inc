@@ -29,6 +29,20 @@ Charity_Hallway1_EventScript_digi::
 	release
 	end
 
+Charity_Hallway1_EventScript_AxoloDyl::
+	trainerbattle_single TRAINER_CHARITY_AxoloDyl, Charity_Hallway1_Text_AxoloDylIntro, Charity_Hallway1_Text_AxoloDylDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_AxoloDyl
+	msgbox Charity_Hallway1_Text_AxoloDylPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Hallway1_EventScript_Clover::
+	trainerbattle_single TRAINER_CHARITY_Clover, Charity_Hallway1_Text_CloverIntro, Charity_Hallway1_Text_CloverDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Clover
+	msgbox Charity_Hallway1_Text_CloverPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 Charity_Hallway1_Text_CupOhJoeIntro:
 	.string "$"
 
@@ -63,4 +77,22 @@ Charity_Hallway1_Text_digiDefeat:
 	.string "$"
 
 Charity_Hallway1_Text_digiPostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_AxoloDylIntro:
+	.string "$"
+
+Charity_Hallway1_Text_AxoloDylDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_AxoloDylPostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_CloverIntro:
+	.string "$"
+
+Charity_Hallway1_Text_CloverDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_CloverPostBattle:
 	.string "$"

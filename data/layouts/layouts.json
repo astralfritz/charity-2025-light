@@ -4480,6 +4480,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Charity_House_1/border.bin",
       "blockdata_filepath": "data/layouts/Charity_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHARITY_HOUSE_2",
+      "name": "Charity_House_2_Layout",
+      "width": 20,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Charity_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_House_2/map.bin"
     }
   ]
 }

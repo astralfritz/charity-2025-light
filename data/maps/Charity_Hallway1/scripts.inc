@@ -11,10 +11,10 @@ Charity_Hallway1_EventScript_WarpToPokecenter::
 	warp MAP_CHARITY_POKECENTER, 2, 6
 	waitstate
 
-Charity_Hallway1_EventScript_Fritzz37::
-	trainerbattle_single TRAINER_CHARITY_Fritzz37, Charity_Hallway1_Text_Fritzz37Intro, Charity_Hallway1_Text_Fritzz37Defeat
-	setvar VAR_0x8004, TRAINER_CHARITY_Fritzz37
-	msgbox Charity_Hallway1_Text_Fritzz37PostBattle, MSGBOX_DEFAULT
+Charity_Hallway1_EventScript_astralfritz::
+	trainerbattle_single TRAINER_CHARITY_astralfritz, Charity_Hallway1_Text_astralfritzIntro, Charity_Hallway1_Text_astralfritzDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_astralfritz
+	msgbox Charity_Hallway1_Text_astralfritzPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -36,13 +36,13 @@ Charity_Hallway1_Text_ToolBox:
 	.string "Just a bunch of tools in here.\n"
 	.string "Nothing of use to you.$"
 
-Charity_Hallway1_Text_Fritzz37Intro:
+Charity_Hallway1_Text_astralfritzIntro:
 	.string "$"
 
-Charity_Hallway1_Text_Fritzz37Defeat:
+Charity_Hallway1_Text_astralfritzDefeat:
 	.string "$"
 
-Charity_Hallway1_Text_Fritzz37PostBattle:
+Charity_Hallway1_Text_astralfritzPostBattle:
 	.string "$"
 
 Charity_Hallway1_Text_RuluanIntro:

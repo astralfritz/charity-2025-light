@@ -8,6 +8,13 @@ Charity_Hallway1_EventScript_Zelder::
 	release
 	end
 
+Charity_Hallway1_EventScript_simquall::
+	trainerbattle_single TRAINER_CHARITY_simquall, Charity_Hallway1_Text_simquallIntro, Charity_Hallway1_Text_simquallDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_simquall
+	msgbox Charity_Hallway1_Text_simquallPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 Charity_Hallway1_Text_ZelderIntro:
 	.string "$"
 
@@ -15,4 +22,13 @@ Charity_Hallway1_Text_ZelderDefeat:
 	.string "$"
 
 Charity_Hallway1_Text_ZelderPostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_simquallIntro:
+	.string "$"
+
+Charity_Hallway1_Text_simquallDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_simquallPostBattle:
 	.string "$"

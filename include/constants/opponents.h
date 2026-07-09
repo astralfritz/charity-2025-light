@@ -336,7 +336,7 @@
 #define TRAINER_CHARITY_Sinners                    330
 #define TRAINER_CHARITY_Nate                    331
 #define TRAINER_CHARITY_Ruluan                       332
-#define TRAINER_CHARITY_Fritzz37                    333
+#define TRAINER_CHARITY_astralfritz                    333
 #define TRAINER_CHARITY_Hannahhanz                  334
 #define TRAINER_WALLACE                     335
 #define TRAINER_ANDREW                      336

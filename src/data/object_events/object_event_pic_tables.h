@@ -1374,7 +1374,7 @@ const struct SpriteFrameImage gObjectEventPicTable_Ursaluna[] = {
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Victreebel[] = {
-    overworld_frame(gObjectEventPicMain_Victreebel, 4, 4, 4),
+    overworld_frame(gObjectEventPicMain_Victreebel, 4, 4, 0),
     overworld_frame(gObjectEventPicMain_Victreebel, 4, 4, 5),
     overworld_frame(gObjectEventPicMain_Victreebel, 4, 4, 4),
     overworld_frame(gObjectEventPicMain_Victreebel, 4, 4, 5),
