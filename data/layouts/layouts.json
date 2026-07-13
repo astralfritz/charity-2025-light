@@ -4466,7 +4466,7 @@
       "name": "Charity_Gym_Layout",
       "width": 13,
       "height": 19,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_EliteFour",
       "border_filepath": "data/layouts/Charity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/Charity_Gym/map.bin"
@@ -4490,6 +4490,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Charity_House_2/border.bin",
       "blockdata_filepath": "data/layouts/Charity_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHARITY_HOUSE_3",
+      "name": "Charity_House_3_Layout",
+      "width": 6,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Charity_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/Charity_House_3/map.bin"
     }
   ]
 }

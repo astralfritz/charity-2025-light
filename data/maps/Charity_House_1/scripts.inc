@@ -16,15 +16,22 @@ Charity_Hallway1_EventScript_Sean::
 	end
 
 Charity_Hallway1_Text_bambijoeIntro:
+	.string "Raising money for animals AND\l"
+	.string "working alongside GDQ?\p"
+	.string "What can't you do?"
 	.string "$"
 
 Charity_Hallway1_Text_bambijoeDefeat:
+	.string "Lose to me apparently."
 	.string "$"
 
 Charity_Hallway1_Text_bambijoePostBattle:
+	.string "Thanks for all your support!\n"
+	.string "It means a lot to everyone."
 	.string "$"
 
 Charity_Hallway1_Text_SeanIntro:
+	.string ""
 	.string "$"
 
 Charity_Hallway1_Text_SeanDefeat:

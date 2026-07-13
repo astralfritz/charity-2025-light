@@ -1180,3 +1180,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Charity_House_1/scripts.inc"
 
 	.include "data/maps/Charity_House_2/scripts.inc"
+
+	.include "data/maps/Charity_House_3/scripts.inc"

@@ -1,5 +1,14 @@
 Charity_StartingZone_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Charity_StartingZone_OnTransition
 	.byte 0
+
+Charity_StartingZone_OnTransition:
+	goto_if_eq VAR_CHARITY_STATE, 0, Charity_StartingZone_EventScript_BirchBlock
+	end
+
+Charity_StartingZone_EventScript_BirchBlock::
+	setobjectxyperm LOCALID_PICK_A_MON, 5, 2
+	return
 
 Charity_StartingZone_EventScript_GivePokemon::
 	lock

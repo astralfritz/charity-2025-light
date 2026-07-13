@@ -1,6 +1,13 @@
 Charity_Gym_MapScripts::
 	.byte 0
 
+Charity_Hallway1_EventScript_Light::
+	trainerbattle_single TRAINER_CHARITY_Light, Charity_Hallway1_Text_LightIntro, Charity_Hallway1_Text_LightDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Light
+	msgbox Charity_Hallway1_Text_LightPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 Charity_Hallway1_EventScript_Zelder::
 	trainerbattle_single TRAINER_CHARITY_Zelder, Charity_Hallway1_Text_ZelderIntro, Charity_Hallway1_Text_ZelderDefeat
 	setvar VAR_0x8004, TRAINER_CHARITY_Zelder
@@ -14,6 +21,15 @@ Charity_Hallway1_EventScript_simquall::
 	msgbox Charity_Hallway1_Text_simquallPostBattle, MSGBOX_DEFAULT
 	release
 	end
+
+Charity_Hallway1_Text_LightIntro:
+	.string "$"
+
+Charity_Hallway1_Text_LightDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_LightPostBattle:
+	.string "$"
 
 Charity_Hallway1_Text_ZelderIntro:
 	.string "$"

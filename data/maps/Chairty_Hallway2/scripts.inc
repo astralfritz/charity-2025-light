@@ -43,6 +43,20 @@ Charity_Hallway1_EventScript_Clover::
 	release
 	end
 
+Charity_Hallway1_EventScript_Chibi::
+	trainerbattle_single TRAINER_CHARITY_Chibi, Charity_Hallway1_Text_ChibiIntro, Charity_Hallway1_Text_ChibiDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Chibi
+	msgbox Charity_Hallway1_Text_ChibiPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Hallway1_EventScript_Gwen::
+	trainerbattle_single TRAINER_CHARITY_Gwen, Charity_Hallway1_Text_GwenIntro, Charity_Hallway1_Text_GwenDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Gwen
+	msgbox Charity_Hallway1_Text_GwenPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 Charity_Hallway1_Text_CupOhJoeIntro:
 	.string "$"
 
@@ -95,4 +109,22 @@ Charity_Hallway1_Text_CloverDefeat:
 	.string "$"
 
 Charity_Hallway1_Text_CloverPostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_ChibiIntro:
+	.string "$"
+
+Charity_Hallway1_Text_ChibiDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_ChibiPostBattle:
+	.string "$"
+
+Charity_Hallway1_Text_GwenIntro:
+	.string "$"
+
+Charity_Hallway1_Text_GwenDefeat:
+	.string "$"
+
+Charity_Hallway1_Text_GwenPostBattle:
 	.string "$"

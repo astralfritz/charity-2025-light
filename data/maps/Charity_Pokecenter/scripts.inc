@@ -68,7 +68,7 @@ Charity_Pokecenter_Movement_Face_Down:
 	step_end
 
 Charity_Pokecenter_Text_Healed:
-	.string "Your Pokemon have been healed."
+	.string "Your POKéMON have been healed."
 	.string "$"
 
 Charity_Pokecenter_Text_Goodbye:
@@ -76,37 +76,56 @@ Charity_Pokecenter_Text_Goodbye:
 	.string "$"
 
 Charity_Pokecenter_Text_HannahhanzIntro:
-	.string "Get fucked.$"
+	.string "I thought being here would be a\l"
+	.string "fun way to trick you!"
+	.string "$"
 
 Charity_Pokecenter_Text_HannahhanzDefeat:
+	.string "Were you decieved?"
 	.string "$"
 
 Charity_Pokecenter_Text_HannahhanzPostBattle:
+	.string "The older lady will heal your\l"
+	.string "POKéMON for you!"
 	.string "$"
 
 Charity_Pokecenter_Text_ChrisIntro:
-	.string "Get fucked.$"
+	.string "I was hoping they would have\l"
+	.string "more books on Dragon types.\n"
+	.string "$"
 
 Charity_Pokecenter_Text_ChrisDefeat:
+	.string "You beat my Dragon types anyway!"
 	.string "$"
 
 Charity_Pokecenter_Text_ChrisPostBattle:
+	.string "Thanks for putting together such\l"
+	.string "a helpful event! Good luck!"
 	.string "$"
 
 Charity_Pokecenter_Text_SinnersIntro:
-	.string "Get fucked.$"
+	.string "This game is really fun!\n"
+	.string "You should give it a try later."
+	.string "$"
 
 Charity_Pokecenter_Text_SinnersDefeat:
+	.string "By later I meant after I'm done."
 	.string "$"
 
 Charity_Pokecenter_Text_SinnersPostBattle:
+	.string "I'm done playing yet."
 	.string "$"
 
 Charity_Pokecenter_Text_Tsuki_RaeIntro:
-	.string "Get fucked.$"
+	.string "I'm so happy I could help with\l"
+	.string "your charity event!"
+	.string "$"
 
 Charity_Pokecenter_Text_Tsuki_RaeDefeat:
+	.string "Thanks for caring about the pets!"
 	.string "$"
 
 Charity_Pokecenter_Text_Tsuki_RaePostBattle:
+	.string "Make sure to give your cats some\l"
+	.string "pets from me!"
 	.string "$"

@@ -6151,30 +6151,34 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 === TRAINER_CHARITY_Zelder ===
 Name: Zelder
 Class: Donator
-Pic: Pokemon Breeder M
+Pic: Cycling Triathlete M
 Gender: Male
 Music: Cool
 Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Centiskorch
+Mudkip
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Cresselia
+Lotad
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Kangaskhan
+Raichu Alola
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Vileplume
+Metapod
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Swampert
+Yamper
+Level: 50
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Boltund
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 

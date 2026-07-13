@@ -31,7 +31,7 @@
     {
       "local_id": "LOCALID_PICK_A_MON",
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
-      "x": 5,
+      "x": 6,
       "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -54,7 +54,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Charity_StartingZone_EventScript_Pick_A_Mon_Sign",
-      "flag": "LOCALID_CHARITY_STARTING_ZONE_BIRCH_BAG"
+      "flag": "FLAG_SYS_POKEMON_GET"
     }
   ],
   "warp_events": [
