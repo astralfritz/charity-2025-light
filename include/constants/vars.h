@@ -185,7 +185,7 @@
 #define VAR_TRICK_HOUSE_BEING_WATCHED_STATE              0x40A5
 #define VAR_TRICK_HOUSE_FOUND_TRICK_MASTER               0x40A6
 #define VAR_TRICK_HOUSE_ENTRANCE_STATE                   0x40A7
-#define VAR_CHARITY_STATE                                0x40A8 // Used for the charity game.
+#define VAR_UNUSED_0x40A8                                0x40A8 // Unused Var
 #define VAR_CYCLING_CHALLENGE_STATE                      0x40A9
 #define VAR_SLATEPORT_MUSEUM_1F_STATE                    0x40AA
 #define VAR_TRICK_HOUSE_PUZZLE_1_STATE                   0x40AB
@@ -204,7 +204,7 @@
 #define VAR_UNUSED_0x40B8                                0x40B8 // Unused Var
 #define VAR_MT_PYRE_STATE                                0x40B9
 #define VAR_NEW_MAUVILLE_STATE                           0x40BA
-#define VAR_CHARITY_LOOP                                 0x40BB // Used for tracking loop times
+#define VAR_UNUSED_0x40BB                                0x40BB // Unused Var
 #define VAR_BRAVO_TRAINER_BATTLE_TOWER_ON                0x40BC
 #define VAR_JAGGED_PASS_ASH_WEATHER                      0x40BD
 #define VAR_GLASS_WORKSHOP_STATE                         0x40BE
@@ -264,9 +264,17 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var
-#define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
+
+
+#define VARS_END                                         0x40F6
+
+#define NON_CHARITY_VARS_COUNT                           (VARS_END - VARS_START + 1)
+
+#define CHARITY_VARS_START                               0x40F7
+
+#define VAR_CHARITY_LOOP                                 0x40F7 // Used for tracking loop times
+#define VAR_CHARITY_STATE                                0x40F8 // Used for the charity game
+#define VAR_CHARITY_BATTLES_WON                          0x40F9 // Just holds the battles won number
 #define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
@@ -274,8 +282,9 @@
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
-#define VARS_END                                         0x40FF
-#define VARS_COUNT                                       (VARS_END - VARS_START + 1)
+#define CHARITY_VARS_END                                 0x40FF
+
+#define VARS_COUNT                                       (CHARITY_VARS_END - VARS_START + 1)
 
 #define SPECIAL_VARS_START            0x8000
 // special vars

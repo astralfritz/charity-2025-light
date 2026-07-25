@@ -77,5 +77,14 @@
       "script": "Charity_StartingZone_EventScript_StartAdventure"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Charity_StartingZone_EventScript_BattlesWonSign"
+    }
+  ]
 }

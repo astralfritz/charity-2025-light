@@ -4551,6 +4551,7 @@ BattleScript_LocalBattleWonReward::
 BattleScript_PayDayMoneyAndPickUpItems::
 	givepaydaymoney
 	pickup
+	incrementcharitytrainercount
 	end2
 
 BattleScript_LocalBattleLost::

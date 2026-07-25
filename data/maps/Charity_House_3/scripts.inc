@@ -29,29 +29,29 @@ Charity_Hallway1_EventScript_Pastrieman_POST_BATTLE_3::
 	end
 
 Charity_Hallway1_Text_PastriemanIntro:
-	.string "I'm sure you'll be impressed\l"
+	.string "I'm sure you'll be impressed\n"
 	.string "with my team."
 	.string "$"
 
 Charity_Hallway1_Text_PastriemanDefeat:
-	.string "Aren't you curious how I picked\l"
+	.string "Aren't you curious how I picked\n"
 	.string "them?"
 	.string "$"
 
 Charity_Hallway1_Text_PastriemanPostBattle_1:
-	.string "I made a playlist that was the\l"
+	.string "I made a playlist that was the\n"
 	.string "peanuts christmas album, zombie\p"
-	.string "from the cranberries and a lot of\p"
+	.string "from the cranberries and a lot of\n"
 	.string "Eminem, it's my Trail Mix."
 	.string "$"
 
 Charity_Hallway1_Text_PastriemanPostBattle_2:
-	.string "I got the Yakuza and a jacuzzi mixed\l"
+	.string "I got the Yakuza and a jacuzzi mixed\n"
 	.string "up and now I'm in hot water with the\p"
 	.string "Japanese mafia."
 	.string "$"
 
 Charity_Hallway1_Text_PastriemanPostBattle_3:
-	.string "Working all day to make custard,\l"
+	.string "Working all day to make custard,\n"
 	.string "I love it when a flan comes together."
 	.string "$"

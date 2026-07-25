@@ -572,6 +572,10 @@
 	.byte 0x5d
 	.endm
 
+	.macro incrementcharitytrainercount
+	.byte 0x65
+	.endm
+
 	.macro updatebattlermoves battler:req
 	.byte 0x5e
 	.byte \battler

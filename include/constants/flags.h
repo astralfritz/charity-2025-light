@@ -1609,37 +1609,46 @@
 #define FLAG_UNUSED_0x942                           (DAILY_FLAGS_START + 0x22) // Unused Flag
 #define FLAG_UNUSED_0x943                           (DAILY_FLAGS_START + 0x23) // Unused Flag
 #define FLAG_UNUSED_0x944                           (DAILY_FLAGS_START + 0x24) // Unused Flag
-#define FLAG_UNUSED_0x945                           (DAILY_FLAGS_START + 0x25) // Unused Flag
-#define FLAG_UNUSED_0x946                           (DAILY_FLAGS_START + 0x26) // Unused Flag
-#define FLAG_UNUSED_0x947                           (DAILY_FLAGS_START + 0x27) // Unused Flag
-#define FLAG_UNUSED_0x948                           (DAILY_FLAGS_START + 0x28) // Unused Flag
-#define FLAG_UNUSED_0x949                           (DAILY_FLAGS_START + 0x29) // Unused Flag
-#define FLAG_UNUSED_0x94A                           (DAILY_FLAGS_START + 0x2A) // Unused Flag
-#define FLAG_UNUSED_0x94B                           (DAILY_FLAGS_START + 0x2B) // Unused Flag
-#define FLAG_UNUSED_0x94C                           (DAILY_FLAGS_START + 0x2C) // Unused Flag
-#define FLAG_UNUSED_0x94D                           (DAILY_FLAGS_START + 0x2D) // Unused Flag
-#define FLAG_UNUSED_0x94E                           (DAILY_FLAGS_START + 0x2E) // Unused Flag
-#define FLAG_UNUSED_0x94F                           (DAILY_FLAGS_START + 0x2F) // Unused Flag
-#define FLAG_UNUSED_0x950                           (DAILY_FLAGS_START + 0x30) // Unused Flag
-#define FLAG_UNUSED_0x951                           (DAILY_FLAGS_START + 0x31) // Unused Flag
-#define FLAG_UNUSED_0x952                           (DAILY_FLAGS_START + 0x32) // Unused Flag
-#define FLAG_UNUSED_0x953                           (DAILY_FLAGS_START + 0x33) // Unused Flag
-#define FLAG_UNUSED_0x954                           (DAILY_FLAGS_START + 0x34) // Unused Flag
-#define FLAG_UNUSED_0x955                           (DAILY_FLAGS_START + 0x35) // Unused Flag
-#define FLAG_UNUSED_0x956                           (DAILY_FLAGS_START + 0x36) // Unused Flag
-#define FLAG_UNUSED_0x957                           (DAILY_FLAGS_START + 0x37) // Unused Flag
-#define FLAG_UNUSED_0x958                           (DAILY_FLAGS_START + 0x38) // Unused Flag
-#define FLAG_UNUSED_0x959                           (DAILY_FLAGS_START + 0x39) // Unused Flag
-#define FLAG_UNUSED_0x95A                           (DAILY_FLAGS_START + 0x3A) // Unused Flag
-#define FLAG_UNUSED_0x95B                           (DAILY_FLAGS_START + 0x3B) // Unused Flag
-#define FLAG_UNUSED_0x95C                           (DAILY_FLAGS_START + 0x3C) // Unused Flag
-#define FLAG_UNUSED_0x95D                           (DAILY_FLAGS_START + 0x3D) // Unused Flag
-#define FLAG_UNUSED_0x95E                           (DAILY_FLAGS_START + 0x3E) // Unused Flag
-#define FLAG_UNUSED_0x95F                           (DAILY_FLAGS_START + 0x3F) // Unused Flag
-#define DAILY_FLAGS_END                             (FLAG_UNUSED_0x95F + (7 - FLAG_UNUSED_0x95F % 8))
+
+#define DAILY_FLAGS_END                             (FLAG_UNUSED_0x944 + (7 - FLAG_UNUSED_0x944 % 8))
 #define NUM_DAILY_FLAGS                             (DAILY_FLAGS_END - DAILY_FLAGS_START + 1)
 
-#define FLAGS_COUNT (DAILY_FLAGS_END + 1)
+#define NON_LOOP_FLAGS_COUNT (DAILY_FLAGS_END + 1)
+
+#define TRAINER_LOOP_FLAGS_START                    (FLAG_UNUSED_0x944 + (8 - FLAG_UNUSED_0x944 % 8))
+#define FLAG_UNUSED_0x945                           (TRAINER_LOOP_FLAGS_START + 0x25) // Unused Flag
+#define FLAG_UNUSED_0x946                           (TRAINER_LOOP_FLAGS_START + 0x26) // Unused Flag
+#define FLAG_UNUSED_0x947                           (TRAINER_LOOP_FLAGS_START + 0x27) // Unused Flag
+#define FLAG_UNUSED_0x948                           (TRAINER_LOOP_FLAGS_START + 0x28) // Unused Flag
+#define FLAG_UNUSED_0x949                           (TRAINER_LOOP_FLAGS_START + 0x29) // Unused Flag
+#define FLAG_UNUSED_0x94A                           (TRAINER_LOOP_FLAGS_START + 0x2A) // Unused Flag
+#define FLAG_UNUSED_0x94B                           (TRAINER_LOOP_FLAGS_START + 0x2B) // Unused Flag
+#define FLAG_UNUSED_0x94C                           (TRAINER_LOOP_FLAGS_START + 0x2C) // Unused Flag
+#define FLAG_UNUSED_0x94D                           (TRAINER_LOOP_FLAGS_START + 0x2D) // Unused Flag
+#define FLAG_UNUSED_0x94E                           (TRAINER_LOOP_FLAGS_START + 0x2E) // Unused Flag
+#define FLAG_UNUSED_0x94F                           (TRAINER_LOOP_FLAGS_START + 0x2F) // Unused Flag
+#define FLAG_UNUSED_0x950                           (TRAINER_LOOP_FLAGS_START + 0x30) // Unused Flag
+#define FLAG_UNUSED_0x951                           (TRAINER_LOOP_FLAGS_START + 0x31) // Unused Flag
+#define FLAG_UNUSED_0x952                           (TRAINER_LOOP_FLAGS_START + 0x32) // Unused Flag
+#define FLAG_UNUSED_0x953                           (TRAINER_LOOP_FLAGS_START + 0x33) // Unused Flag
+#define FLAG_UNUSED_0x954                           (TRAINER_LOOP_FLAGS_START + 0x34) // Unused Flag
+#define FLAG_UNUSED_0x955                           (TRAINER_LOOP_FLAGS_START + 0x35) // Unused Flag
+#define FLAG_UNUSED_0x956                           (TRAINER_LOOP_FLAGS_START + 0x36) // Unused Flag
+#define FLAG_UNUSED_0x957                           (TRAINER_LOOP_FLAGS_START + 0x37) // Unused Flag
+#define FLAG_UNUSED_0x958                           (TRAINER_LOOP_FLAGS_START + 0x38) // Unused Flag
+#define FLAG_UNUSED_0x959                           (TRAINER_LOOP_FLAGS_START + 0x39) // Unused Flag
+#define FLAG_UNUSED_0x95A                           (TRAINER_LOOP_FLAGS_START + 0x3A) // Unused Flag
+#define FLAG_UNUSED_0x95B                           (TRAINER_LOOP_FLAGS_START + 0x3B) // Unused Flag
+#define FLAG_UNUSED_0x95C                           (TRAINER_LOOP_FLAGS_START + 0x3C) // Unused Flag
+#define FLAG_UNUSED_0x95D                           (TRAINER_LOOP_FLAGS_START + 0x3D) // Unused Flag
+#define FLAG_UNUSED_0x95E                           (TRAINER_LOOP_FLAGS_START + 0x3E) // Unused Flag
+#define FLAG_UNUSED_0x95F                           (TRAINER_LOOP_FLAGS_START + 0x3F) // Unused Flag
+
+#define TRAINER_LOOP_FLAGS_END                      (FLAG_UNUSED_0x95F + (7 - FLAG_UNUSED_0x95F % 8))
+#define NUM_TRAINER_LOOP_FLAGS                      (TRAINER_LOOP_FLAGS_END - TRAINER_LOOP_FLAGS_START + 1)
+
+#define FLAGS_COUNT (TRAINER_LOOP_FLAGS_END + 1)
+
 
 // Special Flags (Stored in EWRAM (sSpecialFlags), not in the SaveBlock)
 #define SPECIAL_FLAGS_START                     0x4000

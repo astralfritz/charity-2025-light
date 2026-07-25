@@ -818,6 +818,12 @@
 	.2byte \trainer
 	.endm
 
+	@ Checks if the trainer has been defeated by the player outside of the loop (by comparing the flag 'trainer + TRAINER_FLAGS_START' to TRUE).
+	.macro checktrainerloopflag trainer:req
+	.byte SCR_OP_CHECKTRAINERLOOPFLAG
+	.2byte \trainer
+	.endm
+
 	@ Sets the trainer flag (trainer + TRAINER_FLAGS_START) to TRUE (defeated).
 	.macro settrainerflag trainer:req
 	.byte SCR_OP_SETTRAINERFLAG
@@ -2025,6 +2031,16 @@
 
 	.macro goto_if_not_defeated trainer:req, dest:req
 	checktrainerflag \trainer
+	goto_if FALSE, \dest
+	.endm
+
+	.macro goto_if_loop_defeated trainer:req, dest:req
+	checktrainerloopflag \trainer
+	goto_if TRUE, \dest
+	.endm
+
+	.macro goto_if_not_loop_defeated trainer:req, dest:req
+	checktrainerloopflag \trainer
 	goto_if FALSE, \dest
 	.endm
 

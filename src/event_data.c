@@ -1,11 +1,13 @@
 #include "global.h"
 #include "event_data.h"
 #include "pokedex.h"
+#include "constants/flags.h"
 
 #define SPECIAL_FLAGS_SIZE  (NUM_SPECIAL_FLAGS / 8)  // 8 flags per byte
 #define TEMP_FLAGS_SIZE     (NUM_TEMP_FLAGS / 8)
 #define DAILY_FLAGS_SIZE    (NUM_DAILY_FLAGS / 8)
 #define TEMP_VARS_SIZE      (NUM_TEMP_VARS * 2)      // 1/2 var per byte
+#define NUM_NON_LOOP_FLAG_BYTES ROUND_BITS_TO_BYTES(NON_LOOP_FLAGS_COUNT)
 
 EWRAM_DATA u16 gSpecialVar_0x8000 = 0;
 EWRAM_DATA u16 gSpecialVar_0x8001 = 0;
@@ -57,13 +59,14 @@ void InitEventData(void)
 
 void InitLoopData(void)
 {
-    u8 loopCount = VarGet(VAR_CHARITY_LOOP);
-        
-    memset(gSaveBlock1Ptr->flags, 0, sizeof(gSaveBlock1Ptr->flags));
-    memset(gSaveBlock1Ptr->vars, 0, sizeof(gSaveBlock1Ptr->vars));
-    memset(sSpecialFlags, 0, sizeof(sSpecialFlags));
+    u8 flags[NUM_NON_LOOP_FLAG_BYTES];
+    u16 vars[NON_CHARITY_VARS_COUNT];
 
-    VarSet(VAR_CHARITY_LOOP, loopCount);
+    memset(gSaveBlock1Ptr->flags, 0, sizeof(flags));
+    memset(gSaveBlock1Ptr->vars, 0, sizeof(vars));
+    memset(sSpecialFlags, 0, sizeof(sSpecialFlags));
+    
+    VarSet(VAR_CHARITY_STATE, 0);
 }
 
 void ClearTempFieldEventData(void)

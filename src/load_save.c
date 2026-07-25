@@ -303,3 +303,8 @@ static void ApplyNewEncryptionKeyToAllEncryptedData(u32 encryptionKey)
     ApplyNewEncryptionKeyToWord(&gSaveBlock1Ptr->money, encryptionKey);
     ApplyNewEncryptionKeyToHword(&gSaveBlock1Ptr->coins, encryptionKey);
 }
+
+void StartNewLoop(void) 
+{
+    SetMainCallback2(CB2_ResetLoop);
+}

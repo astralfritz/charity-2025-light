@@ -2475,6 +2475,16 @@ bool8 ScrCmd_checktrainerflag(struct ScriptContext *ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_checktrainerloopflag(struct ScriptContext *ctx)
+{
+    u16 index = VarGet(ScriptReadHalfword(ctx));
+
+    Script_RequestEffects(SCREFF_V1);
+
+    ctx->comparisonResult = HasTrainerBeenFoughtInLoop(index);
+    return FALSE;
+}
+
 bool8 ScrCmd_settrainerflag(struct ScriptContext *ctx)
 {
     u16 index = VarGet(ScriptReadHalfword(ctx));

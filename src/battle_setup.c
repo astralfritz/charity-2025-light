@@ -930,6 +930,11 @@ static u16 GetTrainerAFlag(void)
     return TRAINER_FLAGS_START + TRAINER_BATTLE_PARAM.opponentA;
 }
 
+static u16 GetTrainerALoopFlag(void)
+{
+    return TRAINER_LOOP_FLAGS_START + (TRAINER_BATTLE_PARAM.opponentA - 308);
+}
+
 static u16 GetTrainerBFlag(void)
 {
     return TRAINER_FLAGS_START + TRAINER_BATTLE_PARAM.opponentB;
@@ -1174,6 +1179,15 @@ static void SetBattledTrainersFlags(void)
     if (TRAINER_BATTLE_PARAM.opponentB != 0)
         FlagSet(GetTrainerBFlag());
     FlagSet(GetTrainerAFlag());
+
+    if (!FlagGet(GetTrainerALoopFlag()))
+    {
+        u16 battlesWon = VarGet(VAR_CHARITY_BATTLES_WON);
+        battlesWon++;
+        VarSet(VAR_CHARITY_BATTLES_WON, battlesWon);
+
+        FlagSet(GetTrainerALoopFlag());
+    }
 }
 
 static void UNUSED SetBattledTrainerFlag(void)
@@ -1184,6 +1198,11 @@ static void UNUSED SetBattledTrainerFlag(void)
 bool8 HasTrainerBeenFought(u16 trainerId)
 {
     return FlagGet(TRAINER_FLAGS_START + trainerId);
+}
+
+bool8 HasTrainerBeenFoughtInLoop(u16 trainerId)
+{
+    return FlagGet(TRAINER_LOOP_FLAGS_START + (trainerId - 308));
 }
 
 void SetTrainerFlag(u16 trainerId)

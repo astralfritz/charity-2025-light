@@ -440,7 +440,7 @@ static void Cmd_drawpartystatussummary(void);
 static void Cmd_hidepartystatussummary(void);
 static void Cmd_jumptocalledmove(void);
 static void Cmd_statusanimation(void);
-static void Cmd_unused_0x65(void);
+static void Cmd_incrementcharitytrainercount(void);
 static void Cmd_unused_0x66(void);
 static void Cmd_yesnobox(void);
 static void Cmd_cancelallactions(void);
@@ -699,7 +699,7 @@ void (*const gBattleScriptingCommandsTable[])(void) =
     Cmd_hidepartystatussummary,                  //0x62
     Cmd_jumptocalledmove,                        //0x63
     Cmd_statusanimation,                         //0x64
-    Cmd_unused_0x65,                             //0x65
+    Cmd_incrementcharitytrainercount,                   //0x65 // for charity event
     Cmd_unused_0x66,                             //0x66
     Cmd_yesnobox,                                //0x67
     Cmd_cancelallactions,                        //0x68
@@ -8693,8 +8693,10 @@ static void Cmd_statusanimation(void)
     }
 }
 
-static void Cmd_unused_0x65(void)
+static void Cmd_incrementcharitytrainercount(void)
 {
+    CMD_ARGS();
+    gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
 static void Cmd_unused_0x66(void)

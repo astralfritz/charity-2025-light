@@ -35,6 +35,20 @@ Charity_StartingZone_EventScript_GivePokemon::
 	release
 	end
 
+Charity_StartingZone_EventScript_BattlesWonSign::
+	goto_if_eq VAR_CHARITY_BATTLES_WON, 0, Charity_StartingZone_EventScript_BattlesWonSign_Zero
+	buffernumberstring STR_VAR_1, VAR_CHARITY_BATTLES_WON
+	lockall
+	msgbox Charity_StartingZone_Text_BattlesWon, MSGBOX_NPC
+	releaseall
+	end
+
+Charity_StartingZone_EventScript_BattlesWonSign_Zero::
+	lockall
+	msgbox Charity_StartingZone_Text_BattlesWon_Zero, MSGBOX_NPC
+	releaseall
+	end
+
 Charity_StartingZone_EventScript_StartAdventure::
 	goto_if_set FLAG_OPENED_LOOP_DIALOG, Charity_StartingZone_EventScript_StartAdventureSkip
 	setflag FLAG_OPENED_LOOP_DIALOG
@@ -123,6 +137,14 @@ Charity_StartingZone_Movement_Away_From_Door:
 Charity_StartingZone_Movement_Face_Down:
 	walk_in_place_down
 	step_end
+
+Charity_StartingZone_Text_BattlesWon:
+	.string "Number of battles won: {STR_VAR_1} of 27"
+	.string "$"
+
+Charity_StartingZone_Text_BattlesWon_Zero:
+	.string "Number of battles won: 0 of 27"
+	.string "$"
 
 Charity_StartingZone_Text_Pick_A_Mon:
 	.string "You must select your first POKéMON\n"
