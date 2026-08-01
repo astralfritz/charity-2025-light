@@ -471,3 +471,5 @@ const u32 gObjectEventPicMain_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna
 const u16 gObjectEventPalette_Ursaluna[] = INCBIN_U16("graphics/pokemon/ursaluna/overworld_normal.gbapal");
 const u32 gObjectEventPicMain_Victreebel[] = INCBIN_U32("graphics/pokemon/victreebel/overworld.4bpp");
 const u16 gObjectEventPalette_Victreebel[] = INCBIN_U16("graphics/pokemon/victreebel/overworld_normal.gbapal");
+const u32 gObjectEventPicMain_Oricorio_Pom_Pom[] = INCBIN_U32("graphics/pokemon/oricorio/pom_pom/overworld.4bpp");
+const u16 gObjectEventPalette_Oricorio_Pom_Pom[] = INCBIN_U16("graphics/pokemon/oricorio/pom_pom/overworld_normal.gbapal");

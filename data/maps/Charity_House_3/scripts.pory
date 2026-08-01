@@ -1,0 +1,49 @@
+raw `Charity_House_3_MapScripts::
+	.byte 0
+
+Charity_House_3_EventScript_Pastrieman::
+	trainerbattle_single TRAINER_CHARITY_Pastrieman, Charity_House_3_Text_PastriemanIntro, Charity_House_3_Text_PastriemanDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Pastrieman
+	goto_if_eq VAR_Pastrieman_POST_BATTLE, 0, Charity_House_3_EventScript_Pastrieman_POST_BATTLE_1
+	goto_if_eq VAR_Pastrieman_POST_BATTLE, 1, Charity_House_3_EventScript_Pastrieman_POST_BATTLE_2
+	goto_if_eq VAR_Pastrieman_POST_BATTLE, 2, Charity_House_3_EventScript_Pastrieman_POST_BATTLE_3
+	release
+	end
+
+Charity_House_3_EventScript_Pastrieman_POST_BATTLE_1::
+	setvar VAR_Pastrieman_POST_BATTLE, 1
+	msgbox Charity_House_3_Text_PastriemanPostBattle_1, MSGBOX_NPC
+	releaseall
+	end
+
+Charity_House_3_EventScript_Pastrieman_POST_BATTLE_2::
+	setvar VAR_Pastrieman_POST_BATTLE, 2
+	msgbox Charity_House_3_Text_PastriemanPostBattle_2, MSGBOX_NPC
+	releaseall
+	end
+	
+Charity_House_3_EventScript_Pastrieman_POST_BATTLE_3::
+	setvar VAR_Pastrieman_POST_BATTLE, 0
+	msgbox Charity_House_3_Text_PastriemanPostBattle_3, MSGBOX_NPC
+	releaseall
+	end`
+
+text Charity_House_3_Text_PastriemanIntro {
+    format("I'm sure you'll be impressed with my team.")
+}
+
+text Charity_House_3_Text_PastriemanDefeat {
+    format("Aren't you curious how I picked them?")
+}
+
+text Charity_House_3_Text_PastriemanPostBattle_1 {
+    format("I made a playlist that was the peanuts christmas album, zombie from the cranberries and a lot of Eminem, it's my Trail Mix.")
+}
+
+text Charity_House_3_Text_PastriemanPostBattle_2 {
+    format("I got the Yakuza and a jacuzzi mixed up and now I'm in hot water with the Japanese mafia.")
+}
+
+text Charity_House_3_Text_PastriemanPostBattle_3 {
+    format("Working all day to make custard, I love it when a flan comes together.")
+}

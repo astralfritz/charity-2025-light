@@ -1,0 +1,90 @@
+raw `Charity_Hallway1_MapScripts::
+	.byte 0
+
+Charity_Hallway1_EventScript_ToolBox::
+	lockall
+	msgbox Charity_Hallway1_Text_ToolBox, MSGBOX_DEFAULT
+	releaseall
+	return
+
+Charity_Hallway1_EventScript_WarpToPokecenter::
+	warp MAP_CHARITY_POKECENTER, 2, 6
+	waitstate
+
+Charity_Hallway1_EventScript_astralfritz::
+	trainerbattle_single TRAINER_CHARITY_astralfritz, Charity_Hallway1_Text_astralfritzIntro, Charity_Hallway1_Text_astralfritzDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_astralfritz
+	goto_if_eq VAR_astralfritz_POST_BATTLE, 0, Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_1
+	goto_if_eq VAR_astralfritz_POST_BATTLE, 1, Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_2
+	release
+	end
+
+Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_1::
+	setvar VAR_astralfritz_POST_BATTLE, 1
+	msgbox Charity_Hallway1_Text_astralfritzPostBattle_1, MSGBOX_NPC
+	releaseall
+	end
+
+Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_2::
+	setvar VAR_astralfritz_POST_BATTLE, 0
+	msgbox Charity_Hallway1_Text_astralfritzPostBattle_2, MSGBOX_NPC
+	releaseall
+	end
+
+Chairty_Hallway1_EventScript_Ruluan::
+	trainerbattle_single TRAINER_CHARITY_Ruluan, Charity_Hallway1_Text_RuluanIntro, Charity_Hallway1_Text_RuluanDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Ruluan
+	msgbox Charity_Hallway1_Text_RuluanPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Chairty_Hallway1_EventScript_Nate::
+	trainerbattle_single TRAINER_CHARITY_Nate, Charity_Hallway1_Text_NateIntro, Charity_Hallway1_Text_NateDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Nate
+	msgbox Charity_Hallway1_Text_NatePostBattle, MSGBOX_DEFAULT
+	release
+	end`
+
+text Charity_Hallway1_Text_astralfritzIntro {
+    format("I was told to tell you that some of these boxes might have stuff to help you!")
+}
+
+text Charity_Hallway1_Text_astralfritzDefeat {
+    format("Well it seems you've setup a good team! Don't forget to talk to people after you battle them!")
+}
+
+text Charity_Hallway1_Text_astralfritzPostBattle_1 {
+    format("You have to battle everyone to succeed! Think of it as a way to thank everyone for donating!")
+}
+
+text Charity_Hallway1_Text_astralfritzPostBattle_2 {
+    format("Don't worry if you lose! There might even be a little surprise for you if you have to restart. ;D")
+}
+
+text Charity_Hallway1_Text_ToolBox {
+    format("Just a bunch of tools in here. Nothing of use to you.")
+}
+
+text Charity_Hallway1_Text_RuluanIntro {
+	format("Not really sure what this is but I was happy to see the charity go so well!")
+}
+
+text Charity_Hallway1_Text_RuluanDefeat {
+    format("Thanks for putting together such a great event!")
+}
+
+text Charity_Hallway1_Text_RuluanPostBattle {
+    format("I'm probably just going to keep looking at this thing. Good luck!")
+}
+
+text Charity_Hallway1_Text_NateIntro {
+    format("You have to battle me for some awesome pro-gamer strats!")
+}
+
+text Charity_Hallway1_Text_NateDefeat {
+    format("See only a pro-gamer could beat this team!")
+}
+
+text Charity_Hallway1_Text_NatePostBattle {
+    format("I was told to tell you that some of these boxes might have stuff to help you!")
+}

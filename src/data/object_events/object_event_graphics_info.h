@@ -4745,3 +4745,21 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Victreebel = {
     .images = gObjectEventPicTable_Victreebel,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Oricorio_Pom_Pom = { 
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ORICORIO_POM_POM,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_2,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_Standard,
+    .images = gObjectEventPicTable_Oricorio_Pom_Pom,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};

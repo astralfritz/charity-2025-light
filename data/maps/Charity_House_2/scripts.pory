@@ -1,0 +1,59 @@
+raw `Charity_House_2_MapScripts::
+	.byte 0
+
+Charity_House_2_EventScript_MelodySera::
+	trainerbattle_single TRAINER_CHARITY_MelodySera, Charity_House_2_Text_MelodySeraIntro, Charity_House_2_Text_MelodySeraDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_MelodySera
+	msgbox Charity_House_2_Text_MelodySeraPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_House_2_EventScript_Enomorie::
+	trainerbattle_single TRAINER_CHARITY_Enomorie, Charity_House_2_Text_EnomorieIntro, Charity_House_2_Text_EnomorieDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Enomorie
+	msgbox Charity_House_2_Text_EnomoriePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_House_2_EventScript_Maddy::
+	trainerbattle_single TRAINER_CHARITY_Maddy, Charity_House_2_Text_MaddyIntro, Charity_House_2_Text_MaddyDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Maddy
+	msgbox Charity_House_2_Text_MaddyPostBattle, MSGBOX_DEFAULT
+	release
+	end`
+
+text Charity_House_2_Text_MelodySeraIntro {
+    format("You already know what you're in for. Let's go!")
+}
+
+text Charity_House_2_Text_MelodySeraDefeat {
+    format("My SABELEYES!")
+}
+
+text Charity_House_2_Text_MelodySeraPostBattle {
+    format("They were really cute though right?")
+}
+
+text Charity_House_2_Text_EnomorieIntro {
+    format("My beautiful POKéMON will take you out!")
+}
+
+text Charity_House_2_Text_EnomorieDefeat {
+    format("That was an Alolan one too!")
+}
+
+text Charity_House_2_Text_EnomoriePostBattle {
+    format("You are always prepped for battle. Ready to fight for any cause!")
+}
+
+text Charity_House_2_Text_MaddyIntro {
+    format("You did a great job running the charity!")
+}
+
+text Charity_House_2_Text_MaddyDefeat {
+    format("This was fun! We should do it again!")
+}
+
+text Charity_House_2_Text_MaddyPostBattle {
+    format("Keep being fantastic!")
+}

@@ -233,7 +233,7 @@ void NewGameInitData(void)
     ResetGabbyAndTy();
     ClearSecretBases();
     ClearBerryTrees();
-    SetMoney(&gSaveBlock1Ptr->money, 3000);
+    SetMoney(&gSaveBlock1Ptr->money, 50000);
     SetCoins(0);
     ResetLinkContestBoolean();
     ResetGameStats();
@@ -291,7 +291,7 @@ void NewLoopInitData(void)
     gSaveBlock2Ptr->specialSaveWarpFlags = 0;
     gSaveBlock2Ptr->gcnLinkFlags = 0;
     InitLoopData();
-    SetMoney(&gSaveBlock1Ptr->money, 3000);
+    SetMoney(&gSaveBlock1Ptr->money, 50000);
     ResetLinkContestBoolean();
     ResetGameStats();
     gPlayerPartyCount = 0;

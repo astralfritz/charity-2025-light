@@ -25,7 +25,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Charity_Hallway1_EventScript_Lobo",
+      "script": "Charity_Pokemart_EventScript_Lobo",
       "flag": "0"
     },
     {
@@ -39,7 +39,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Charity_Hallway1_EventScript_Ozlaine",
+      "script": "Charity_Pokemart_EventScript_Ozlaine",
       "flag": "0"
     },
     {
@@ -53,7 +53,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Charity_Hallway1_EventScript_ImpGirlee",
+      "script": "Charity_Pokemart_EventScript_ImpGirlee",
       "flag": "0"
     },
     {
@@ -67,7 +67,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Charity_Hallway1_EventScript_Prue",
+      "script": "Charity_Pokemart_EventScript_Prue",
       "flag": "0"
     }
   ],

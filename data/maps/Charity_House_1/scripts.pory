@@ -1,0 +1,40 @@
+raw `Charity_House_1_MapScripts::
+	.byte 0
+
+Charity_House_1_EventScript_bambijoe::
+	trainerbattle_single TRAINER_CHARITY_bambijoe, Charity_House_1_Text_bambijoeIntro, Charity_House_1_Text_bambijoeDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_bambijoe
+	msgbox Charity_House_1_Text_bambijoePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_House_1_EventScript_Sean::
+	trainerbattle_single TRAINER_CHARITY_Sean, Charity_House_1_Text_SeanIntro, Charity_House_1_Text_SeanDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Sean
+	msgbox Charity_House_1_Text_SeanPostBattle, MSGBOX_DEFAULT
+	release
+	end`
+
+text Charity_House_1_Text_bambijoeIntro {
+    format("Raising money for animals AND working alongside GDQ? What can't you do?")
+}
+
+text Charity_House_1_Text_bambijoeDefeat {
+    format("Lose to me apparently.")
+}
+
+text Charity_House_1_Text_bambijoePostBattle {
+    format("Thanks for all your support! It means a lot to everyone.")
+}
+
+text Charity_House_1_Text_SeanIntro {
+    format("I hope you're ready for this!")
+}
+
+text Charity_House_1_Text_SeanDefeat {
+    format("Man, that went worse than I thought it would.")
+}
+
+text Charity_House_1_Text_SeanPostBattle {
+    format("You really are doing amazing stuff! Thanks again!")
+}

@@ -1,0 +1,197 @@
+raw `Chairty_Hallway2_MapScripts::
+	.byte 0
+
+Charity_Hallway1_EventScript_CupOhJoe::
+	trainerbattle_single TRAINER_CHARITY_CupOhJoe, Charity_Hallway1_Text_CupOhJoeIntro, Charity_Hallway1_Text_CupOhJoeDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_CupOhJoe
+	msgbox Charity_Hallway1_Text_CupOhJoePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Hallway1_EventScript_Gamekxnd::
+	trainerbattle_single TRAINER_CHARITY_Gamekxnd, Charity_Hallway1_Text_GamekxndIntro, Charity_Hallway1_Text_GamekxndDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Gamekxnd
+	msgbox Charity_Hallway1_Text_GamekxndPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Hallway1_EventScript_Nicolowlow::
+	trainerbattle_single TRAINER_CHARITY_Nicolowlow, Charity_Hallway1_Text_NicolowlowIntro, Charity_Hallway1_Text_NicolowlowDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Nicolowlow
+	msgbox Charity_Hallway1_Text_NicolowlowPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Hallway1_EventScript_digi::
+	trainerbattle_single TRAINER_CHARITY_digi, Charity_Hallway1_Text_digiIntro, Charity_Hallway1_Text_digiDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_digi
+	msgbox Charity_Hallway1_Text_digiPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Hallway1_EventScript_AxoloDyl::
+	trainerbattle_single TRAINER_CHARITY_AxoloDyl, Charity_Hallway1_Text_AxoloDylIntro, Charity_Hallway1_Text_AxoloDylDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_AxoloDyl
+	goto_if_eq VAR_AxoloDyl_POST_BATTLE, 0, Charity_Hallway1_EventScript_AxoloDyl_POST_BATTLE_1
+	goto_if_eq VAR_AxoloDyl_POST_BATTLE, 1, Charity_Hallway1_EventScript_AxoloDyl_POST_BATTLE_2
+	release
+	end
+
+Charity_Hallway1_EventScript_AxoloDyl_POST_BATTLE_1::
+	setvar VAR_AxoloDyl_POST_BATTLE, 1
+	msgbox Charity_Hallway1_Text_AxoloDylPostBattle_1, MSGBOX_NPC
+	releaseall
+	end
+
+Charity_Hallway1_EventScript_AxoloDyl_POST_BATTLE_2::
+	msgbox Charity_Hallway1_Text_AxoloDylPostBattle_2, MSGBOX_NPC
+	releaseall
+	end
+
+Charity_Hallway1_EventScript_Clover::
+	trainerbattle_single TRAINER_CHARITY_Clover, Charity_Hallway1_Text_CloverIntro, Charity_Hallway1_Text_CloverDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Clover
+	goto_if_eq VAR_Clover_POST_BATTLE, 0, Charity_Hallway1_EventScript_Clover_POST_BATTLE_1
+	goto_if_eq VAR_Clover_POST_BATTLE, 1, Charity_Hallway1_EventScript_Clover_POST_BATTLE_2
+	goto_if_eq VAR_Clover_POST_BATTLE, 2, Charity_Hallway1_EventScript_Clover_POST_BATTLE_3
+	release
+	end
+
+Charity_Hallway1_EventScript_Clover_POST_BATTLE_1::
+	setvar VAR_Clover_POST_BATTLE, 1
+	msgbox Charity_Hallway1_Text_CloverPostBattle_1, MSGBOX_NPC
+	releaseall
+	end
+
+Charity_Hallway1_EventScript_Clover_POST_BATTLE_2::
+	setvar VAR_Clover_POST_BATTLE, 2
+	msgbox Charity_Hallway1_Text_CloverPostBattle_2, MSGBOX_NPC
+	releaseall
+	end
+
+Charity_Hallway1_EventScript_Clover_POST_BATTLE_3::
+	msgbox Charity_Hallway1_Text_CloverPostBattle_3, MSGBOX_NPC
+	releaseall
+	end
+
+Charity_Hallway1_EventScript_Chibi::
+	trainerbattle_single TRAINER_CHARITY_Chibi, Charity_Hallway1_Text_ChibiIntro, Charity_Hallway1_Text_ChibiDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Chibi
+	msgbox Charity_Hallway1_Text_ChibiPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Hallway1_EventScript_Gwen::
+	trainerbattle_single TRAINER_CHARITY_Gwen, Charity_Hallway1_Text_GwenIntro, Charity_Hallway1_Text_GwenDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Gwen
+	msgbox Charity_Hallway1_Text_GwenPostBattle, MSGBOX_DEFAULT
+	release
+	end`
+
+text Charity_Hallway1_Text_CupOhJoeIntro {
+    format("How cute do you think I can make Pikachu look?")
+}
+
+text Charity_Hallway1_Text_CupOhJoeDefeat {
+    format("Glad I've been able to help you with the events! Keep up the good work!")
+}
+
+text Charity_Hallway1_Text_CupOhJoePostBattle {
+    format("Pikachu really is a cutie.")
+}
+
+text Charity_Hallway1_Text_GamekxndIntro {
+    format("You always find a way to help out.")
+}
+
+text Charity_Hallway1_Text_GamekxndDefeat {
+    format("Can't wait to see what you do next!")
+}
+
+text Charity_Hallway1_Text_GamekxndPostBattle {
+    format("Make sure you thank everyone!")
+}
+
+text Charity_Hallway1_Text_NicolowlowIntro {
+    format("What do you think of my URSALUNA?")
+}
+
+text Charity_Hallway1_Text_NicolowlowDefeat {
+    format("Now I have to run to the POKéCENTER!")
+}
+
+text Charity_Hallway1_Text_NicolowlowPostBattle {
+    format("Thanks for raising money for the Humane Society!")
+}
+
+text Charity_Hallway1_Text_digiIntro {
+    format("Do you like my VICTREEBEL?")
+}
+
+text Charity_Hallway1_Text_digiDefeat {
+    format("They were helping me pick berries. They kept eating them though.")
+}
+
+text Charity_Hallway1_Text_digiPostBattle {
+    format("I was hoping to have a berry for the battle but they kept eating them all.")
+}
+
+text Charity_Hallway1_Text_AxoloDylIntro {
+    format("Don't forget to take some time for yourself. Relaxing by the water is nice.")
+}
+
+text Charity_Hallway1_Text_AxoloDylDefeat {
+    format("Now I'm going to need chill out!")
+}
+
+text Charity_Hallway1_Text_AxoloDylPostBattle_1 {
+    format("Good luck!")
+}
+
+text Charity_Hallway1_Text_AxoloDylPostBattle_2 {
+    format("... ... ... ...")
+}
+
+text Charity_Hallway1_Text_CloverIntro {
+    format("Moving is a great way to keep the energy flowing!")
+}
+
+text Charity_Hallway1_Text_CloverDefeat {
+    format("This won't keep me down for long!")
+}
+
+text Charity_Hallway1_Text_CloverPostBattle_1 {
+    format("Gotta be quicker than that!")
+}
+
+text Charity_Hallway1_Text_CloverPostBattle_2 {
+    format("Almost got me!")
+}
+
+text Charity_Hallway1_Text_CloverPostBattle_3 {
+    format("Awww! You caught me.")
+}
+
+text Charity_Hallway1_Text_ChibiIntro {
+    format("Bird POKéMON are pretty great!")
+}
+
+text Charity_Hallway1_Text_ChibiDefeat {
+    format("Ah my parents bird POKéMON!")
+}
+
+text Charity_Hallway1_Text_ChibiPostBattle {
+    format("Just kidding. These were all mine. I guess I need to catch more though!")
+}
+
+text Charity_Hallway1_Text_GwenIntro {
+    format("Don't think I'll take it easy on just because you did a charity event!")
+}
+
+text Charity_Hallway1_Text_GwenDefeat {
+    format("I didn't even hold back.")
+}
+
+text Charity_Hallway1_Text_GwenPostBattle {
+    format("You really are good at this! Thanks again for the event!")
+}

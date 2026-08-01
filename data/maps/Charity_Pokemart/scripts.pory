@@ -1,0 +1,92 @@
+raw `Charity_Pokemart_MapScripts::
+	.byte 0
+
+Charity_Pokemart_EventScript_Ozlaine::
+	trainerbattle_single TRAINER_CHARITY_Ozlaine, Charity_Pokemart_Text_OzlaineIntro, Charity_Pokemart_Text_OzlaineDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Ozlaine
+	msgbox Charity_Pokemart_Text_OzlainePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Pokemart_EventScript_ImpGirlee::
+	trainerbattle_single TRAINER_CHARITY_ImpGirlee, Charity_Pokemart_Text_ImpGirleeIntro, Charity_Pokemart_Text_ImpGirleeDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_ImpGirlee
+	msgbox Charity_Pokemart_Text_ImpGirleePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Pokemart_EventScript_Lobo::
+	trainerbattle_single TRAINER_CHARITY_Lobo, Charity_Pokemart_Text_LoboIntro, Charity_Pokemart_Text_LoboDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Lobo
+	msgbox Charity_Pokemart_Text_LoboPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+    .align 2
+Charity_Pokemart:
+	.2byte ITEM_FULL_RESTORE
+    .2byte ITEM_REVIVE
+    .2byte ITEM_MAX_REVIVE
+    .2byte ITEM_MASTER_BALL
+	pokemartlistend`
+
+script Charity_Pokemart_EventScript_Prue {
+	trainerbattle_single(TRAINER_CHARITY_Prue, Charity_Pokemart_Text_PrueIntro, Charity_Pokemart_Text_PrueDefeat)
+	msgbox(Charity_Pokemart_Text_PruePostBattle, MSGBOX_DEFAULT)
+    pokemart(Charity_Pokemart)
+    msgbox(Charity_Pokemart_Text_Thanks, MSGBOX_DEFAULT)
+	release
+	end
+}
+
+text Charity_Pokemart_Text_OzlaineIntro {
+    format("I was hoping Potions would be cheap!")
+}
+
+text Charity_Pokemart_Text_OzlaineDefeat {
+    format("They wouldn't sell me anything!")
+}
+
+text Charity_Pokemart_Text_OzlainePostBattle {
+    format("I heard they will give you the items for free if you beat them.")
+}
+
+text Charity_Pokemart_Text_ImpGirleeIntro {
+    format("I wonder what kind of stuff they have in these fridges?")
+}
+
+text Charity_Pokemart_Text_ImpGirleeDefeat {
+    format("You think they have Dr. Pepper?")
+}
+
+text Charity_Pokemart_Text_ImpGirleePostBattle {
+    format("I can't find any Dr. Pepper here!")
+}
+
+text Charity_Pokemart_Text_LoboIntro {
+    format("You better watch it! I'm ready to take you down!")
+}
+
+text Charity_Pokemart_Text_LoboDefeat {
+    format("I guess I was the one taken down!")
+}
+
+text Charity_Pokemart_Text_LoboPostBattle {
+    format("Good luck with the rest of this! It's been really fun helping out!")
+}
+
+text Charity_Pokemart_Text_PrueIntro {
+    format("If you want to shop you have to win!")
+}
+
+text Charity_Pokemart_Text_PrueDefeat {
+    format("Okay okay! You can have the items!")
+}
+
+text Charity_Pokemart_Text_PruePostBattle {
+    format("Don't worry about the cost today!")
+}
+
+text Charity_Pokemart_Text_Thanks {
+    format("Thanks again for hosting the charity event!")
+}

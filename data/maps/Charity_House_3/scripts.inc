@@ -1,57 +1,85 @@
+# 1 "data/maps/Charity_House_3/scripts.pory"
 Charity_House_3_MapScripts::
+# 2 "data/maps/Charity_House_3/scripts.pory"
 	.byte 0
+# 3 "data/maps/Charity_House_3/scripts.pory"
 
-Charity_Hallway1_EventScript_Pastrieman::
-	trainerbattle_single TRAINER_CHARITY_Pastrieman, Charity_Hallway1_Text_PastriemanIntro, Charity_Hallway1_Text_PastriemanDefeat
+# 4 "data/maps/Charity_House_3/scripts.pory"
+Charity_House_3_EventScript_Pastrieman::
+# 5 "data/maps/Charity_House_3/scripts.pory"
+	trainerbattle_single TRAINER_CHARITY_Pastrieman, Charity_House_3_Text_PastriemanIntro, Charity_House_3_Text_PastriemanDefeat
+# 6 "data/maps/Charity_House_3/scripts.pory"
 	setvar VAR_0x8004, TRAINER_CHARITY_Pastrieman
-	goto_if_eq VAR_Pastrieman_POST_BATTLE, 0, Charity_Hallway1_EventScript_Pastrieman_POST_BATTLE_1
-	goto_if_eq VAR_Pastrieman_POST_BATTLE, 1, Charity_Hallway1_EventScript_Pastrieman_POST_BATTLE_2
-	goto_if_eq VAR_Pastrieman_POST_BATTLE, 2, Charity_Hallway1_EventScript_Pastrieman_POST_BATTLE_3
+# 7 "data/maps/Charity_House_3/scripts.pory"
+	goto_if_eq VAR_Pastrieman_POST_BATTLE, 0, Charity_House_3_EventScript_Pastrieman_POST_BATTLE_1
+# 8 "data/maps/Charity_House_3/scripts.pory"
+	goto_if_eq VAR_Pastrieman_POST_BATTLE, 1, Charity_House_3_EventScript_Pastrieman_POST_BATTLE_2
+# 9 "data/maps/Charity_House_3/scripts.pory"
+	goto_if_eq VAR_Pastrieman_POST_BATTLE, 2, Charity_House_3_EventScript_Pastrieman_POST_BATTLE_3
+# 10 "data/maps/Charity_House_3/scripts.pory"
 	release
+# 11 "data/maps/Charity_House_3/scripts.pory"
 	end
+# 12 "data/maps/Charity_House_3/scripts.pory"
 
-Charity_Hallway1_EventScript_Pastrieman_POST_BATTLE_1::
+# 13 "data/maps/Charity_House_3/scripts.pory"
+Charity_House_3_EventScript_Pastrieman_POST_BATTLE_1::
+# 14 "data/maps/Charity_House_3/scripts.pory"
 	setvar VAR_Pastrieman_POST_BATTLE, 1
-	msgbox Charity_Hallway1_Text_PastriemanPostBattle_1, MSGBOX_NPC
+# 15 "data/maps/Charity_House_3/scripts.pory"
+	msgbox Charity_House_3_Text_PastriemanPostBattle_1, MSGBOX_NPC
+# 16 "data/maps/Charity_House_3/scripts.pory"
 	releaseall
+# 17 "data/maps/Charity_House_3/scripts.pory"
 	end
+# 18 "data/maps/Charity_House_3/scripts.pory"
 
-Charity_Hallway1_EventScript_Pastrieman_POST_BATTLE_2::
+# 19 "data/maps/Charity_House_3/scripts.pory"
+Charity_House_3_EventScript_Pastrieman_POST_BATTLE_2::
+# 20 "data/maps/Charity_House_3/scripts.pory"
 	setvar VAR_Pastrieman_POST_BATTLE, 2
-	msgbox Charity_Hallway1_Text_PastriemanPostBattle_2, MSGBOX_NPC
+# 21 "data/maps/Charity_House_3/scripts.pory"
+	msgbox Charity_House_3_Text_PastriemanPostBattle_2, MSGBOX_NPC
+# 22 "data/maps/Charity_House_3/scripts.pory"
 	releaseall
+# 23 "data/maps/Charity_House_3/scripts.pory"
 	end
+# 24 "data/maps/Charity_House_3/scripts.pory"
 	
-Charity_Hallway1_EventScript_Pastrieman_POST_BATTLE_3::
+# 25 "data/maps/Charity_House_3/scripts.pory"
+Charity_House_3_EventScript_Pastrieman_POST_BATTLE_3::
+# 26 "data/maps/Charity_House_3/scripts.pory"
 	setvar VAR_Pastrieman_POST_BATTLE, 0
-	msgbox Charity_Hallway1_Text_PastriemanPostBattle_3, MSGBOX_NPC
+# 27 "data/maps/Charity_House_3/scripts.pory"
+	msgbox Charity_House_3_Text_PastriemanPostBattle_3, MSGBOX_NPC
+# 28 "data/maps/Charity_House_3/scripts.pory"
 	releaseall
+# 29 "data/maps/Charity_House_3/scripts.pory"
 	end
 
-Charity_Hallway1_Text_PastriemanIntro:
-	.string "I'm sure you'll be impressed\n"
-	.string "with my team."
-	.string "$"
+Charity_House_3_Text_PastriemanIntro::
+# 31 "data/maps/Charity_House_3/scripts.pory"
+	.string "I'm sure you'll be impressed with my\n"
+	.string "team.$"
 
-Charity_Hallway1_Text_PastriemanDefeat:
-	.string "Aren't you curious how I picked\n"
-	.string "them?"
-	.string "$"
+Charity_House_3_Text_PastriemanDefeat::
+# 35 "data/maps/Charity_House_3/scripts.pory"
+	.string "Aren't you curious how I picked them?$"
 
-Charity_Hallway1_Text_PastriemanPostBattle_1:
-	.string "I made a playlist that was the\n"
-	.string "peanuts christmas album, zombie\p"
-	.string "from the cranberries and a lot of\n"
-	.string "Eminem, it's my Trail Mix."
-	.string "$"
+Charity_House_3_Text_PastriemanPostBattle_1::
+# 39 "data/maps/Charity_House_3/scripts.pory"
+	.string "I made a playlist that was the peanuts\n"
+	.string "christmas album, zombie from the\l"
+	.string "cranberries and a lot of Eminem, it's my\l"
+	.string "Trail Mix.$"
 
-Charity_Hallway1_Text_PastriemanPostBattle_2:
-	.string "I got the Yakuza and a jacuzzi mixed\n"
-	.string "up and now I'm in hot water with the\p"
-	.string "Japanese mafia."
-	.string "$"
+Charity_House_3_Text_PastriemanPostBattle_2::
+# 43 "data/maps/Charity_House_3/scripts.pory"
+	.string "I got the Yakuza and a jacuzzi mixed up\n"
+	.string "and now I'm in hot water with the\l"
+	.string "Japanese mafia.$"
 
-Charity_Hallway1_Text_PastriemanPostBattle_3:
-	.string "Working all day to make custard,\n"
-	.string "I love it when a flan comes together."
-	.string "$"
+Charity_House_3_Text_PastriemanPostBattle_3::
+# 47 "data/maps/Charity_House_3/scripts.pory"
+	.string "Working all day to make custard, I love\n"
+	.string "it when a flan comes together.$"

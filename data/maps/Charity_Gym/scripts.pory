@@ -1,0 +1,71 @@
+raw `Charity_Gym_MapScripts::
+	.byte 0
+
+Charity_Gym_EventScript_Light::
+	goto_if_le VAR_CHARITY_BATTLES_WON, 27, Charity_Gym_EventScript_Light_ThankEveryone
+	trainerbattle_single TRAINER_CHARITY_Light, Charity_Gym_Text_LightIntro, Charity_Gym_Text_LightDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Light
+	msgbox Charity_Gym_Text_LightPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Gym_EventScript_Light_ThankEveryone::
+	lockall
+	msgbox Charity_Gym_Text_ThankEveryone, MSGBOX_NPC
+	special StartNewLoop
+	release
+	end
+
+Charity_Gym_EventScript_Zelder::
+	trainerbattle_single TRAINER_CHARITY_Zelder, Charity_Gym_Text_ZelderIntro, Charity_Gym_Text_ZelderDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_Zelder
+	msgbox Charity_Gym_Text_ZelderPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+Charity_Gym_EventScript_simquall::
+	trainerbattle_single TRAINER_CHARITY_simquall, Charity_Gym_Text_simquallIntro, Charity_Gym_Text_simquallDefeat
+	setvar VAR_0x8004, TRAINER_CHARITY_simquall
+	msgbox Charity_Gym_Text_simquallPostBattle, MSGBOX_DEFAULT
+	release
+	end`
+
+text Charity_Gym_Text_LightIntro {
+    format("Thanks for thanking everyone. It meant a lot to have all the support from everyone for this. Now let's get this battle started!")
+}
+
+text Charity_Gym_Text_LightDefeat {
+    format("Congrats on winning all the battles!")
+}
+
+text Charity_Gym_Text_LightPostBattle {
+    format("You did it! Thanks for playing and let's do this again soon!")
+}
+
+text Charity_Gym_Text_ThankEveryone {
+    format("You need to thank everyone before you can fight me! Come back when you've beaten everyone!")
+}
+
+text Charity_Gym_Text_ZelderIntro {
+    format("To fight the leader you'll have to get through me!")
+}
+
+text Charity_Gym_Text_ZelderDefeat {
+    format("You better have liked my team though!")
+}
+
+text Charity_Gym_Text_ZelderPostBattle {
+    format("This was a good time! Hopefully we can do another one!")
+}
+
+text Charity_Gym_Text_simquallIntro {
+    format("You're getting close to the end! Have you figured out the ending yet?")
+}
+
+text Charity_Gym_Text_simquallDefeat {
+    format("The leader awaits!")
+}
+
+text Charity_Gym_Text_simquallPostBattle {
+    format("So glad the event went how it did! Did you see how scary my TYPHLOSION was?")
+}
