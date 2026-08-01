@@ -4424,10 +4424,10 @@
     {
       "id": "LAYOUT_Charity_Hallway1",
       "name": "Charity_Hallway1_Layout",
-      "width": 29,
-      "height": 27,
+      "width": 14,
+      "height": 10,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BikeShop",
+      "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/Charity_Hallway1/border.bin",
       "blockdata_filepath": "data/layouts/Charity_Hallway1/map.bin"
     },

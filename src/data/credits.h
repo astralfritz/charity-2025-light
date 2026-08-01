@@ -1,6 +1,10 @@
 enum
 {
     PAGE_TITLE,
+    PAGE_HACK,
+    PAGE_HACK_TESTERS,
+    PAGE_HACK_DEVELOPER,
+    PAGE_HACK_IN_MEMORY_OF,
     PAGE_DIRECTOR,
     PAGE_ART_DIRECTOR,
     PAGE_WORLD_DIRECTOR,
@@ -221,9 +225,28 @@ static const u8 sCreditsText_MotoyasuTojima[]                 = _("Motoyasu Toji
 static const u8 sCreditsText_NicolaPrattBarlow[]              = _("Nicola Pratt-Barlow");
 static const u8 sCreditsText_ShellieDow[]                     = _("Shellie Dow");
 static const u8 sCreditsText_ErikJohnson[]                    = _("Erik Johnson");
+// Charity Credits
+static const u8 sCreditsText_HackTitle[]                      = _("CHARITY MILESTONE");
+static const u8 sCreditsText_ThankYouForPlaying[]             = _("Thank you for playing!");
+static const u8 sCreditsText_Testers[]                        = _("Testers");
+static const u8 sCreditsText_ZelderFreak[]                    = _("ZelderFreak");
+static const u8 sCreditsText_imasoulman517[]                  = _("imasoulman517");
+static const u8 sCreditsText_Developer[]                      = _("Developer");
+static const u8 sCreditsText_astralfritz[]                    = _("astralfritz");
+static const u8 sCreditsText_InMemoryOf[]                     = _("In Loving Memory of");
+static const u8 sCreditsText_Tobi[]                           = _("Tobi (she/her)");
 static const struct CreditsEntry sCreditsEntry_EmptyString                      = { 0, FALSE, sCreditsText_EmptyString};
 static const struct CreditsEntry sCreditsEntry_PkmnEmeraldVersion               = { 7,  TRUE, sCreditsText_PkmnEmeraldVersion};
 static const struct CreditsEntry sCreditsEntry_Credits                          = {11,  TRUE, sCreditsText_Credits};
+static const struct CreditsEntry sCreditsEntry_HackTitle                        = {11,  TRUE, sCreditsText_HackTitle};
+static const struct CreditsEntry sCreditsEntry_ThankYouForPlaying               = {11,  TRUE, sCreditsText_ThankYouForPlaying};
+static const struct CreditsEntry sCreditsEntry_Testers                          = {11,  TRUE, sCreditsText_Testers};
+static const struct CreditsEntry sCreditsEntry_ZelderFreak                      = {11,  FALSE, sCreditsText_ZelderFreak};
+static const struct CreditsEntry sCreditsEntry_imasoulman517                    = {11,  FALSE, sCreditsText_imasoulman517};
+static const struct CreditsEntry sCreditsEntry_Developer                        = {11,  TRUE, sCreditsText_Developer};
+static const struct CreditsEntry sCreditsEntry_astralfritz                      = {11,  FALSE, sCreditsText_astralfritz};
+static const struct CreditsEntry sCreditsEntry_InMemoryOf                       = {11,  TRUE, sCreditsText_InMemoryOf};
+static const struct CreditsEntry sCreditsEntry_Tobi                             = {11,  FALSE, sCreditsText_Tobi};
 static const struct CreditsEntry sCreditsEntry_ExecutiveDirector                = { 8,  TRUE, sCreditsText_ExecutiveDirector};
 static const struct CreditsEntry sCreditsEntry_Director                         = {12,  TRUE, sCreditsText_Director};
 static const struct CreditsEntry sCreditsEntry_ArtDirector                      = {10,  TRUE, sCreditsText_ArtDirector};
@@ -388,6 +411,34 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         &sCreditsEntry_PkmnEmeraldVersion,
         &sCreditsEntry_Credits,
+        _,
+        _
+    },
+    [PAGE_HACK] = {
+        _,
+        &sCreditsEntry_HackTitle,
+        &sCreditsEntry_ThankYouForPlaying,
+        _,
+        _
+    },
+    [PAGE_HACK_TESTERS] = {
+        _,
+        &sCreditsEntry_Testers,
+        &sCreditsEntry_ZelderFreak,
+        &sCreditsEntry_imasoulman517,
+        _
+    },
+    [PAGE_HACK_DEVELOPER] = {
+        _,
+        &sCreditsEntry_Developer,
+        &sCreditsEntry_astralfritz,
+        _,
+        _
+    },
+    [PAGE_HACK_IN_MEMORY_OF] = {
+        _,
+        &sCreditsEntry_InMemoryOf,
+        &sCreditsEntry_Tobi,
         _,
         _
     },

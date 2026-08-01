@@ -1,10 +1,6 @@
 raw `Charity_Pokecenter_MapScripts::
 	.byte 0
 
-Charity_Pokecenter_EventScript_WarpToPokecenter::
-	warp MAP_Charity_Hallway1, 26, 5
-	waitstate
-
 Charity_Pokecenter_EventScript_Hannahhanz::
 	trainerbattle_single TRAINER_CHARITY_Hannahhanz, Charity_Pokecenter_Text_HannahhanzIntro, Charity_Pokecenter_Text_HannahhanzDefeat
 	setvar VAR_0x8004, TRAINER_CHARITY_Hannahhanz
@@ -67,6 +63,13 @@ Charity_Pokecenter_Movement_Face_Down:
 	walk_in_place_down
 	step_end`
 
+script Charity_Pokecenter_EventScript_Book {
+	lockall
+	msgbox(Charity_Pokecenter_Text_Book, MSGBOX_DEFAULT)
+	releaseall
+	return
+}
+
 text Charity_Pokecenter_Text_Healed {
     format("Your POKéMON have been healed.")
 }
@@ -121,4 +124,8 @@ text Charity_Pokecenter_Text_Tsuki_RaeDefeat {
 
 text Charity_Pokecenter_Text_Tsuki_RaePostBattle {
     format("Make sure to give your cats some pets from me!")
+}
+
+text Charity_Pokecenter_Text_Book {
+	format("You find a book about how to draw dragons. Seems like an odd choice for a POK\eCENTER though.")
 }

@@ -90,3 +90,8 @@ bool8 SetCB2WhiteOut(void)
     SetMainCallback2(CB2_WhiteOut);
     return FALSE;
 }
+
+void StartCredits(void) 
+{
+    SetMainCallback2(CB2_StartCreditsSequence);
+}

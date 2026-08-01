@@ -1,36 +1,6 @@
 raw `Charity_Hallway1_MapScripts::
 	.byte 0
 
-Charity_Hallway1_EventScript_ToolBox::
-	lockall
-	msgbox Charity_Hallway1_Text_ToolBox, MSGBOX_DEFAULT
-	releaseall
-	return
-
-Charity_Hallway1_EventScript_WarpToPokecenter::
-	warp MAP_CHARITY_POKECENTER, 2, 6
-	waitstate
-
-Charity_Hallway1_EventScript_astralfritz::
-	trainerbattle_single TRAINER_CHARITY_astralfritz, Charity_Hallway1_Text_astralfritzIntro, Charity_Hallway1_Text_astralfritzDefeat
-	setvar VAR_0x8004, TRAINER_CHARITY_astralfritz
-	goto_if_eq VAR_astralfritz_POST_BATTLE, 0, Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_1
-	goto_if_eq VAR_astralfritz_POST_BATTLE, 1, Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_2
-	release
-	end
-
-Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_1::
-	setvar VAR_astralfritz_POST_BATTLE, 1
-	msgbox Charity_Hallway1_Text_astralfritzPostBattle_1, MSGBOX_NPC
-	releaseall
-	end
-
-Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_2::
-	setvar VAR_astralfritz_POST_BATTLE, 0
-	msgbox Charity_Hallway1_Text_astralfritzPostBattle_2, MSGBOX_NPC
-	releaseall
-	end
-
 Chairty_Hallway1_EventScript_Ruluan::
 	trainerbattle_single TRAINER_CHARITY_Ruluan, Charity_Hallway1_Text_RuluanIntro, Charity_Hallway1_Text_RuluanDefeat
 	setvar VAR_0x8004, TRAINER_CHARITY_Ruluan
@@ -45,8 +15,37 @@ Chairty_Hallway1_EventScript_Nate::
 	release
 	end`
 
+script Charity_Hallway1_EventScript_Book {
+	lockall
+	msgbox(Charity_Hallway1_Text_Book, MSGBOX_DEFAULT)
+	releaseall
+	return
+}
+
+script Charity_Hallway1_EventScript_astralfritz {
+	trainerbattle_single(TRAINER_CHARITY_astralfritz, Charity_Hallway1_Text_astralfritzIntro, Charity_Hallway1_Text_astralfritzDefeat)
+	goto_if_eq(VAR_astralfritz_POST_BATTLE, 0, Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_1)
+	goto_if_eq(VAR_astralfritz_POST_BATTLE, 1, Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_2)
+	release
+	end
+}
+
+script Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_1 {
+	setvar(VAR_astralfritz_POST_BATTLE, 1)
+	msgbox(Charity_Hallway1_Text_astralfritzPostBattle_1, MSGBOX_NPC)
+	releaseall
+	end
+}
+
+script Charity_Hallway1_EventScript_astralfritz_POST_BATTLE_2 {
+	setvar(VAR_astralfritz_POST_BATTLE, 0)
+	msgbox(Charity_Hallway1_Text_astralfritzPostBattle_2, MSGBOX_NPC)
+	releaseall
+	end
+}
+
 text Charity_Hallway1_Text_astralfritzIntro {
-    format("I was told to tell you that some of these boxes might have stuff to help you!")
+    format("Welcome to the battles! If you have questions then you can talk to me. First though, why don't we start with a battle of our own?")
 }
 
 text Charity_Hallway1_Text_astralfritzDefeat {
@@ -61,8 +60,8 @@ text Charity_Hallway1_Text_astralfritzPostBattle_2 {
     format("Don't worry if you lose! There might even be a little surprise for you if you have to restart. ;D")
 }
 
-text Charity_Hallway1_Text_ToolBox {
-    format("Just a bunch of tools in here. Nothing of use to you.")
+text Charity_Hallway1_Text_Book {
+    format("You find an interesting looking book.\p\qoThere seem to hidden items throughout this little village area.\qc")
 }
 
 text Charity_Hallway1_Text_RuluanIntro {
@@ -86,5 +85,5 @@ text Charity_Hallway1_Text_NateDefeat {
 }
 
 text Charity_Hallway1_Text_NatePostBattle {
-    format("I was told to tell you that some of these boxes might have stuff to help you!")
+    format("Thanks for setting up the event and raising so much money for the Humane Society!")
 }

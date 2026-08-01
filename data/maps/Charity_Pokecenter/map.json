@@ -99,18 +99,32 @@
       "elevation": 0,
       "dest_map": "MAP_CHAIRTY_HALLWAY2",
       "dest_warp_id": "0"
-    }
-  ],
-  "coord_events": [
+    },
     {
-      "type": "trigger",
       "x": 1,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Charity_Pokecenter_EventScript_WarpToPokecenter"
+      "dest_map": "MAP_Charity_Hallway1",
+      "dest_warp_id": "0"
     }
   ],
-  "bg_events": []
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 4,
+      "y": 3,
+      "elevation": 0,
+      "item": "ITEM_FULL_HEAL",
+      "flag": "FLAG_HIDDEN_ITEM_CHARITY_POKECENTER_FULL_HEAL_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 3,
+      "elevation": 0,
+      "item": "ITEM_FULL_HEAL",
+      "flag": "FLAG_HIDDEN_ITEM_CHARITY_POKECENTER_FULL_HEAL_2"
+    }
+  ]
 }
