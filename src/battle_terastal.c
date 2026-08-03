@@ -78,14 +78,6 @@ bool32 CanTerastallize(u32 battler)
     {
         return FALSE;
     }
-    else if (FlagGet(B_FLAG_TERA_ORB_NO_COST))
-    {
-        // Tera Orb is not depleted, go to HasTrainerUsedGimmick
-    }
-    else if (!FlagGet(B_FLAG_TERA_ORB_CHARGED))
-    {
-        return FALSE;
-    }
 
     // Check if Trainer has already Terastallized.
     if (HasTrainerUsedGimmick(battler, GIMMICK_TERA))

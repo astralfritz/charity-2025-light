@@ -6042,11 +6042,11 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Crawdaunt
+Oricorio
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Oricorio
+Crawdaunt
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -6193,6 +6193,7 @@ AI: Basic Trainer
 Pikachu
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Tera Type: Fire
 
 Dondozo
 Level: 50

@@ -22,6 +22,33 @@ Charity_House_2_EventScript_Maddy::
 	release
 	end`
 
+script Charity_House_2_EventScript_Fridge {
+	lockall
+	msgbox(format("You open the fridge to see a nice cold Dr. Pepper."))
+	applymovement(Charity_House_2_MelodySera, LookLeft)
+	waitmovement(0)
+	msgbox(format("Hey"))
+	applymovement(LOCALID_PLAYER, LookRight)
+	waitmovement(0)
+	msgbox(format("That's not for you. You're supposed to battle us."))
+	applymovement(Charity_House_2_MelodySera, LookDown)
+	waitmovement(0)
+	releaseall
+	end
+}
+
+movement LookLeft {
+	walk_in_place_fast_left
+}
+
+movement LookDown {
+	walk_in_place_fast_down
+}
+
+movement LookRight {
+	walk_in_place_fast_right
+}
+
 text Charity_House_2_Text_MelodySeraIntro {
     format("You already know what you're in for. Let's go!")
 }

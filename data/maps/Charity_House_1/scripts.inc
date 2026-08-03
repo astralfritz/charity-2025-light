@@ -31,30 +31,45 @@ Charity_House_1_EventScript_Sean::
 # 16 "data/maps/Charity_House_1/scripts.pory"
 	end
 
+Charity_House_1_EventScript_Games::
+# 19 "data/maps/Charity_House_1/scripts.pory"
+	lockall
+# 20 "data/maps/Charity_House_1/scripts.pory"
+	msgbox Charity_House_1_EventScript_Games_Text_0
+# 21 "data/maps/Charity_House_1/scripts.pory"
+	releaseall
+	end
+
+
+Charity_House_1_EventScript_Games_Text_0:
+# 20 "data/maps/Charity_House_1/scripts.pory"
+	.string "Looks like this was setup to play Mario\n"
+	.string "Kart Double Dash!$"
+
 Charity_House_1_Text_bambijoeIntro::
-# 18 "data/maps/Charity_House_1/scripts.pory"
+# 25 "data/maps/Charity_House_1/scripts.pory"
 	.string "Raising money for animals AND working\n"
 	.string "alongside GDQ? What can't you do?$"
 
 Charity_House_1_Text_bambijoeDefeat::
-# 22 "data/maps/Charity_House_1/scripts.pory"
+# 29 "data/maps/Charity_House_1/scripts.pory"
 	.string "Lose to me apparently.$"
 
 Charity_House_1_Text_bambijoePostBattle::
-# 26 "data/maps/Charity_House_1/scripts.pory"
+# 33 "data/maps/Charity_House_1/scripts.pory"
 	.string "Thanks for all your support! It means a\n"
 	.string "lot to everyone.$"
 
 Charity_House_1_Text_SeanIntro::
-# 30 "data/maps/Charity_House_1/scripts.pory"
+# 37 "data/maps/Charity_House_1/scripts.pory"
 	.string "I hope you're ready for this!$"
 
 Charity_House_1_Text_SeanDefeat::
-# 34 "data/maps/Charity_House_1/scripts.pory"
+# 41 "data/maps/Charity_House_1/scripts.pory"
 	.string "Man, that went worse than I thought it\n"
 	.string "would.$"
 
 Charity_House_1_Text_SeanPostBattle::
-# 38 "data/maps/Charity_House_1/scripts.pory"
+# 45 "data/maps/Charity_House_1/scripts.pory"
 	.string "You really are doing amazing stuff!\n"
 	.string "Thanks again!$"

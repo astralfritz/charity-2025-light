@@ -45,40 +45,98 @@ Charity_House_2_EventScript_Maddy::
 # 23 "data/maps/Charity_House_2/scripts.pory"
 	end
 
+Charity_House_2_EventScript_Fridge::
+# 26 "data/maps/Charity_House_2/scripts.pory"
+	lockall
+# 27 "data/maps/Charity_House_2/scripts.pory"
+	msgbox Charity_House_2_EventScript_Fridge_Text_0
+# 28 "data/maps/Charity_House_2/scripts.pory"
+	applymovement Charity_House_2_MelodySera, LookLeft
+# 29 "data/maps/Charity_House_2/scripts.pory"
+	waitmovement 0
+# 30 "data/maps/Charity_House_2/scripts.pory"
+	msgbox Charity_House_2_EventScript_Fridge_Text_1
+# 31 "data/maps/Charity_House_2/scripts.pory"
+	applymovement LOCALID_PLAYER, LookRight
+# 32 "data/maps/Charity_House_2/scripts.pory"
+	waitmovement 0
+# 33 "data/maps/Charity_House_2/scripts.pory"
+	msgbox Charity_House_2_EventScript_Fridge_Text_2
+# 34 "data/maps/Charity_House_2/scripts.pory"
+	applymovement Charity_House_2_MelodySera, LookDown
+# 35 "data/maps/Charity_House_2/scripts.pory"
+	waitmovement 0
+# 36 "data/maps/Charity_House_2/scripts.pory"
+	releaseall
+	end
+
+
+# 40 "data/maps/Charity_House_2/scripts.pory"
+LookLeft:
+# 41 "data/maps/Charity_House_2/scripts.pory"
+	walk_in_place_fast_left
+	step_end
+
+# 44 "data/maps/Charity_House_2/scripts.pory"
+LookDown:
+# 45 "data/maps/Charity_House_2/scripts.pory"
+	walk_in_place_fast_down
+	step_end
+
+# 48 "data/maps/Charity_House_2/scripts.pory"
+LookRight:
+# 49 "data/maps/Charity_House_2/scripts.pory"
+	walk_in_place_fast_right
+	step_end
+
+Charity_House_2_EventScript_Fridge_Text_0:
+# 27 "data/maps/Charity_House_2/scripts.pory"
+	.string "You open the fridge to see a nice cold\n"
+	.string "Dr. Pepper.$"
+
+Charity_House_2_EventScript_Fridge_Text_1:
+# 30 "data/maps/Charity_House_2/scripts.pory"
+	.string "Hey$"
+
+Charity_House_2_EventScript_Fridge_Text_2:
+# 33 "data/maps/Charity_House_2/scripts.pory"
+	.string "That's not for you. You're supposed to\n"
+	.string "battle us.$"
+
 Charity_House_2_Text_MelodySeraIntro::
-# 25 "data/maps/Charity_House_2/scripts.pory"
+# 52 "data/maps/Charity_House_2/scripts.pory"
 	.string "You already know what you're in for.\n"
 	.string "Let's go!$"
 
 Charity_House_2_Text_MelodySeraDefeat::
-# 29 "data/maps/Charity_House_2/scripts.pory"
+# 56 "data/maps/Charity_House_2/scripts.pory"
 	.string "My SABELEYES!$"
 
 Charity_House_2_Text_MelodySeraPostBattle::
-# 33 "data/maps/Charity_House_2/scripts.pory"
+# 60 "data/maps/Charity_House_2/scripts.pory"
 	.string "They were really cute though right?$"
 
 Charity_House_2_Text_EnomorieIntro::
-# 37 "data/maps/Charity_House_2/scripts.pory"
+# 64 "data/maps/Charity_House_2/scripts.pory"
 	.string "My beautiful POKéMON will take you out!$"
 
 Charity_House_2_Text_EnomorieDefeat::
-# 41 "data/maps/Charity_House_2/scripts.pory"
+# 68 "data/maps/Charity_House_2/scripts.pory"
 	.string "That was an Alolan one too!$"
 
 Charity_House_2_Text_EnomoriePostBattle::
-# 45 "data/maps/Charity_House_2/scripts.pory"
+# 72 "data/maps/Charity_House_2/scripts.pory"
 	.string "You are always prepped for battle.\n"
 	.string "Ready to fight for any cause!$"
 
 Charity_House_2_Text_MaddyIntro::
-# 49 "data/maps/Charity_House_2/scripts.pory"
+# 76 "data/maps/Charity_House_2/scripts.pory"
 	.string "You did a great job running the charity!$"
 
 Charity_House_2_Text_MaddyDefeat::
-# 53 "data/maps/Charity_House_2/scripts.pory"
+# 80 "data/maps/Charity_House_2/scripts.pory"
 	.string "This was fun! We should do it again!$"
 
 Charity_House_2_Text_MaddyPostBattle::
-# 57 "data/maps/Charity_House_2/scripts.pory"
+# 84 "data/maps/Charity_House_2/scripts.pory"
 	.string "Keep being fantastic!$"

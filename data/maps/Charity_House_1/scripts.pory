@@ -15,6 +15,13 @@ Charity_House_1_EventScript_Sean::
 	release
 	end`
 
+script Charity_House_1_EventScript_Games {
+	lockall
+	msgbox(format("Looks like this was setup to play Mario Kart Double Dash!"))
+	releaseall
+	end
+}
+
 text Charity_House_1_Text_bambijoeIntro {
     format("Raising money for animals AND working alongside GDQ? What can't you do?")
 }
