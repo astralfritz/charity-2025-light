@@ -57,29 +57,84 @@ Charity_House_3_EventScript_Pastrieman_POST_BATTLE_3::
 # 29 "data/maps/Charity_House_3/scripts.pory"
 	end
 
+Charity_House_3_EventScript_Sink::
+# 32 "data/maps/Charity_House_3/scripts.pory"
+	lockall
+# 33 "data/maps/Charity_House_3/scripts.pory"
+	msgbox Charity_House_3_EventScript_Sink_Text_0
+# 34 "data/maps/Charity_House_3/scripts.pory"
+	releaseall
+	end
+
+
+Charity_House_3_EventScript_GlassCase::
+# 39 "data/maps/Charity_House_3/scripts.pory"
+	lockall
+# 40 "data/maps/Charity_House_3/scripts.pory"
+	msgbox Charity_House_3_EventScript_GlassCase_Text_0
+# 41 "data/maps/Charity_House_3/scripts.pory"
+	goto_if_unset FLAG_HIDDEN_ITEM_CHARITY_HOUSE_3_FULL_RESTORE, Charity_House_3_EventScript_Get_Hidden_Item
+# 42 "data/maps/Charity_House_3/scripts.pory"
+	msgbox Charity_House_3_EventScript_GlassCase_Text_1
+# 43 "data/maps/Charity_House_3/scripts.pory"
+	releaseall
+	end
+
+
+Charity_House_3_EventScript_Get_Hidden_Item::
+# 48 "data/maps/Charity_House_3/scripts.pory"
+	msgbox Charity_House_3_EventScript_Get_Hidden_Item_Text_0
+# 49 "data/maps/Charity_House_3/scripts.pory"
+	giveitem ITEM_FULL_RESTORE
+# 50 "data/maps/Charity_House_3/scripts.pory"
+	setflag FLAG_HIDDEN_ITEM_CHARITY_HOUSE_3_FULL_RESTORE
+# 51 "data/maps/Charity_House_3/scripts.pory"
+	releaseall
+	end
+
+
+Charity_House_3_EventScript_Sink_Text_0:
+# 33 "data/maps/Charity_House_3/scripts.pory"
+	.string "You get the sense that running the sink\n"
+	.string "would be rude.$"
+
+Charity_House_3_EventScript_GlassCase_Text_0:
+# 40 "data/maps/Charity_House_3/scripts.pory"
+	.string "You see something inside...$"
+
+Charity_House_3_EventScript_GlassCase_Text_1:
+# 42 "data/maps/Charity_House_3/scripts.pory"
+	.string "Looks kind of like an egg but this isn't\n"
+	.string "the best looking glass.$"
+
+Charity_House_3_EventScript_Get_Hidden_Item_Text_0:
+# 48 "data/maps/Charity_House_3/scripts.pory"
+	.string "You get distracted by the FULL RESTORE\n"
+	.string "on the ground!$"
+
 Charity_House_3_Text_PastriemanIntro::
-# 31 "data/maps/Charity_House_3/scripts.pory"
+# 55 "data/maps/Charity_House_3/scripts.pory"
 	.string "I'm sure you'll be impressed with my\n"
 	.string "team.$"
 
 Charity_House_3_Text_PastriemanDefeat::
-# 35 "data/maps/Charity_House_3/scripts.pory"
+# 59 "data/maps/Charity_House_3/scripts.pory"
 	.string "Aren't you curious how I picked them?$"
 
 Charity_House_3_Text_PastriemanPostBattle_1::
-# 39 "data/maps/Charity_House_3/scripts.pory"
+# 63 "data/maps/Charity_House_3/scripts.pory"
 	.string "I made a playlist that was the peanuts\n"
 	.string "christmas album, zombie from the\l"
 	.string "cranberries and a lot of Eminem, it's my\l"
 	.string "Trail Mix.$"
 
 Charity_House_3_Text_PastriemanPostBattle_2::
-# 43 "data/maps/Charity_House_3/scripts.pory"
+# 67 "data/maps/Charity_House_3/scripts.pory"
 	.string "I got the Yakuza and a jacuzzi mixed up\n"
 	.string "and now I'm in hot water with the\l"
 	.string "Japanese mafia.$"
 
 Charity_House_3_Text_PastriemanPostBattle_3::
-# 47 "data/maps/Charity_House_3/scripts.pory"
+# 71 "data/maps/Charity_House_3/scripts.pory"
 	.string "Working all day to make custard, I love\n"
 	.string "it when a flan comes together.$"

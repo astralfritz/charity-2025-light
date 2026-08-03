@@ -1,52 +1,56 @@
 gText_Birch_Welcome::
+# 1 "data/text/birch_speech.pory"
 	.string "Hello and welcome to the world of\n"
 	.string "POKéMON!\p"
-	.string "My name is FRITZ.\p"
-	.string "But everyone knows me as the HACK\n"
-	.string "DEVELOPER.\p"
+	.string "My name is FRITZ but everyone knows me\n"
+	.string "as the HACK DEVELOPER.\p"
 	.string "$"
 
 gText_Birch_Pokemon::
+# 5 "data/text/birch_speech.pory"
 	.string "You of course know of “POKéMON.”\p"
-	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
+# 9 "data/text/birch_speech.pory"
 	.string "I just wanted to say thank you for\n"
 	.string "making this possible and helping Light\l"
-	.string "with the charity he ran!\p"
-	.string "It's was exciting seeing how far the\n"
-	.string "the event went and getting this\l"
-	.string "unlocked!\p"
-	.string "So let's skip ahead shall we?\p"
+	.string "with the charity he ran! It's was\l"
+	.string "exciting seeing how far the event went\l"
+	.string "and getting this unlocked! So let's skip\l"
+	.string "ahead shall we?\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
+# 13 "data/text/birch_speech.pory"
 	.string "Who's taking on the adventure today?\p"
 	.string "$"
 
 gText_Birch_BoyOrGirl::
+# 17 "data/text/birch_speech.pory"
 	.string "BRENDAN or MAY?\p"
 	.string "$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
-	.string "What's your name?$"
+# 21 "data/text/birch_speech.pory"
+	.string "All right. What's your name?\p"
+	.string "$"
 
 gText_Birch_SoItsPlayer::
-	.string "So it's {PLAYER}{KUN}?$"
+# 26 "data/text/birch_speech.pory"
+	.string "So it's {PLAYER}{KUN}?\p"
+	.string "$"
 
 gText_Birch_YourePlayer::
-	.string "Ah, so {PLAYER}{KUN} will be the lead\n"
-	.string "today!\p"
+# 31 "data/text/birch_speech.pory"
+	.string "Ah, so {PLAYER}{KUN} will be the lead today!\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
-	.string "Last note before we begin!\p"
-	.string "I did my best to match pics to\n"
-	.string "trainers! Apologies if it's not a\l"
-	.string "great match!\p"
-	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold!\p"
+# 35 "data/text/birch_speech.pory"
+	.string "Last note before we begin! I did my\n"
+	.string "best to match pics to trainers!\l"
+	.string "Apologies if it's not a great match! All\l"
+	.string "right, are you ready? Your very own\l"
+	.string "adventure is about to unfold!\p"
 	.string "$"

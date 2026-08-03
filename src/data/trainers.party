@@ -5762,7 +5762,6 @@ Name: Light
 Class: Champion
 Pic: Red
 Gender: Male
-Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
@@ -6174,11 +6173,11 @@ Metapod
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Yamper
+Roy (Yamper)
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Boltund
+Oliver (Boltund)
 Level: 50
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 

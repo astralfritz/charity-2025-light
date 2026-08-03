@@ -1,0 +1,37 @@
+text gText_Birch_Welcome {
+    format("Hello and welcome to the world of POKéMON!\pMy name is FRITZ but everyone knows me as the HACK DEVELOPER.\p")
+}
+
+text gText_Birch_Pokemon {
+    format("You of course know of “POKéMON.”\p")
+}
+
+text gText_Birch_MainSpeech {
+    format("I just wanted to say thank you for making this possible and helping Light with the charity he ran! It's was exciting seeing how far the event went and getting this unlocked! So let's skip ahead shall we?\p")
+}
+
+text gText_Birch_AndYouAre {
+    format("Who's taking on the adventure today?\p")
+}
+
+text gText_Birch_BoyOrGirl {
+    format("BRENDAN or MAY?\p")
+}
+
+text gText_Birch_WhatsYourName {
+    format("All right. What's your name?\p")
+}
+	
+
+text gText_Birch_SoItsPlayer {
+    format("So it's {PLAYER}{KUN}?\p")
+}
+	
+
+text gText_Birch_YourePlayer {
+    format("Ah, so {PLAYER}{KUN} will be the lead today!\p")
+}
+
+text gText_Birch_AreYouReady {
+    format("Last note before we begin! I did my best to match pics to trainers! Apologies if it's not a great match! All right, are you ready? Your very own adventure is about to unfold!\p")
+}

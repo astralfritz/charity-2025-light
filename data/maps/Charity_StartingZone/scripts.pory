@@ -7,6 +7,8 @@ Charity_StartingZone_OnTransition:
 	end
 
 Charity_StartingZone_EventScript_BirchBlock::
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_B_DASH
 	setobjectxyperm LOCALID_PICK_A_MON, 5, 2
 	return
 
@@ -46,21 +48,6 @@ Charity_StartingZone_EventScript_BattlesWonSign::
 Charity_StartingZone_EventScript_BattlesWonSign_Zero::
 	lockall
 	msgbox Charity_StartingZone_Text_BattlesWon_Zero, MSGBOX_NPC
-	releaseall
-	end
-
-Charity_StartingZone_EventScript_StartAdventure::
-	goto_if_set FLAG_OPENED_LOOP_DIALOG, Charity_StartingZone_EventScript_StartAdventureSkip
-	setflag FLAG_OPENED_LOOP_DIALOG
-	goto_if_eq VAR_CHARITY_LOOP, 1, Charity_StartingZone_EventScript_StartAdventure_1
-	end
-
-Charity_StartingZone_EventScript_StartAdventureSkip::
-	end
-
-Charity_StartingZone_EventScript_StartAdventure_1::
-	lockall
-	msgbox Charity_StartingZone_Text_Welcome_Back_1, MSGBOX_NPC
 	releaseall
 	end
 
@@ -138,6 +125,32 @@ Charity_StartingZone_Movement_Face_Down:
 	walk_in_place_down
 	step_end`
 
+script Charity_StartingZone_EventScript_StartAdventure {
+	goto_if_set(FLAG_OPENED_LOOP_DIALOG, Charity_StartingZone_EventScript_StartAdventureSkip)
+	setflag(FLAG_OPENED_LOOP_DIALOG)
+	goto_if_eq(VAR_CHARITY_LOOP, 1, Charity_StartingZone_EventScript_StartAdventure_1)
+	goto_if_eq(VAR_CHARITY_LOOP, 2, Charity_StartingZone_EventScript_StartAdventure_2)
+	end
+}
+
+script Charity_StartingZone_EventScript_StartAdventureSkip {
+	end
+}
+
+script Charity_StartingZone_EventScript_StartAdventure_1 {
+	lockall
+	msgbox(Charity_StartingZone_Text_Welcome_Back_1, MSGBOX_NPC)
+	releaseall
+	end
+}
+
+script Charity_StartingZone_EventScript_StartAdventure_2 {
+	lockall
+	msgbox(Charity_StartingZone_Text_Welcome_Back_2, MSGBOX_NPC)
+	releaseall
+	end
+}
+
 text Charity_StartingZone_Text_BattlesWon {
     format("Number of battles won : {STR_VAR_1} of 27")
 }
@@ -175,7 +188,7 @@ text Charity_StartingZone_Text_Pick_A_Mon_Sign {
 }
 
 text Charity_StartingZone_Text_Welcome_Back_1 {
-    format("Welcome back! You'll find battles to be a bit easier this time I believe.")
+    format("Welcome back! You'll find you have a small advantage now.")
 }
 
 text Charity_StartingZone_Text_Welcome_Back_2 {

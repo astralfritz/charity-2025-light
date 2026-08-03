@@ -28,6 +28,30 @@ Charity_House_3_EventScript_Pastrieman_POST_BATTLE_3::
 	releaseall
 	end`
 
+script Charity_House_3_EventScript_Sink {
+	lockall
+	msgbox(format("You get the sense that running the sink would be rude."))
+	releaseall
+	end
+}
+
+script Charity_House_3_EventScript_GlassCase {
+	lockall
+	msgbox(format("You see something inside..."))
+	goto_if_unset(FLAG_HIDDEN_ITEM_CHARITY_HOUSE_3_FULL_RESTORE, Charity_House_3_EventScript_Get_Hidden_Item)
+	msgbox(format("Looks kind of like an egg but this isn't the best looking glass."))
+	releaseall
+	end
+}
+
+script Charity_House_3_EventScript_Get_Hidden_Item {
+	msgbox(format("You get distracted by the FULL RESTORE on the ground!"))
+	giveitem(ITEM_FULL_RESTORE)
+	setflag(FLAG_HIDDEN_ITEM_CHARITY_HOUSE_3_FULL_RESTORE)
+	releaseall
+	end
+}
+
 text Charity_House_3_Text_PastriemanIntro {
     format("I'm sure you'll be impressed with my team.")
 }

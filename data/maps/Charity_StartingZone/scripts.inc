@@ -17,205 +17,205 @@ Charity_StartingZone_OnTransition:
 # 9 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_EventScript_BirchBlock::
 # 10 "data/maps/Charity_StartingZone/scripts.pory"
-	setobjectxyperm LOCALID_PICK_A_MON, 5, 2
+	setflag FLAG_RECEIVED_RUNNING_SHOES
 # 11 "data/maps/Charity_StartingZone/scripts.pory"
-	return
+	setflag FLAG_SYS_B_DASH
 # 12 "data/maps/Charity_StartingZone/scripts.pory"
-
+	setobjectxyperm LOCALID_PICK_A_MON, 5, 2
 # 13 "data/maps/Charity_StartingZone/scripts.pory"
-Charity_StartingZone_EventScript_GivePokemon::
+	return
 # 14 "data/maps/Charity_StartingZone/scripts.pory"
-	lock
+
 # 15 "data/maps/Charity_StartingZone/scripts.pory"
-	fadescreen FADE_TO_BLACK
+Charity_StartingZone_EventScript_GivePokemon::
 # 16 "data/maps/Charity_StartingZone/scripts.pory"
-	setvar VAR_CHARITY_STATE, 1
+	lock
 # 17 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	fadescreen FADE_TO_BLACK
 # 18 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_BADGE01_GET
+	setvar VAR_CHARITY_STATE, 1
 # 19 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_BADGE02_GET
+	setflag FLAG_SYS_POKEMON_GET
 # 20 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE01_GET
 # 21 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE02_GET
 # 22 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE03_GET
 # 23 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE04_GET
 # 24 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE05_GET
 # 25 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_BADGE08_GET
+	setflag FLAG_BADGE06_GET
 # 26 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_NURSE_UNION_ROOM_REMINDER
+	setflag FLAG_BADGE07_GET
 # 27 "data/maps/Charity_StartingZone/scripts.pory"
-	removeobject LOCALID_CHARITY_STARTING_ZONE_BIRCH_BAG
+	setflag FLAG_BADGE08_GET
 # 28 "data/maps/Charity_StartingZone/scripts.pory"
-	removeobject LOCALID_CHARITY_STARTING_ZONE_PC
+	setflag FLAG_NURSE_UNION_ROOM_REMINDER
 # 29 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_HIDE_CHARITY_STARTING_ZONE_BIRCH_BAG
+	removeobject LOCALID_CHARITY_STARTING_ZONE_BIRCH_BAG
 # 30 "data/maps/Charity_StartingZone/scripts.pory"
-	waitmovement 0
+	removeobject LOCALID_CHARITY_STARTING_ZONE_PC
 # 31 "data/maps/Charity_StartingZone/scripts.pory"
-	special ChooseStarter
+	setflag FLAG_HIDE_CHARITY_STARTING_ZONE_BIRCH_BAG
 # 32 "data/maps/Charity_StartingZone/scripts.pory"
-	waitstate
-# 33 "data/maps/Charity_StartingZone/scripts.pory"
-	applymovement LOCALID_PICK_A_MON, Charity_StartingZone_Movement_Away_From_Door
-# 34 "data/maps/Charity_StartingZone/scripts.pory"
 	waitmovement 0
+# 33 "data/maps/Charity_StartingZone/scripts.pory"
+	special ChooseStarter
+# 34 "data/maps/Charity_StartingZone/scripts.pory"
+	waitstate
 # 35 "data/maps/Charity_StartingZone/scripts.pory"
-	release
+	applymovement LOCALID_PICK_A_MON, Charity_StartingZone_Movement_Away_From_Door
 # 36 "data/maps/Charity_StartingZone/scripts.pory"
-	end
+	waitmovement 0
 # 37 "data/maps/Charity_StartingZone/scripts.pory"
-
+	release
 # 38 "data/maps/Charity_StartingZone/scripts.pory"
-Charity_StartingZone_EventScript_BattlesWonSign::
+	end
 # 39 "data/maps/Charity_StartingZone/scripts.pory"
-	goto_if_eq VAR_CHARITY_BATTLES_WON, 0, Charity_StartingZone_EventScript_BattlesWonSign_Zero
+
 # 40 "data/maps/Charity_StartingZone/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_CHARITY_BATTLES_WON
+Charity_StartingZone_EventScript_BattlesWonSign::
 # 41 "data/maps/Charity_StartingZone/scripts.pory"
-	lockall
+	goto_if_eq VAR_CHARITY_BATTLES_WON, 0, Charity_StartingZone_EventScript_BattlesWonSign_Zero
 # 42 "data/maps/Charity_StartingZone/scripts.pory"
-	msgbox Charity_StartingZone_Text_BattlesWon, MSGBOX_NPC
+	buffernumberstring STR_VAR_1, VAR_CHARITY_BATTLES_WON
 # 43 "data/maps/Charity_StartingZone/scripts.pory"
-	releaseall
+	lockall
 # 44 "data/maps/Charity_StartingZone/scripts.pory"
-	end
+	msgbox Charity_StartingZone_Text_BattlesWon, MSGBOX_NPC
 # 45 "data/maps/Charity_StartingZone/scripts.pory"
-
+	releaseall
 # 46 "data/maps/Charity_StartingZone/scripts.pory"
-Charity_StartingZone_EventScript_BattlesWonSign_Zero::
+	end
 # 47 "data/maps/Charity_StartingZone/scripts.pory"
-	lockall
+
 # 48 "data/maps/Charity_StartingZone/scripts.pory"
-	msgbox Charity_StartingZone_Text_BattlesWon_Zero, MSGBOX_NPC
+Charity_StartingZone_EventScript_BattlesWonSign_Zero::
 # 49 "data/maps/Charity_StartingZone/scripts.pory"
-	releaseall
+	lockall
 # 50 "data/maps/Charity_StartingZone/scripts.pory"
-	end
+	msgbox Charity_StartingZone_Text_BattlesWon_Zero, MSGBOX_NPC
 # 51 "data/maps/Charity_StartingZone/scripts.pory"
-
+	releaseall
 # 52 "data/maps/Charity_StartingZone/scripts.pory"
-Charity_StartingZone_EventScript_StartAdventure::
+	end
 # 53 "data/maps/Charity_StartingZone/scripts.pory"
-	goto_if_set FLAG_OPENED_LOOP_DIALOG, Charity_StartingZone_EventScript_StartAdventureSkip
+
 # 54 "data/maps/Charity_StartingZone/scripts.pory"
-	setflag FLAG_OPENED_LOOP_DIALOG
-# 55 "data/maps/Charity_StartingZone/scripts.pory"
-	goto_if_eq VAR_CHARITY_LOOP, 1, Charity_StartingZone_EventScript_StartAdventure_1
-# 56 "data/maps/Charity_StartingZone/scripts.pory"
-	end
-# 57 "data/maps/Charity_StartingZone/scripts.pory"
-
-# 58 "data/maps/Charity_StartingZone/scripts.pory"
-Charity_StartingZone_EventScript_StartAdventureSkip::
-# 59 "data/maps/Charity_StartingZone/scripts.pory"
-	end
-# 60 "data/maps/Charity_StartingZone/scripts.pory"
-
-# 61 "data/maps/Charity_StartingZone/scripts.pory"
-Charity_StartingZone_EventScript_StartAdventure_1::
-# 62 "data/maps/Charity_StartingZone/scripts.pory"
-	lockall
-# 63 "data/maps/Charity_StartingZone/scripts.pory"
-	msgbox Charity_StartingZone_Text_Welcome_Back_1, MSGBOX_NPC
-# 64 "data/maps/Charity_StartingZone/scripts.pory"
-	releaseall
-# 65 "data/maps/Charity_StartingZone/scripts.pory"
-	end
-# 66 "data/maps/Charity_StartingZone/scripts.pory"
-
-# 67 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_EventScript_BirchChat::
-# 68 "data/maps/Charity_StartingZone/scripts.pory"
+# 55 "data/maps/Charity_StartingZone/scripts.pory"
 	lockall
-# 69 "data/maps/Charity_StartingZone/scripts.pory"
+# 56 "data/maps/Charity_StartingZone/scripts.pory"
 	goto_if_unset FLAG_SYS_POKEMON_GET, Charity_StartingZone_EventScript_Pick_A_Mon
-# 70 "data/maps/Charity_StartingZone/scripts.pory"
+# 57 "data/maps/Charity_StartingZone/scripts.pory"
 	goto_if_unset FLAG_CONGRATS_ON_FIRST_MON, Charity_StartingZone_EventScript_Congrats
-# 71 "data/maps/Charity_StartingZone/scripts.pory"
+# 58 "data/maps/Charity_StartingZone/scripts.pory"
 	goto_if_eq VAR_TIPS_FROM_BIRCH, 0, Charity_StartingZone_EventScript_MultipleDialog
-# 72 "data/maps/Charity_StartingZone/scripts.pory"
+# 59 "data/maps/Charity_StartingZone/scripts.pory"
 	goto_if_eq VAR_TIPS_FROM_BIRCH, 1, Charity_StartingZone_EventScript_ChangeMoves
-# 73 "data/maps/Charity_StartingZone/scripts.pory"
+# 60 "data/maps/Charity_StartingZone/scripts.pory"
 	goto_if_eq VAR_TIPS_FROM_BIRCH, 2, Charity_StartingZone_EventScript_MoreMons
-# 74 "data/maps/Charity_StartingZone/scripts.pory"
+# 61 "data/maps/Charity_StartingZone/scripts.pory"
 	goto_if_eq VAR_TIPS_FROM_BIRCH, 3, Charity_StartingZone_EventScript_TryAgain
-# 75 "data/maps/Charity_StartingZone/scripts.pory"
+# 62 "data/maps/Charity_StartingZone/scripts.pory"
 	releaseall
-# 76 "data/maps/Charity_StartingZone/scripts.pory"
+# 63 "data/maps/Charity_StartingZone/scripts.pory"
 	end
-# 77 "data/maps/Charity_StartingZone/scripts.pory"
+# 64 "data/maps/Charity_StartingZone/scripts.pory"
 
-# 78 "data/maps/Charity_StartingZone/scripts.pory"
+# 65 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_EventScript_Pick_A_Mon::
-# 79 "data/maps/Charity_StartingZone/scripts.pory"
+# 66 "data/maps/Charity_StartingZone/scripts.pory"
 	msgbox Charity_StartingZone_Text_Pick_A_Mon, MSGBOX_NPC
-# 80 "data/maps/Charity_StartingZone/scripts.pory"
+# 67 "data/maps/Charity_StartingZone/scripts.pory"
 	goto Charity_StartingZone_EventScript_BirchChatEnd
-# 81 "data/maps/Charity_StartingZone/scripts.pory"
+# 68 "data/maps/Charity_StartingZone/scripts.pory"
 	releaseall
-# 82 "data/maps/Charity_StartingZone/scripts.pory"
+# 69 "data/maps/Charity_StartingZone/scripts.pory"
 	end
-# 83 "data/maps/Charity_StartingZone/scripts.pory"
+# 70 "data/maps/Charity_StartingZone/scripts.pory"
 
-# 84 "data/maps/Charity_StartingZone/scripts.pory"
+# 71 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_EventScript_Congrats::
-# 85 "data/maps/Charity_StartingZone/scripts.pory"
+# 72 "data/maps/Charity_StartingZone/scripts.pory"
 	setflag FLAG_CONGRATS_ON_FIRST_MON
-# 86 "data/maps/Charity_StartingZone/scripts.pory"
+# 73 "data/maps/Charity_StartingZone/scripts.pory"
 	setvar VAR_TIPS_FROM_BIRCH, 1
-# 87 "data/maps/Charity_StartingZone/scripts.pory"
+# 74 "data/maps/Charity_StartingZone/scripts.pory"
 	msgbox Charity_StartingZone_Text_Congrats, MSGBOX_NPC
-# 88 "data/maps/Charity_StartingZone/scripts.pory"
+# 75 "data/maps/Charity_StartingZone/scripts.pory"
 	goto Charity_StartingZone_EventScript_BirchChatEnd
-# 89 "data/maps/Charity_StartingZone/scripts.pory"
+# 76 "data/maps/Charity_StartingZone/scripts.pory"
 	releaseall
-# 90 "data/maps/Charity_StartingZone/scripts.pory"
+# 77 "data/maps/Charity_StartingZone/scripts.pory"
 	end
-# 91 "data/maps/Charity_StartingZone/scripts.pory"
+# 78 "data/maps/Charity_StartingZone/scripts.pory"
 
-# 92 "data/maps/Charity_StartingZone/scripts.pory"
+# 79 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_EventScript_MultipleDialog::
-# 93 "data/maps/Charity_StartingZone/scripts.pory"
+# 80 "data/maps/Charity_StartingZone/scripts.pory"
 	setvar VAR_TIPS_FROM_BIRCH, 1
-# 94 "data/maps/Charity_StartingZone/scripts.pory"
+# 81 "data/maps/Charity_StartingZone/scripts.pory"
 	msgbox Charity_StartingZone_Text_MultipleDialog, MSGBOX_NPC
-# 95 "data/maps/Charity_StartingZone/scripts.pory"
+# 82 "data/maps/Charity_StartingZone/scripts.pory"
 	goto Charity_StartingZone_EventScript_BirchChatEnd
-# 96 "data/maps/Charity_StartingZone/scripts.pory"
+# 83 "data/maps/Charity_StartingZone/scripts.pory"
 	releaseall
-# 97 "data/maps/Charity_StartingZone/scripts.pory"
+# 84 "data/maps/Charity_StartingZone/scripts.pory"
 	end
-# 98 "data/maps/Charity_StartingZone/scripts.pory"
+# 85 "data/maps/Charity_StartingZone/scripts.pory"
 
-# 99 "data/maps/Charity_StartingZone/scripts.pory"
+# 86 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_EventScript_ChangeMoves::
-# 100 "data/maps/Charity_StartingZone/scripts.pory"
+# 87 "data/maps/Charity_StartingZone/scripts.pory"
 	setvar VAR_TIPS_FROM_BIRCH, 2
-# 101 "data/maps/Charity_StartingZone/scripts.pory"
+# 88 "data/maps/Charity_StartingZone/scripts.pory"
 	msgbox Charity_StartingZone_Text_ChangeMoves, MSGBOX_NPC
-# 102 "data/maps/Charity_StartingZone/scripts.pory"
+# 89 "data/maps/Charity_StartingZone/scripts.pory"
 	goto Charity_StartingZone_EventScript_BirchChatEnd
-# 103 "data/maps/Charity_StartingZone/scripts.pory"
+# 90 "data/maps/Charity_StartingZone/scripts.pory"
 	releaseall
-# 104 "data/maps/Charity_StartingZone/scripts.pory"
+# 91 "data/maps/Charity_StartingZone/scripts.pory"
 	end
-# 105 "data/maps/Charity_StartingZone/scripts.pory"
+# 92 "data/maps/Charity_StartingZone/scripts.pory"
 
-# 106 "data/maps/Charity_StartingZone/scripts.pory"
+# 93 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_EventScript_MoreMons::
-# 107 "data/maps/Charity_StartingZone/scripts.pory"
+# 94 "data/maps/Charity_StartingZone/scripts.pory"
 	setvar VAR_TIPS_FROM_BIRCH, 3
-# 108 "data/maps/Charity_StartingZone/scripts.pory"
+# 95 "data/maps/Charity_StartingZone/scripts.pory"
 	msgbox Charity_StartingZone_Text_MoreMons, MSGBOX_NPC
-# 109 "data/maps/Charity_StartingZone/scripts.pory"
+# 96 "data/maps/Charity_StartingZone/scripts.pory"
 	goto Charity_StartingZone_EventScript_BirchChatEnd
+# 97 "data/maps/Charity_StartingZone/scripts.pory"
+	releaseall
+# 98 "data/maps/Charity_StartingZone/scripts.pory"
+	end
+# 99 "data/maps/Charity_StartingZone/scripts.pory"
+
+# 100 "data/maps/Charity_StartingZone/scripts.pory"
+Charity_StartingZone_EventScript_TryAgain::
+# 101 "data/maps/Charity_StartingZone/scripts.pory"
+	setvar VAR_TIPS_FROM_BIRCH, 0
+# 102 "data/maps/Charity_StartingZone/scripts.pory"
+	msgbox Charity_StartingZone_Text_TryAgain, MSGBOX_NPC
+# 103 "data/maps/Charity_StartingZone/scripts.pory"
+	goto Charity_StartingZone_EventScript_BirchChatEnd
+# 104 "data/maps/Charity_StartingZone/scripts.pory"
+	releaseall
+# 105 "data/maps/Charity_StartingZone/scripts.pory"
+	end
+# 106 "data/maps/Charity_StartingZone/scripts.pory"
+
+# 107 "data/maps/Charity_StartingZone/scripts.pory"
+Charity_StartingZone_EventScript_BirchChatEnd::
+# 108 "data/maps/Charity_StartingZone/scripts.pory"
+	applymovement LOCALID_PICK_A_MON, Charity_StartingZone_Movement_Face_Down
+# 109 "data/maps/Charity_StartingZone/scripts.pory"
+	waitmovement 0
 # 110 "data/maps/Charity_StartingZone/scripts.pory"
 	releaseall
 # 111 "data/maps/Charity_StartingZone/scripts.pory"
@@ -223,113 +223,123 @@ Charity_StartingZone_EventScript_MoreMons::
 # 112 "data/maps/Charity_StartingZone/scripts.pory"
 
 # 113 "data/maps/Charity_StartingZone/scripts.pory"
-Charity_StartingZone_EventScript_TryAgain::
-# 114 "data/maps/Charity_StartingZone/scripts.pory"
-	setvar VAR_TIPS_FROM_BIRCH, 0
-# 115 "data/maps/Charity_StartingZone/scripts.pory"
-	msgbox Charity_StartingZone_Text_TryAgain, MSGBOX_NPC
-# 116 "data/maps/Charity_StartingZone/scripts.pory"
-	goto Charity_StartingZone_EventScript_BirchChatEnd
-# 117 "data/maps/Charity_StartingZone/scripts.pory"
-	releaseall
-# 118 "data/maps/Charity_StartingZone/scripts.pory"
-	end
-# 119 "data/maps/Charity_StartingZone/scripts.pory"
-
-# 120 "data/maps/Charity_StartingZone/scripts.pory"
-Charity_StartingZone_EventScript_BirchChatEnd::
-# 121 "data/maps/Charity_StartingZone/scripts.pory"
-	applymovement LOCALID_PICK_A_MON, Charity_StartingZone_Movement_Face_Down
-# 122 "data/maps/Charity_StartingZone/scripts.pory"
-	waitmovement 0
-# 123 "data/maps/Charity_StartingZone/scripts.pory"
-	releaseall
-# 124 "data/maps/Charity_StartingZone/scripts.pory"
-	end
-# 125 "data/maps/Charity_StartingZone/scripts.pory"
-
-# 126 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_EventScript_Pick_A_Mon_Sign::
-# 127 "data/maps/Charity_StartingZone/scripts.pory"
+# 114 "data/maps/Charity_StartingZone/scripts.pory"
 	lockall
-# 128 "data/maps/Charity_StartingZone/scripts.pory"
+# 115 "data/maps/Charity_StartingZone/scripts.pory"
 	msgbox Charity_StartingZone_Text_Pick_A_Mon_Sign, MSGBOX_DEFAULT
-# 129 "data/maps/Charity_StartingZone/scripts.pory"
+# 116 "data/maps/Charity_StartingZone/scripts.pory"
 	releaseall
-# 130 "data/maps/Charity_StartingZone/scripts.pory"
+# 117 "data/maps/Charity_StartingZone/scripts.pory"
 	return
-# 131 "data/maps/Charity_StartingZone/scripts.pory"
+# 118 "data/maps/Charity_StartingZone/scripts.pory"
 
-# 132 "data/maps/Charity_StartingZone/scripts.pory"
+# 119 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_Movement_Away_From_Door:
-# 133 "data/maps/Charity_StartingZone/scripts.pory"
+# 120 "data/maps/Charity_StartingZone/scripts.pory"
 	walk_right
-# 134 "data/maps/Charity_StartingZone/scripts.pory"
+# 121 "data/maps/Charity_StartingZone/scripts.pory"
 	walk_in_place_down
-# 135 "data/maps/Charity_StartingZone/scripts.pory"
+# 122 "data/maps/Charity_StartingZone/scripts.pory"
 	step_end
-# 136 "data/maps/Charity_StartingZone/scripts.pory"
+# 123 "data/maps/Charity_StartingZone/scripts.pory"
 
-# 137 "data/maps/Charity_StartingZone/scripts.pory"
+# 124 "data/maps/Charity_StartingZone/scripts.pory"
 Charity_StartingZone_Movement_Face_Down:
-# 138 "data/maps/Charity_StartingZone/scripts.pory"
+# 125 "data/maps/Charity_StartingZone/scripts.pory"
 	walk_in_place_down
-# 139 "data/maps/Charity_StartingZone/scripts.pory"
+# 126 "data/maps/Charity_StartingZone/scripts.pory"
 	step_end
+
+Charity_StartingZone_EventScript_StartAdventure::
+# 129 "data/maps/Charity_StartingZone/scripts.pory"
+	goto_if_set FLAG_OPENED_LOOP_DIALOG, Charity_StartingZone_EventScript_StartAdventureSkip
+# 130 "data/maps/Charity_StartingZone/scripts.pory"
+	setflag FLAG_OPENED_LOOP_DIALOG
+# 131 "data/maps/Charity_StartingZone/scripts.pory"
+	goto_if_eq VAR_CHARITY_LOOP, 1, Charity_StartingZone_EventScript_StartAdventure_1
+# 132 "data/maps/Charity_StartingZone/scripts.pory"
+	goto_if_eq VAR_CHARITY_LOOP, 2, Charity_StartingZone_EventScript_StartAdventure_2
+	end
+
+
+Charity_StartingZone_EventScript_StartAdventureSkip::
+	end
+
+
+Charity_StartingZone_EventScript_StartAdventure_1::
+# 141 "data/maps/Charity_StartingZone/scripts.pory"
+	lockall
+# 142 "data/maps/Charity_StartingZone/scripts.pory"
+	msgbox Charity_StartingZone_Text_Welcome_Back_1, MSGBOX_NPC
+# 143 "data/maps/Charity_StartingZone/scripts.pory"
+	releaseall
+	end
+
+
+Charity_StartingZone_EventScript_StartAdventure_2::
+# 148 "data/maps/Charity_StartingZone/scripts.pory"
+	lockall
+# 149 "data/maps/Charity_StartingZone/scripts.pory"
+	msgbox Charity_StartingZone_Text_Welcome_Back_2, MSGBOX_NPC
+# 150 "data/maps/Charity_StartingZone/scripts.pory"
+	releaseall
+	end
+
 
 Charity_StartingZone_Text_BattlesWon::
-# 141 "data/maps/Charity_StartingZone/scripts.pory"
+# 154 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "Number of battles won : {STR_VAR_1}\n"
 	.string "of 27$"
 
 Charity_StartingZone_Text_BattlesWon_Zero::
-# 145 "data/maps/Charity_StartingZone/scripts.pory"
+# 158 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "Number of battles won : 0 of 27$"
 
 Charity_StartingZone_Text_Pick_A_Mon::
-# 149 "data/maps/Charity_StartingZone/scripts.pory"
+# 162 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "You must select your first POKéMON\n"
 	.string "before you can proceed.$"
 
 Charity_StartingZone_Text_Congrats::
-# 153 "data/maps/Charity_StartingZone/scripts.pory"
+# 166 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "Congrats on your first POKéMON! Some\n"
 	.string "people might have multiple dialogs if\l"
 	.string "you talk to them more.$"
 
 Charity_StartingZone_Text_MultipleDialog::
-# 157 "data/maps/Charity_StartingZone/scripts.pory"
+# 170 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "Some people might have multiple dialogs\n"
 	.string "if you talk to them more.$"
 
 Charity_StartingZone_Text_ChangeMoves::
-# 161 "data/maps/Charity_StartingZone/scripts.pory"
+# 174 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "Make sure to check the summary. You can\n"
 	.string "change the moveset in the menu using\l"
 	.string "the start button.$"
 
 Charity_StartingZone_Text_MoreMons::
-# 165 "data/maps/Charity_StartingZone/scripts.pory"
+# 178 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "Check out the PC for more random\n"
 	.string "POKéMON to help you!$"
 
 Charity_StartingZone_Text_TryAgain::
-# 169 "data/maps/Charity_StartingZone/scripts.pory"
+# 182 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "If you lose, you'll come back here to\n"
 	.string "pick a new team. Don't feel bad if you\l"
 	.string "don't like the ones available now.$"
 
 Charity_StartingZone_Text_Pick_A_Mon_Sign::
-# 173 "data/maps/Charity_StartingZone/scripts.pory"
+# 186 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "You cannot access your PC until you\n"
 	.string "pick your first POKéMON from the bag!$"
 
 Charity_StartingZone_Text_Welcome_Back_1::
-# 177 "data/maps/Charity_StartingZone/scripts.pory"
-	.string "Welcome back! You'll find battles to be\n"
-	.string "a bit easier this time I believe.$"
+# 190 "data/maps/Charity_StartingZone/scripts.pory"
+	.string "Welcome back! You'll find you have a\n"
+	.string "small advantage now.$"
 
 Charity_StartingZone_Text_Welcome_Back_2::
-# 181 "data/maps/Charity_StartingZone/scripts.pory"
+# 194 "data/maps/Charity_StartingZone/scripts.pory"
 	.string "Back again huh? Make sure to find\n"
 	.string "everyone! A lot of people donated!$"

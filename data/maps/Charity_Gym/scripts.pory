@@ -2,7 +2,7 @@ raw `Charity_Gym_MapScripts::
 	.byte 0`
 
 script Charity_Gym_EventScript_Light {
-	goto_if_le(VAR_CHARITY_BATTLES_WON, 27, Charity_Gym_EventScript_Light_ThankEveryone)
+	goto_if_lt(VAR_CHARITY_BATTLES_WON, 27, Charity_Gym_EventScript_Light_ThankEveryone)
 	msgbox(Charity_Gym_Text_LightIntro, MSGBOX_NPC)
 	trainerbattle_no_intro(TRAINER_CHARITY_Light, Charity_Gym_Text_LightDefeat)
 	msgbox(Charity_Gym_Text_LightPostBattle, MSGBOX_DEFAULT)

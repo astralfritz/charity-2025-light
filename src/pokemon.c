@@ -68,6 +68,7 @@
 #include "constants/trainers.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "constants/opponents.h"
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_8) ? 160 : 220)
 
@@ -6099,6 +6100,11 @@ u16 GetBattleBGM(void)
             trainerClass = TRAINER_CLASS_EXPERT;
         else
             trainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
+
+        if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_CHARITY_Light)
+        {
+            return MUS_RG_VS_CHAMPION;
+        }
 
         switch (trainerClass)
         {

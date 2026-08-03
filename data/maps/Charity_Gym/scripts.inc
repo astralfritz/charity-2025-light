@@ -5,7 +5,7 @@ Charity_Gym_MapScripts::
 
 Charity_Gym_EventScript_Light::
 # 5 "data/maps/Charity_Gym/scripts.pory"
-	goto_if_le VAR_CHARITY_BATTLES_WON, 27, Charity_Gym_EventScript_Light_ThankEveryone
+	goto_if_lt VAR_CHARITY_BATTLES_WON, 27, Charity_Gym_EventScript_Light_ThankEveryone
 # 6 "data/maps/Charity_Gym/scripts.pory"
 	msgbox Charity_Gym_Text_LightIntro, MSGBOX_NPC
 # 7 "data/maps/Charity_Gym/scripts.pory"
